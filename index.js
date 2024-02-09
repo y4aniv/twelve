@@ -13,6 +13,19 @@ app.use('/video', express.static(__dirname + 'public/video'));
 app.set('view engine', 'ejs');
 app.set('views', './views');
 
+app.get('/', (req, res) => {
+    res.render('pages/index');
+})
+
+app.get('/robots.txt', (req, res) => {
+    res.type('text/plain');
+    res.send('User-agent: *\nDisallow: /');
+});
+
+app.all('*', (req, res) => {
+    res.redirect('/');
+});
+
 app.listen(port, () => {
     console.log(`Le serveur est lancé sur le port ${port}`);
 });
