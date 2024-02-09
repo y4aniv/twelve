@@ -1,0 +1,26 @@
+@import url('https://fonts.cdnfonts.com/css/poe-vetica-new');
+
+:root {
+    --color-white: #FDFAF6;
+    --color-black: #313131;
+    
+    --font-primary: 'Poe Vetica New', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::selection{
+    background-color: var(--color-black);
+    color: var(--color-white);
+}
+
+body {
+    font-family: var(--font-primary);
+    background-color: var(--color-white);
+    color: var(--color-black);
+    overflow-x: hidden;
+}
