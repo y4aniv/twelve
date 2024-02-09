@@ -1,7 +1,7 @@
 {
   "name": "twelve",
   "version": "1.0.0",
-  "description": "Twelve, a timeless hotel.",
+  "description": "Twelve, un hôtel hors du temps.",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
