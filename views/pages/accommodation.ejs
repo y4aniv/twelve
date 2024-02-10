@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <%- include('../partials/head') %>
+    <link rel="stylesheet" href="/css/accommodation.css">
+    <script src="/js/accommodation.js" defer></script>
+</head>
+<body>
+    <div class="header">
+        <div class="header__logo"></div>
+    </div>
+    <div class="accommodation">
+        <ul class="accommodation__sorting">
+            <li class="sorting__all sorting__active" id="sorting__all">Tous</p>
+            <li class="sorting__villa" id="sorting__villa">Villas</p>
+            <li class="sorting__pavillon" id="sorting__pavillon">Pavillons</p>
+        </ul>
+        <div class="accommodation__content" id="accommodation__content">
+            <% for (let i = 0; i < data.length; i++) { %>
+                <div class="content__item" data-type="<%= data[i].type %>" data-id="<%= i %>">
+                    <div class="item__slider"></div>
+                    <p class="item__type"><%= data[i].type %></p>
+                    <h3 class="item__name"><%= data[i].name %></h3>
+                    <p class="item__description"><%= data[i].description %></p>
+                </div>
+            <% } %>
+        </div>
+    </div>
+    <%- include('../partials/footer') %>
+</body>
+</html>
