@@ -15,7 +15,7 @@ app.set('views', './views');
 
 app.get('/', (req, res) => {
     res.render('pages/index', {
-        currentUrl: req.protocol + '://' + req.get('host') + req.originalUrl,
+        currentUrl:'https://' + req.get('host') + req.originalUrl,
     });
 })
 
