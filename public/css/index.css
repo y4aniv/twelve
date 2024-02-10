@@ -14,3 +14,18 @@
     margin-bottom: 10px;
     background: url('/img/logo-white.svg') no-repeat center/contain;
 }
+
+.keywords {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.keywords__text {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 95%;
+    font-size: 32px;
+    margin-top: 20px;
+}
