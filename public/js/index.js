@@ -5,8 +5,7 @@ gsap.to(".keywords__text span", {
         trigger: ".keywords__text",
         start: "10% 40%",
         end: "bottom 60%",
-        scrub: 1,
-        markers: true,
+        scrub: 1
     },
     opacity: 0.1,
     stagger: 0.1,
