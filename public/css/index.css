@@ -3,6 +3,7 @@
     width: 100%;
     height: 150vh;
     background: url('/img/header-index.jpg') no-repeat center 40%/cover;
+    filter: saturate(100%)
 }
 
 .header__logo {
@@ -17,15 +18,107 @@
 
 .keywords {
     position: relative;
-    width: 100%;
-    height: auto;
+    width: 95%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 50px;
 }
 
 .keywords__text {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 95%;
-    font-size: 32px;
+    font-size: 30px;
+}
+
+.accommodation, .dining {
+    position: relative;
+    width: 100%;
+    height: 150vh;
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: normal;
+    align-items: normal;
+    align-content: normal;
+}
+
+.accommodation {
+    flex-direction: row;
+}
+
+.dining {
+    flex-direction: row-reverse;
+}
+
+.accommodation__content, .dining__content {
+    position: relative;
+    width: 40%;
+    height: 100%;
+    padding: 50px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: normal;
+    align-content: normal;
+    flex-direction: column;
+}
+
+.accommodation__title, .dining__title {
+    font-family: var(--font-secondary);
+    font-size: 30px;
+}
+
+.accommodation__description, .dining__description {
     margin-top: 20px;
+    font-size: 20px;
+}
+
+.accommodation__author, .dining__author {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.accommodation__button, .dining__button {
+    position: relative;
+    width: 100%;
+    min-height: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 20px;
+    font-size: 20px;
+    background-color: var(--color-black);
+    color: var(--color-white);
+    border: none;
+    cursor: pointer;
+    font-family: var(--font-primary);
+}
+
+.accommodation__image, .dining__image {
+    position: relative;
+    width: 60%;
+    height: 100%;
+    filter: saturate(100%);
+}
+
+.accommodation__image {
+    background: url('/img/accommodation-index.jpg') no-repeat center/cover;
+}
+
+.dining__image {
+    background: url('/img/dining-index.jpg') no-repeat center bottom/cover;
+}
+
+@media screen and (max-width: 800px){
+    .accommodation, .dining {
+        flex-direction: column-reverse;
+        height: 100vh;
+    }
+    .accommodation__content, .dining__content {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        justify-content: center;
+    }
+    .accommodation__image, .dining__image {
+        width: 100%;
+        height: 100%;
+    }
 }
