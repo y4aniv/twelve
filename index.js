@@ -14,7 +14,9 @@ app.set('view engine', 'ejs');
 app.set('views', './views');
 
 app.get('/', (req, res) => {
-    res.render('pages/index');
+    res.render('pages/index', {
+        currentUrl: req.protocol + '://' + req.get('host') + req.originalUrl,
+    });
 })
 
 app.get('/robots.txt', (req, res) => {
