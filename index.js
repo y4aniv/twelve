@@ -21,6 +21,15 @@ app.get('/', (req, res) => {
     });
 })
 
+app.get('/accommodation', (req, res) => {
+    res.render('pages/accommodation', {
+        head: {
+            url: 'https://' + req.get('host') + req.originalUrl,
+        },
+        data: require('./data/accommodation.json')
+    });
+})
+
 app.get('/robots.txt', (req, res) => {
     res.type('text/plain');
     res.send('User-agent: *\nDisallow: /');
