@@ -19,8 +19,8 @@
         </ul>
         <div class="accommodation__content" id="accommodation__content">
             <% for (let i = 0; i < data.length; i++) { %>
-                <div class="content__item" data-type="<%= data[i].type %>" data-id="<%= i %>">
-                    <div class="item__slider"></div>
+                <div class="content__item" data-type="<%= data[i].type %>">
+                    <img class="item__poster" src="/img/accommodation/poster/<%= data[i].slug %>.jpg" alt="<%= data[i].name %>" draggable="false">
                     <p class="item__type"><%= data[i].type %></p>
                     <h3 class="item__name"><%= data[i].name %></h3>
                     <p class="item__description"><%= data[i].description %></p>
