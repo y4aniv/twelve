@@ -94,7 +94,16 @@
     position: relative;
     width: 60%;
     height: 100%;
-    object-fit: cover;
+}
+
+.accommodation__image {
+    background: url('/img/accommodation-index.jpg') no-repeat center 40%/cover;
+    filter: saturate(100%);
+}
+
+.dining__image {
+    background: url('/img/dining-index.jpg') no-repeat center 40%/cover;
+    filter: saturate(100%);
 }
 
 @media screen and (max-width: 800px){
