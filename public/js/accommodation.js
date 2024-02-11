@@ -9,7 +9,7 @@ function filterAccommodation(type) {
     document.querySelector('.sorting__active').classList.remove('sorting__active');
     sortingButtons[type].classList.add('sorting__active');
     accommodationContent.style.opacity = 0;
-    
+
     setTimeout(() => {
         const elements = document.querySelectorAll('.content__item');
         elements.forEach(element => {
