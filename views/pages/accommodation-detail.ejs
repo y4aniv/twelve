@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <%- include('../partials/head') %>
+    <link rel="stylesheet" href="/css/accommodation-detail.css">
+    <script src="/js/accommodation-detail.js" defer></script>
+</head>
+
+<body>
+    <div class="header">
+        <a href="/">
+            <div class="header__logo"></div>
+        </a>
+    </div>
+    <h1 class="accommodation-detail__title"><%= accommodation.name %></h1>
+    <div class="accommodation-detail">
+        <div class="accommodation-detail__slider">
+            <% for (let i=0; i < accommodation.slider; i++) { %>
+                <% if (i === 0) { %>
+                    <img class="slider__item" src="/img/accommodation/slider/<%= accommodation.slug %>/<%= i %>.jpg" style="opacity: 1;" draggable="false">
+                <% } else { %>
+                    <img class="slider__item" src="/img/accommodation/slider/<%= accommodation.slug %>/<%= i %>.jpg" draggable="false">
+                <% } %>
+            <% } %>
+        </div>
+    </div>
+    <%- include('../partials/footer') %>
+</body>
+
+</html>
