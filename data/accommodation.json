@@ -3,7 +3,8 @@
         "name": "Villa 20",
         "slug": "villa-20",
         "type": "Villa",
-        "description": "Neuf chambres disposées sur six étages, six piscines, un spa privé et une vue remarquable sur la mer Égée."
+        "description": "Neuf chambres disposées sur six étages, six piscines, un spa privé et une vue remarquable sur la mer Égée.",
+        "slider": 30
     }, 
     {
         "name": "Villa Quatre Chambres",
