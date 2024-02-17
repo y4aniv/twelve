@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <%- include('../partials/head') %>
-    <link rel="stylesheet" href="/css/accommodation.css">
-    <script src="/js/accommodation.js" defer></script>
+        <link rel="stylesheet" href="/css/accommodation.css">
+        <script src="/js/accommodation.js" defer></script>
 </head>
+
 <body>
     <div class="header">
         <a href="/">
@@ -18,16 +20,24 @@
             <li class="sorting__pavillon" id="sorting__pavillon">Pavillons</p>
         </ul>
         <div class="accommodation__content" id="accommodation__content">
-            <% for (let i = 0; i < data.length; i++) { %>
-                <div class="content__item" data-type="<%= data[i].type %>">
-                    <img class="item__poster" src="/img/accommodation/poster/<%= data[i].slug %>.jpg" alt="<%= data[i].name %>" draggable="false">
-                    <p class="item__type"><%= data[i].type %></p>
-                    <h3 class="item__name"><%= data[i].name %></h3>
-                    <p class="item__description"><%= data[i].description %></p>
-                </div>
-            <% } %>
+            <% for (let i=0; i < data.length; i++) { %>
+                <a href="/accommodation/<%= data[i].slug %>" class="content__item" data-type="<%= data[i].type %>">
+                    <img class="item__poster" src="/img/accommodation/poster/<%= data[i].slug %>.jpg"
+                        alt="<%= data[i].name %>" draggable="false">
+                    <p class="item__type">
+                        <%= data[i].type %>
+                    </p>
+                    <h3 class="item__name">
+                        <%= data[i].name %>
+                    </h3>
+                    <p class="item__description">
+                        <%= data[i].description %>
+                    </p>
+                </a>
+                <% } %>
         </div>
     </div>
     <%- include('../partials/footer') %>
 </body>
+
 </html>
