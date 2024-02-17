@@ -1,0 +1,25 @@
+.header {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url('/img/header-404.jpg') no-repeat center 40%/cover;
+}
+
+.header__logo {
+    position: sticky;
+    top: 10px;
+    left: 50px;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+    background: url('/img/logo-white.svg') no-repeat center/contain;
+}
+
+.header__title {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 100px;
+    color: var(--color-white);
+}
