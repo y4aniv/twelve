@@ -30,13 +30,37 @@ app.get('/accommodation', (req, res) => {
     });
 })
 
+app.get('/accommodation/:slug', (req, res) => {
+    const slug = req.params.slug;
+    const data = require('./data/accommodation.json');
+    const accommodation = data.find(accommodation => accommodation.slug === slug);
+    if (accommodation) {
+        res.render('pages/accommodation-detail', {
+            head: {
+                url: 'https://' + req.get('host') + req.originalUrl,
+            },
+            accommodation
+        });
+    } else {
+        res.render('pages/404', {
+            head: {
+                url: 'https://' + req.get('host') + req.originalUrl,
+            }
+        });
+    }
+});
+
 app.get('/robots.txt', (req, res) => {
     res.type('text/plain');
     res.send('User-agent: *\nDisallow: /');
 });
 
 app.all('*', (req, res) => {
-    res.redirect('/');
+    res.render('pages/404', {
+        head: {
+            url: 'https://' + req.get('host') + req.originalUrl,
+        }
+    });
 });
 
 app.listen(port, () => {
