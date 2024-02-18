@@ -16,11 +16,23 @@
     background: url('/img/logo-white.svg') no-repeat center/contain;
 }
 
+.accommodation-detail__title {
+    position: relative;
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: var(--color-black);
+    font-family: var(--font-secondary);
+}
+
 .accommodation-detail {
     position: relative;
     width: 95%;
     left: 50%;
-    margin-top: 50px;
     transform: translateX(-50%);
     display: flex;
     flex-direction: row;
@@ -34,7 +46,6 @@
 .accommodation-detail__slider {
     position: relative;
     width: 60%;
-    height: 500px;
     margin: 0;
     padding: 0;
     overflow: hidden;
@@ -53,11 +64,108 @@
 }
 
 
-.slider__commandes p {
+.accommodation-detail__content {
     position: relative;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: normal;
+    align-items: stretch;
+    align-content: stretch;
+    gap: 20px;
+    padding: 50px;
+}
+
+.content__description {
     font-size: 20px;
+}
+
+.content__button {
+    position: relative;
+    width: 100%;
+    min-height: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    background-color: var(--color-black);
     color: var(--color-white);
+    border: none;
     cursor: pointer;
-    font-weight: bold;
-    mix-blend-mode: difference;
+    font-family: var(--font-primary);
+}
+
+.accommodation-detail__commodities {
+    position: relative;
+    width: 95%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 50px;
+}
+
+.commodities__separator {
+    position: relative;
+    width: 100%;
+    height: 1px;
+    background-color: var(--color-black);
+    margin-bottom: 50px;
+    opacity: 0.5;
+}
+
+.commodities__title {
+    position: relative;
+    width: 95%;
+    margin-bottom: 50px;
+    text-align: left;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: var(--color-black);
+    font-family: var(--font-secondary);
+}
+
+.commodities__list {
+    position: relative;
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.commodities__list li {
+    font-size: 20px;
+    opacity: 0;
+    transform: translateY(20px);
+    color: var(--color-black);
+}
+
+@media screen and (max-width: 800px){
+    .accommodation-detail {
+        flex-direction: column;
+    }
+
+    .accommodation-detail__slider {
+        width: 100%;
+        height: 300px;
+    }
+
+    .accommodation-detail__content {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .accommodation-detail__commodities {
+        padding: 20px;
+    }
+
+    .commodities__title {
+        text-align: center;
+    }
+
+    .commodities__list {
+        grid-template-columns: repeat(1, 1fr);
+        text-align: center;
+    }
 }
