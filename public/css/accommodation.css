@@ -71,6 +71,8 @@
     flex-basis: calc(50% - 10px);
     cursor: pointer;
     margin-top: 20px;
+    opacity: 0;
+    transform: translateY(20px);
 }
 
 .item__poster {
@@ -94,6 +96,7 @@
     position: relative;
     font-size: 25px;
     font-weight: normal;
+    font-family: var(--font-secondary);
 }
 
 .item__description {
