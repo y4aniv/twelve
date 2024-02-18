@@ -28,7 +28,7 @@
     text-transform: uppercase;
 }
 
-.restaurant {
+.restaurant, .bar {
     position: relative;
     width: 95%;
     left: 50%;
@@ -42,7 +42,12 @@
     align-content: normal;
 }
 
-.restaurant__illustration {
+.bar {
+    height: 150vh;
+    flex-direction: row-reverse;
+}
+
+.restaurant__illustration, .bar__illustration {
     position: relative;
     width: 60%;
     height: 100%;
@@ -53,6 +58,17 @@
     align-items: normal;
     align-content: normal;
     gap: 20px;
+}
+
+
+.bar__illustration {
+    height: 100%;
+}
+
+.bar__illustration img{
+    position: relative;
+    object-fit: cover;
+    height: 100%;
 }
 
 .illustration__top {
@@ -82,24 +98,30 @@
     object-fit: cover;
 }
 
-.restaurant__content {
+.restaurant__content, .bar__content {
     position: relative;
     width: 40%;
     padding: 50px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: stretch;
+    align-content: stretch;
 }
 
-.restaurant__title {
+.restaurant__title, .bar__title {
     font-size: 30px;
     font-family: var(--font-secondary);
 }
 
-.restaurant__description {
+.restaurant__description, .bar__description {
     margin-top: 20px;
     margin-bottom: 50px;
     font-size: 20px;
 }
 
-.restaurant__button {
+.restaurant__button, .bar__button {
     position: relative;
     width: 100%;
     min-height: 50px;
@@ -190,26 +212,216 @@
     font-size: 20px;
 }
 
+.cocktail-builder {
+    position: fixed;
+    width: 500px;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: var(--color-white);
+    z-index: 100;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: normal;
+    align-items: normal;
+    align-content: normal;
+    transform: translateX(-100%);
+}
+
+.cocktail__close {
+    position: absolute;
+    font-size: 15px;
+    color: var(--color-black);
+    cursor: pointer;
+    z-index: 100;
+}
+
+.cocktail__content {
+    position: relative;
+    width: 100%;
+    top: 50px;
+    color: var(--color-black);
+    margin-bottom: 50px;
+}
+
+.cocktail__title {
+    font-size: 30px;
+    font-family: var(--font-secondary);
+}
+
+.cocktail__description {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.separator {
+    position: relative;
+    width: 100%;
+    height: 1px;
+    background-color: var(--color-black);
+    margin-bottom: 20px;
+    opacity: 0.5;
+}
+
+.cocktail__labs {
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+.labs__ingredients {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.labs__title {
+    font-size: 20px;
+    font-family: var(--font-secondary);
+    margin-bottom: 10px;
+}
+
+.labs__list {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: normal;
+    align-items: normal;
+    align-content: normal;
+    gap: 20px;
+}
+
+.labs__list li {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    background-color: var(--color-white);
+    color: var(--color-black);
+    font-size: 20px;
+    font-family: var(--font-primary);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.labs__list li:hover {
+    background-color: var(--color-red);
+    color: var(--color-white);
+}
+
+.labs__input {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 20px;
+    background-color: var(--color-white);
+    color: var(--color-black);
+    border: 2px solid var(--color-black);
+    font-family: var(--font-primary);
+}
+
+.labs__input:focus {
+    outline: none;
+}
+
+.labs__results {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: normal;
+    align-items: normal;
+    align-content: normal;
+    gap: 20px;
+    list-style: none;
+    margin-top: 10px;
+}
+
+.labs__results li {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    background-color: var(--color-white);
+    color: var(--color-black);
+    font-size: 20px;
+    font-family: var(--font-primary);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.labs__results li:hover {
+    background-color: var(--color-blue);
+    color: var(--color-white);
+}
+
+.labs__button {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 20px;
+    font-size: 20px;
+    background-color: var(--color-black);
+    color: var(--color-white);
+    border: none;
+    cursor: pointer;
+    font-family: var(--font-primary);
+}
+
+.labs__button:disabled{
+    background-color: var(--color-grey);
+    color: var(--color-black);
+    cursor: not-allowed;
+}
+
+.cocktail__qr{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: none;
+    opacity: 0;
+}
+
+.cocktail__qr img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    transform: translate(-50%, -50%);
+}
+
 @media screen and (max-width: 800px) {
-    .restaurant {
+    .restaurant, .bar {
         flex-direction: column;
         width: 100%;
+        height: auto;
     }
 
-    .restaurant__illustration {
+    .restaurant__illustration, .bar__illustration {
         width: 100%;
     }
 
-    .restaurant__content {
+    .restaurant__content, .bar__content {
         width: 100%;
         padding: 20px;
+        padding-bottom: 0;
     }
 
     .illustration__bottom {
         display: none;
     }
 
-    .illustration__top {
+    .illustration__top, .bar__illustration {
         height: 40vh;
     }
 
