@@ -55,6 +55,7 @@ app.get('/dining', (req, res) => {
         head: {
             url: 'https://' + req.get('host') + req.originalUrl,
         },
+        le12: require('./data/le12.json'),
     });
 })
 
