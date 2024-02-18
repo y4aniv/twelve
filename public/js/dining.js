@@ -89,6 +89,7 @@ function fetchData(ingredient) {
                         labsResults.innerHTML += `<li onclick="addIngredient('${ingredient.strIngredient}')" data-ingr="${ingredient.strIngredient}">${ingredient.strIngredient}</li>`
                     }
                 })
+                document.querySelector('.cocktail__labs').scrollTo(0, document.querySelector('.cocktail__labs').scrollHeight)
             }
         })
 }
