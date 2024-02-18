@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <%- include('../partials/head') %>
+        <link rel="stylesheet" href="/css/dining.css">
+        <script src="/js/dining.js" defer></script>
+</head>
+
+<body>
+    <div class="header">
+        <a href="/">
+            <div class="header__logo"></div>
+        </a>
+    </div>
+    <h1 class="dining__title">Restauration</h1>
+    <div class="restaurant">
+        <div class="restaurant__illustration">
+            <img class="illustration__top" src="/img/dining/illustration-top.jpg" draggable="false">
+            <div class="illustration__bottom">
+                <img src="/img/dining/illustration-bottom__left.jpg" class="bottom__left" draggable="false">
+                <img src="/img/dining/illustration-bottom__right.jpg" class="bottom__right" draggable="false">
+            </div>
+        </div>
+        <div class="restaurant__content">
+            <h2 class="restaurant__title">LE 12</h2>
+            <p class="restaurant__description">
+                Sous les lumières tamisées de l'élégant restaurant Le 12, un mariage inattendu entre la Méditerranée et
+                le Japon se dévoile avec grâce. Les saveurs envoûtantes des produits locaux se mêlent à la délicatesse
+                des techniques culinaires japonaises, créant ainsi une symphonie gastronomique d'une rare finesse.
+                Chaque plat, véritable œuvre d'art, éveille les sens et transporte les convives dans un voyage sensoriel
+                où la tradition rencontre l'innovation. Au cœur de l'hôtel Twelve, ce sanctuaire culinaire incarne
+                l'excellence et l'harmonie, offrant une expérience inoubliable aux amateurs de cuisine raffinée.
+            </p>
+            <button class="restaurant__button" id="button-menu">Découvrir le menu</button>
+            <a href="https://www.sevenrooms.com/reservations/namaamanzoe" target="_blank">
+                <button class="button-light restaurant__button">Réserver</button>
+            </a>
+        </div>
+    </div>
+    <div class="restaurant-menu">
+        <p class="menu__close" id="menu-close"">FERMER</p>
+        <div class="menu__logo">
+            <img src="/img/le12-logo.png" draggable="false">
+        </div>
+        <div class="menu__content">
+            <ul class="menu__list">
+                <li class="menu__item--title">À partager</li>
+                <li class="menu__item--content">Sélection de Sashimi de saumon, accompagné de fines tranches de daikon, zeste de yuzu et feuilles de shiso</li>
+                <li class="menu__item--content">Assortiment de Tempura : crevettes jumbo enrobées d'une pâte légère, légumes de saison croustillants, servi avec une sauce ponzu artisanale</li>
+                <li class="menu__item--content">Délicats Gyoza au porc, farcis de chou frais et de gingembre râpé, accompagnés d'une sauce soja maison</li>
+                <li class="menu__item--content">Edamame croquants, délicatement assaisonnés au sel de mer pour une expérience gustative subtile</li>
+
+                <li class="menu__item--title">Hors d'œuvre</li>
+                <li class="menu__item--content">Carpaccio de thon rouge mariné dans une infusion de yuzu, agrémenté de fines tranches de radis et de graines de sésame grillées</li>
+                <li class="menu__item--content">Tartare de bœuf premium, relevé par une huître fraîche, des perles de caviar et une touche de wasabi, pour une explosion de saveurs en bouche</li>
+                <li class="menu__item--content">Raviole de langoustine, nage au bouillon dashi parfumé, agrémentée de shiitake poêlé et de coriandre fraîche</li>
+
+                <li class="menu__item--title">Plats</li>
+                <li class="menu__item--content">Filet de Bar sauvage, accompagné d'un duo d'artichaut et de fenouil, nappé d'une émulsion légère à l'orange sanguine</li>
+                <li class="menu__item--content">Suprême de poulet fermier mariné au miso, servi avec des aubergines confites, du pak-choï sauté et des éclats de cacahuètes caramélisées</li>
+                <li class="menu__item--content">Filet de bœuf Wagyu fondant, accompagné de pommes de terre fondantes, de copeaux de truffe noire et d'une sauce au poivre raffinée</li>
+                <li class="menu__item--content">Risotto crémeux, agrémenté de champignons sauvages, de généreux copeaux de parmesan et d'une touche d'huile de truffe exquise</li>
+
+                <li class="menu__item--title">Desserts</li>
+                <li class="menu__item--content">Millefeuille croustillant, garni d'une crème légère à la vanille bourbon, de fraises fraîches et de feuilles de basilic pour une touche de fraîcheur</li>
+                <li class="menu__item--content">Alliance gourmande de chocolat noir intense, de caramel fondant, de cacahuètes caramélisées et de glace onctueuse au sésame noir</li>
+                <li class="menu__item--content">Tartelette au citron acidulé, meringue légère et sorbet rafraîchissant au yuzu</li>
+            </ul>
+        </div>
+    </div>
+    <%- include('../partials/footer') %>
+</body>
+
+</html>
