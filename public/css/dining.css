@@ -436,4 +436,8 @@
     .menu__logo img {
         bottom: 0;
     }
+
+    .cocktail-builder {
+        width: 100%;
+    }
 }
