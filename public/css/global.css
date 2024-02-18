@@ -1,12 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Sulphur+Point:wght@300;400;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800;900&display=swap');
 :root {
     --color-white: #FDFAF6;
     --color-black: #0D0700;
     --color-grey: #F4F4F4;
     
     --font-primary: 'Outfit', sans-serif;
-    --font-secondary: 'Sulphur Point', sans-serif;
+    --font-secondary: 'Syne', sans-serif;
 }
 
 * {
