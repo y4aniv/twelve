@@ -50,6 +50,14 @@ app.get('/accommodation/:slug', (req, res) => {
     }
 });
 
+app.get('/dining', (req, res) => {
+    res.render('pages/dining', {
+        head: {
+            url: 'https://' + req.get('host') + req.originalUrl,
+        },
+    });
+})
+
 app.get('/robots.txt', (req, res) => {
     res.type('text/plain');
     res.send('User-agent: *\nDisallow: /');
