@@ -85,6 +85,10 @@ app.post('/api/cocktail', (req, res) => {
     }
 })
 
+app.get('/cocktail/:id', (req, res) => {
+    res.json(cocktailDB.get(req.params.id));
+})
+
 app.get('/robots.txt', (req, res) => {
     res.type('text/plain');
     res.send('User-agent: *\nDisallow: /');
