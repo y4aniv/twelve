@@ -16,6 +16,17 @@
     background: url('/img/logo-white.svg') no-repeat center/contain;
 }
 
+.accommodation__title {
+    position: relative;
+    margin-top: 50px;
+    width: 95%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-size: 30px;
+    font-family: var(--font-secondary);
+}
+
 .accommodation {
     position: relative;
     margin-top: 50px;
