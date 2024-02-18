@@ -54,6 +54,49 @@
             </ul>
         </div>
     </div>
+    <div class="bar">
+        <div class="bar__illustration">
+            <img src="/img/dining/bar-illustration.jpg" draggable="false">
+        </div>
+        <div class="bar__content">
+            <h2 class="bar__title">L'Aristote</h2>
+            <p class="bar__description">
+                L'Aristote, bar à cocktails de l'hôtel Twelve, est un lieu de rencontre et de partage où l'art de la
+                mixologie est célébré avec passion. Dans un cadre élégant et raffiné, les barmen, véritables alchimistes
+                des temps modernes, créent des cocktails sur-mesure, sublimant les saveurs et les arômes pour offrir une
+                expérience sensorielle unique. Inspirés par les grands classiques et les dernières tendances, les
+                cocktails de L'Aristote sont des œuvres d'art à part entière, à déguster dans une ambiance feutrée et
+                chaleureuse.
+            </p>
+            <button class="bar__button" id="button-cocktails">Concevoir un cocktail</button>
+        </div>
+    </div>
+    <div class="cocktail-builder">
+        <p class="cocktail__close" id="cocktail-close">FERMER</p>
+        <div class="cocktail__content">
+            <h2 class="cocktail__title">Concevoir un cocktail</h2>
+            <p class="cocktail__description">Concevez votre cocktail sur-mesure en sélectionnant parmis plus de 400 spiritueux, liqueurs, sirops et
+                garnitures.</p>
+        </div>
+        <div class="separator"></div>
+        <div class="cocktail__labs">
+            <div class="labs__ingredients">
+                <h3 class="labs__title">Ingrédients de votre cocktail</h3>
+                <ul class="labs__list" id="labs-list">
+                </ul>
+            </div>
+            <div class="labs__form">
+                <h3 class="labs__title">Ajouter un ingrédient</h3>
+                <input type="text" class="labs__input" id="labs-search" placeholder="Rechercher un ingrédient">
+                    <ul class="labs__results" id="labs-results">
+                    </ul>
+            </div>
+            <button class="labs__button" id="next-step" disabled>Continuer</button>
+        </div>
+        <div class="cocktail__qr">
+            <img id="cocktail-qr" draggable="false" />
+        </div>
+    </div>
     <%- include('../partials/footer') %>
 </body>
 
