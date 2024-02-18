@@ -1,0 +1,227 @@
+.header {
+    position: relative;
+    width: 100%;
+    height: 150vh;
+    background: url('/img/header-dining.jpg') no-repeat center 80%/cover;
+    filter: saturate(100%)
+}
+
+.header__logo {
+    position: sticky;
+    top: 10px;
+    left: 50px;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+    background: url('/img/logo-white.svg') no-repeat center/contain;
+}
+
+.dining__title {
+    position: relative;
+    margin-top: 50px;
+    width: 95%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-size: 30px;
+    font-family: var(--font-secondary);
+    text-transform: uppercase;
+}
+
+.restaurant {
+    position: relative;
+    width: 95%;
+    left: 50%;
+    margin-top: 50px;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: normal;
+    align-items: normal;
+    align-content: normal;
+}
+
+.restaurant__illustration {
+    position: relative;
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: normal;
+    align-items: normal;
+    align-content: normal;
+    gap: 20px;
+}
+
+.illustration__top {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    object-fit: cover;
+    object-position: 50% 70%;
+}
+
+.illustration__bottom {
+    position: relative;
+    width: 100%;
+    height: calc(140vh / 2);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: normal;
+    align-items: normal;
+    align-content: normal;
+    gap: 20px;
+}
+
+.illustration__bottom img {
+    position: relative;
+    width: 50%;
+    object-fit: cover;
+}
+
+.restaurant__content {
+    position: relative;
+    width: 40%;
+    padding: 50px;
+}
+
+.restaurant__title {
+    font-size: 30px;
+    font-family: var(--font-secondary);
+}
+
+.restaurant__description {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    font-size: 20px;
+}
+
+.restaurant__button {
+    position: relative;
+    width: 100%;
+    min-height: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    background-color: var(--color-black);
+    color: var(--color-white);
+    border: none;
+    cursor: pointer;
+    font-family: var(--font-primary);
+}
+
+.button-light {
+    background-color: var(--color-white);
+    color: var(--color-black);
+}
+
+.restaurant-menu {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    transform: translateX(100%);
+    top: 0;
+    left: 0;
+    background-color: var(--color-white);
+    z-index: 100;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: normal;
+    align-items: normal;
+    align-content: normal;
+}
+
+.menu__close {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 15px;
+    color: var(--color-black);
+    cursor: pointer;
+    z-index: 100;
+}
+
+.menu__logo {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.menu__logo img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20%;
+    transform: translate(-50%, -50%);
+}
+
+.menu__content {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    color: var(--color-black);
+    box-sizing: border-box;
+    overflow-y: auto;
+    padding: 50px;
+}
+
+.menu__list {
+    list-style: none;
+}
+
+.menu__list li {
+    transform: translateY(20px);
+    opacity: 0;
+}
+
+.menu__item--title {
+    font-size: 30px;
+    font-family: var(--font-secondary);
+}
+
+.menu__item--content {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 800px) {
+    .restaurant {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .restaurant__illustration {
+        width: 100%;
+    }
+
+    .restaurant__content {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .illustration__bottom {
+        display: none;
+    }
+
+    .illustration__top {
+        height: 40vh;
+    }
+
+    .restaurant-menu {
+        flex-direction: column;
+    }
+
+    .menu__logo {
+        height: 20vh;
+    }
+
+    .menu__logo img {
+        bottom: 0;
+    }
+}
