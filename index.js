@@ -86,7 +86,20 @@ app.post('/api/cocktail', (req, res) => {
 })
 
 app.get('/cocktail/:id', (req, res) => {
-    res.json(cocktailDB.get(req.params.id));
+    if(cocktailDB.get(req.params.id)) {
+        res.render('pages/cocktail', {
+            head: {
+                url: 'https://' + req.get('host') + req.originalUrl,
+            },
+            ingredients: cocktailDB.get(req.params.id),
+        });
+    }else{
+        res.render('pages/404', {
+            head: {
+                url: 'https://' + req.get('host') + req.originalUrl,
+            }
+        });
+    }
 })
 
 app.get('/robots.txt', (req, res) => {
