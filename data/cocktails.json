@@ -1,48 +1,17 @@
 {
-  "m1yltwwg6": [
-    "Rum",
-    "Vodka"
-  ],
-  "cstah72tx": [
-    "Vodka",
-    "Tequila"
-  ],
-  "vf65rthao": [
-    "Rum",
-    "Gin"
-  ],
-  "bxiv7l2eh": [
-    "Rum",
-    "Tequila"
-  ],
-  "jy01ree87": [
-    "Gin"
-  ],
-  "07tfmlnsh": [
-    "Rum"
-  ],
-  "rbsxxc5kv": [
-    "Vodka",
-    "Gin"
-  ],
-  "poatqcxt7": [
-    "Rum",
-    "Tequila",
-    "Vodka"
-  ],
-  "j7u19046a": [
-    "Vodka",
-    "Gin"
-  ],
-  "cvx2x095p": [
-    "Gin",
-    "Rum",
-    "Vodka"
-  ],
-  "qfuper7m6": [
-    "Vodka",
-    "Wine",
-    "Water",
-    "Mint"
-  ]
+  "m1yltwwg6": ["Rum", "Vodka"],
+  "cstah72tx": ["Vodka", "Tequila"],
+  "vf65rthao": ["Rum", "Gin"],
+  "bxiv7l2eh": ["Rum", "Tequila"],
+  "jy01ree87": ["Gin"],
+  "07tfmlnsh": ["Rum"],
+  "rbsxxc5kv": ["Vodka", "Gin"],
+  "poatqcxt7": ["Rum", "Tequila", "Vodka"],
+  "j7u19046a": ["Vodka", "Gin"],
+  "cvx2x095p": ["Gin", "Rum", "Vodka"],
+  "qfuper7m6": ["Vodka", "Wine", "Water", "Mint"],
+  "4w5rq3urg": ["Vodka", "Gin"],
+  "qhxuwcni6": ["Rum", "Gin", "Tequila", "Wine"],
+  "sdn2eftts": ["Tequila", "Vodka", "Wine", "Water"],
+  "4q7wlhjlh": ["Rum", "Gin", "Wine", "Water"]
 }

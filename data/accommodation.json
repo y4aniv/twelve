@@ -1,151 +1,151 @@
 [
-    {
-        "name": "Villa 20",
-        "slug": "villa-20",
-        "type": "Villa",
-        "description": "Neuf chambres disposées sur six étages, six piscines, un spa privé et une vue remarquable sur la mer Égée.",
-        "long_description": "Nichée au sommet de la péninsule du Péloponnèse, telle une oasis contemporaine, la Villa 20 offre une symbiose parfaite entre intérieur et extérieur. Conçue par Ed Tuttle et Marios Angelopoulos, elle s'intègre harmonieusement dans le paysage, offrant une vue imprenable sur les collines, la mer Égée et le Péloponnèse. Avec un spa exclusif, six piscines, dont deux en plein air, et une taverne grecque traditionnelle sous les oliviers, elle est l'endroit idéal pour des retrouvailles en famille ou entre amis. Les sculptures monumentales et les trésors sélectionnés avec soin par les propriétaires ajoutent une touche personnelle à cette résidence, la transformant en un véritable havre de paix.",
-        "slider": 30,
-        "commodities": [
-            "Vue panoramique sur la mer Égée",
-            "Peut accueillir jusqu'à 18 personnes",
-            "Jardins parfumés",
-            "Piscine à débordement chauffée de 40 mètres de long au 6e étage",
-            "Piscine à débordement chauffée de 30 mètres de long au 2e étage",
-            "Trois pavillons de 100 m² disposant chacun d'une piscine privée, deux pavillons arborant de superbes vues et quatre chambres-studios de luxe",
-            "Une maison de plage privée (selon disponibilité)",
-            "18 membres du personnel, dont un chef dédié",
-            "Salon-salle à manger formel avec terrasse au 2e étage",
-            "Salon-salle à manger intérieur-extérieur couvert avec terrasse au 6e étage",
-            "Salon-salle de réunion au 5e étage, idéal pour les réunions d'affaires",
-            "Espace barbecue avec table à manger pour 18 personnes",
-            "Brasero dans le jardin avec table en bois rustique pour 18 personnes",
-            "Taverne grecque typique sous les oliviers",
-            "Spa avec salle de soins double traditionnelle, salle de soins avec lit à eau, bain de vapeur, hammam, bassin d'eau froide, couloir de nage intérieur chauffé de 15 mètres de long, bain à remous",
-            "Salle de sport avec équipement Technogym",
-            "Plateforme de yoga",
-            "Bibliothèque et salle de jeux entièrement équipées, idéales pour les familles",
-            "Cinq cuisines",
-            "Grand garage",
-            "Wi-Fi dans tous les espaces intérieurs et extérieurs"
-        ]
-    },
-    {
-        "name": "Villa Quatre Chambres",
-        "slug": "villa-quatre-chambres",
-        "type": "Villa",
-        "description": "Quatre chambres dotées d'un vaste salon intérieur et extérieur, d'un bureau et d'un espace détente supplémentaire près de la grande piscine.",
-        "long_description": "Pour les familles ou les groupes en quête d'intimité absolue, la Villa Quatre Chambres du Twelve est l'incarnation de l'idylle. Fusionnant habilement intérieur et extérieur, cette demeure sereine, nichée parmi les oliviers, offre une vue imprenable sur la mer Égée scintillante ou sur la campagne environnante. Accompagnée d'une équipe dédiée comprenant un chef et un hôte de villa, elle répond à tous les besoins des clients, tandis qu'une piscine privée, un espace multimédia, une terrasse ombragée et un vaste salon-salle à manger intérieur garantissent des moments de divertissement inoubliables. Chaque chambre bénéficie d'une salle de bain attenante avec une grande fenêtre offrant une vue sur les jardins luxuriants et parfaitement entretenus aux alentours.",
-        "slider": 8,
-        "commodities": [
-            "Vue sur la mer Égée et/ou la campagne environnante",
-            "Piscine extérieure privée chauffée de 24 mètres de long",
-            "Personnel dédié (chef et hôte)",
-            "Quatre chambres, dont une chambre principale, chacune avec sa salle de bain attenante",
-            "Salon et salle à manger intérieurs et extérieurs",
-            "Salle de sport (dans deux des villas)",
-            "Bureau",
-            "Cuisine",
-            "Pavillon piscine / espace multimédia / terrasse ombragée",
-            "Garage ou parking",
-            "Wi-Fi"
-        ]
-    },
-    {
-        "name": "Villa Deux Chambres",
-        "slug": "villa-deux-chambres",
-        "type": "Villa",
-        "description": "Deux chambres comprenant un salon et une salle à manger intérieurs et extérieurs, un bureau et une piscine privée.",
-        "long_description": "La Villa Deux Chambres, intégrant harmonieusement les espaces intérieurs et extérieurs, s'élève parmi les oliviers avec vue sur la mer Égée. Une équipe dévouée, comprenant un chef et un hôte de villa, veille au bien-être des clients avec une discrétion absolue. Les deux chambres offrent des salons et salles à manger intérieurs et extérieurs, un bureau et une piscine privée.",
-        "slider": 10,
-        "commodities": [
-            "Vue sur la mer Égée et/ou la campagne environnante",
-            "Piscine extérieure chauffée privée",
-            "Personnel dédié (chef et hôte)",
-            "Deux chambres, chacune avec sa salle de bain attenante",
-            "Salon et salle à manger intérieurs et extérieurs",
-            "Salon / salle TV",
-            "Cuisine",
-            "Garage ou parking",
-            "Wi-Fi"
-        ]
-    },
-    {
-        "name": "Pavillon Deluxe Piscine Vue Mer",
-        "slug": "pavillon-deluxe-piscine-vue-mer",
-        "type": "Pavillon",
-        "description": "Une piscine privée de 12 mètres de long, une vaste terrasse privée et une vue imprenable sur la mer Égée.",
-        "long_description": "S'inspirant de l'architecture grecque classique, les Pavillons Piscine Deluxe Vue Mer du Twelve offrent un espace intérieur et extérieur harmonieux de 210 mètres carrés, ouvrant sur une vaste terrasse privée avec pergola, piscine et une vue imprenable sur la mer Égée. Pour garantir une intimité totale, les pavillons sont accessibles par une cour bordée de murs en pierre, menant à un espace de vie aux plafonds hauts et à un lit king size niché dans une alcôve en marbre, offrant une vue panoramique sur Porto Heli.",
-        "slider": 8,
-        "commodities": [
-            "Vue sur la mer Égée",
-            "Piscine privée de 12 mètres de long",
-            "Lit king size",
-            "Espaces de vie et de couchage ouverts",
-            "Terrasse extérieure, ombragée par une pergola",
-            "Accès par une cour avec des murs en pierre",
-            "Espace intérieur : 100 m² ; espace extérieur : 110 m²",
-            "Wi-Fi",
-            "TV avec vidéo à la demande"
-        ]
-    },
-    {
-        "name": "Pavillon Piscine Deluxe",
-        "slug": "pavillon-piscine-deluxe",
-        "type": "Pavillon",
-        "description": "Une piscine privée de 12 mètres de longueur, une grande terrasse privée offrant une vue sur la campagne environnante.",
-        "long_description": "Chaque Pavillon Piscine Deluxe du Twelve propose un espace intérieur et extérieur de 210 mètres carrés, accompagné d'une piscine privée invitante sur une vaste terrasse offrant une vue sur la luxuriante campagne du Péloponnèse. Des lignes épurées et une esthétique contemporaine permettent aux grandes fenêtres d'encadrer parfaitement les paysages environnants, offrant une immersion totale dans ce cadre naturel remarquable. La chambre luxueuse avec lit king size offre un sanctuaire parfait pour se détendre, tandis que le salon ouvert offre de multiples espaces de détente, idéal pour les couples en quête de confort supplémentaire.",
-        "slider": 8,
-        "commodities": [
-            "Vues sur la campagne",
-            "Piscine privée de 12 mètres de long",
-            "Lit king size",
-            "Espaces de vie et de couchage ouverts",
-            "Terrasse extérieure, ombragée par une pergola",
-            "Accès par une cour avec des murs en pierre",
-            "Espace intérieur : 100 m² ; espace extérieur : 110 m²",
-            "Wi-Fi",
-            "TV avec vidéo à la demande"
-        ]
-    },
-    {
-        "name": "Pavillon Piscine Vue Mer",
-        "slug": "pavillon-piscine-vue-mer",
-        "type": "Pavillon",
-        "description": "Une piscine privée de six mètres de long, une spacieuse terrasse privée et une vue imprenable sur la mer Égée.",
-        "long_description": "Chaque Pavillon Piscine Vue Mer de du Twelve offre des panoramas époustouflants de la mer Égée, ainsi qu'un espace intérieur et extérieur de 210 mètres carrés, où une vaste terrasse extérieure et une piscine privée sont positionnées de manière optimale pour contempler les paysages enchanteurs. Arborant une esthétique minimaliste, les immenses baies vitrées des pavillons permettent une immersion totale dans la nature environnante, tandis qu'un lit king size et un spacieux salon ouvert offrent le cadre parfait pour découvrir la splendeur du Péloponnèse.",
-        "slider": 6,
-        "commodities": [
-            "Vue sur la mer Égée",
-            "Piscine privée de 6 mètres de long",
-            "Lit king size",
-            "Spacieux espaces de vie et de couchage ouverts",
-            "Terrasse extérieure, ombragée par une pergola",
-            "Accès par une cour avec des murs en pierre",
-            "Équipements pour accueillir les personnes en situation de handicap",
-            "Espace intérieur : 100 m² ; espace extérieur : 110 m²",
-            "Wi-Fi",
-            "TV avec vidéo à la demande"
-        ]
-    },
-    {
-        "name": "Pavillon Piscine",
-        "slug": "pavillon-piscine",
-        "type": "Pavillon",
-        "description": "Une piscine privée de six mètres de long, une spacieuse terrasse privée et une vue sur la campagne environnante.",
-        "long_description": "Chaque Pavillon Piscine de du Twelve propose un espace intérieur et extérieur de 210 mètres carrés, offrant une vue panoramique sur la campagne environnante du Péloponnèse. Inspirés de l'architecture grecque classique, ces pavillons sont accessibles par une cour bordée de murs en pierre, menant à un espace de vie aux plafonds élevés, où un lit king size est niché dans une alcôve en marbre. Les vastes terrasses privées sont toutes dotées d'une piscine et d'une pergola haute offrant une agréable ombre pour profiter des après-midis de détente sous le soleil méditerranéen.",
-        "slider": 7,
-        "commodities": [
-            "Vues sur la campagne",
-            "Piscine privée de 6 mètres de long",
-            "Lit king size",
-            "Spacieux espaces de vie et de couchage ouverts",
-            "Terrasse extérieure, ombragée par une pergola",
-            "Accès par une cour avec des murs en pierre",
-            "Équipements pour accueillir les personnes en situation de handicap",
-            "Espace intérieur : 100 m² ; espace extérieur : 110 m²",
-            "Wi-Fi",
-            "TV avec vidéo à la demande"
-        ]
-    }
+  {
+    "name": "Villa 20",
+    "slug": "villa-20",
+    "type": "Villa",
+    "description": "Neuf chambres disposées sur six étages, six piscines, un spa privé et une vue remarquable sur la mer Égée.",
+    "long_description": "Nichée au sommet de la péninsule du Péloponnèse, telle une oasis contemporaine, la Villa 20 offre une symbiose parfaite entre intérieur et extérieur. Conçue par Ed Tuttle et Marios Angelopoulos, elle s'intègre harmonieusement dans le paysage, offrant une vue imprenable sur les collines, la mer Égée et le Péloponnèse. Avec un spa exclusif, six piscines, dont deux en plein air, et une taverne grecque traditionnelle sous les oliviers, elle est l'endroit idéal pour des retrouvailles en famille ou entre amis. Les sculptures monumentales et les trésors sélectionnés avec soin par les propriétaires ajoutent une touche personnelle à cette résidence, la transformant en un véritable havre de paix.",
+    "slider": 30,
+    "commodities": [
+      "Vue panoramique sur la mer Égée",
+      "Peut accueillir jusqu'à 18 personnes",
+      "Jardins parfumés",
+      "Piscine à débordement chauffée de 40 mètres de long au 6e étage",
+      "Piscine à débordement chauffée de 30 mètres de long au 2e étage",
+      "Trois pavillons de 100 m² disposant chacun d'une piscine privée, deux pavillons arborant de superbes vues et quatre chambres-studios de luxe",
+      "Une maison de plage privée (selon disponibilité)",
+      "18 membres du personnel, dont un chef dédié",
+      "Salon-salle à manger formel avec terrasse au 2e étage",
+      "Salon-salle à manger intérieur-extérieur couvert avec terrasse au 6e étage",
+      "Salon-salle de réunion au 5e étage, idéal pour les réunions d'affaires",
+      "Espace barbecue avec table à manger pour 18 personnes",
+      "Brasero dans le jardin avec table en bois rustique pour 18 personnes",
+      "Taverne grecque typique sous les oliviers",
+      "Spa avec salle de soins double traditionnelle, salle de soins avec lit à eau, bain de vapeur, hammam, bassin d'eau froide, couloir de nage intérieur chauffé de 15 mètres de long, bain à remous",
+      "Salle de sport avec équipement Technogym",
+      "Plateforme de yoga",
+      "Bibliothèque et salle de jeux entièrement équipées, idéales pour les familles",
+      "Cinq cuisines",
+      "Grand garage",
+      "Wi-Fi dans tous les espaces intérieurs et extérieurs"
+    ]
+  },
+  {
+    "name": "Villa Quatre Chambres",
+    "slug": "villa-quatre-chambres",
+    "type": "Villa",
+    "description": "Quatre chambres dotées d'un vaste salon intérieur et extérieur, d'un bureau et d'un espace détente supplémentaire près de la grande piscine.",
+    "long_description": "Pour les familles ou les groupes en quête d'intimité absolue, la Villa Quatre Chambres du Twelve est l'incarnation de l'idylle. Fusionnant habilement intérieur et extérieur, cette demeure sereine, nichée parmi les oliviers, offre une vue imprenable sur la mer Égée scintillante ou sur la campagne environnante. Accompagnée d'une équipe dédiée comprenant un chef et un hôte de villa, elle répond à tous les besoins des clients, tandis qu'une piscine privée, un espace multimédia, une terrasse ombragée et un vaste salon-salle à manger intérieur garantissent des moments de divertissement inoubliables. Chaque chambre bénéficie d'une salle de bain attenante avec une grande fenêtre offrant une vue sur les jardins luxuriants et parfaitement entretenus aux alentours.",
+    "slider": 8,
+    "commodities": [
+      "Vue sur la mer Égée et/ou la campagne environnante",
+      "Piscine extérieure privée chauffée de 24 mètres de long",
+      "Personnel dédié (chef et hôte)",
+      "Quatre chambres, dont une chambre principale, chacune avec sa salle de bain attenante",
+      "Salon et salle à manger intérieurs et extérieurs",
+      "Salle de sport (dans deux des villas)",
+      "Bureau",
+      "Cuisine",
+      "Pavillon piscine / espace multimédia / terrasse ombragée",
+      "Garage ou parking",
+      "Wi-Fi"
+    ]
+  },
+  {
+    "name": "Villa Deux Chambres",
+    "slug": "villa-deux-chambres",
+    "type": "Villa",
+    "description": "Deux chambres comprenant un salon et une salle à manger intérieurs et extérieurs, un bureau et une piscine privée.",
+    "long_description": "La Villa Deux Chambres, intégrant harmonieusement les espaces intérieurs et extérieurs, s'élève parmi les oliviers avec vue sur la mer Égée. Une équipe dévouée, comprenant un chef et un hôte de villa, veille au bien-être des clients avec une discrétion absolue. Les deux chambres offrent des salons et salles à manger intérieurs et extérieurs, un bureau et une piscine privée.",
+    "slider": 10,
+    "commodities": [
+      "Vue sur la mer Égée et/ou la campagne environnante",
+      "Piscine extérieure chauffée privée",
+      "Personnel dédié (chef et hôte)",
+      "Deux chambres, chacune avec sa salle de bain attenante",
+      "Salon et salle à manger intérieurs et extérieurs",
+      "Salon / salle TV",
+      "Cuisine",
+      "Garage ou parking",
+      "Wi-Fi"
+    ]
+  },
+  {
+    "name": "Pavillon Deluxe Piscine Vue Mer",
+    "slug": "pavillon-deluxe-piscine-vue-mer",
+    "type": "Pavillon",
+    "description": "Une piscine privée de 12 mètres de long, une vaste terrasse privée et une vue imprenable sur la mer Égée.",
+    "long_description": "S'inspirant de l'architecture grecque classique, les Pavillons Piscine Deluxe Vue Mer du Twelve offrent un espace intérieur et extérieur harmonieux de 210 mètres carrés, ouvrant sur une vaste terrasse privée avec pergola, piscine et une vue imprenable sur la mer Égée. Pour garantir une intimité totale, les pavillons sont accessibles par une cour bordée de murs en pierre, menant à un espace de vie aux plafonds hauts et à un lit king size niché dans une alcôve en marbre, offrant une vue panoramique sur Porto Heli.",
+    "slider": 8,
+    "commodities": [
+      "Vue sur la mer Égée",
+      "Piscine privée de 12 mètres de long",
+      "Lit king size",
+      "Espaces de vie et de couchage ouverts",
+      "Terrasse extérieure, ombragée par une pergola",
+      "Accès par une cour avec des murs en pierre",
+      "Espace intérieur : 100 m² ; espace extérieur : 110 m²",
+      "Wi-Fi",
+      "TV avec vidéo à la demande"
+    ]
+  },
+  {
+    "name": "Pavillon Piscine Deluxe",
+    "slug": "pavillon-piscine-deluxe",
+    "type": "Pavillon",
+    "description": "Une piscine privée de 12 mètres de longueur, une grande terrasse privée offrant une vue sur la campagne environnante.",
+    "long_description": "Chaque Pavillon Piscine Deluxe du Twelve propose un espace intérieur et extérieur de 210 mètres carrés, accompagné d'une piscine privée invitante sur une vaste terrasse offrant une vue sur la luxuriante campagne du Péloponnèse. Des lignes épurées et une esthétique contemporaine permettent aux grandes fenêtres d'encadrer parfaitement les paysages environnants, offrant une immersion totale dans ce cadre naturel remarquable. La chambre luxueuse avec lit king size offre un sanctuaire parfait pour se détendre, tandis que le salon ouvert offre de multiples espaces de détente, idéal pour les couples en quête de confort supplémentaire.",
+    "slider": 8,
+    "commodities": [
+      "Vues sur la campagne",
+      "Piscine privée de 12 mètres de long",
+      "Lit king size",
+      "Espaces de vie et de couchage ouverts",
+      "Terrasse extérieure, ombragée par une pergola",
+      "Accès par une cour avec des murs en pierre",
+      "Espace intérieur : 100 m² ; espace extérieur : 110 m²",
+      "Wi-Fi",
+      "TV avec vidéo à la demande"
+    ]
+  },
+  {
+    "name": "Pavillon Piscine Vue Mer",
+    "slug": "pavillon-piscine-vue-mer",
+    "type": "Pavillon",
+    "description": "Une piscine privée de six mètres de long, une spacieuse terrasse privée et une vue imprenable sur la mer Égée.",
+    "long_description": "Chaque Pavillon Piscine Vue Mer de du Twelve offre des panoramas époustouflants de la mer Égée, ainsi qu'un espace intérieur et extérieur de 210 mètres carrés, où une vaste terrasse extérieure et une piscine privée sont positionnées de manière optimale pour contempler les paysages enchanteurs. Arborant une esthétique minimaliste, les immenses baies vitrées des pavillons permettent une immersion totale dans la nature environnante, tandis qu'un lit king size et un spacieux salon ouvert offrent le cadre parfait pour découvrir la splendeur du Péloponnèse.",
+    "slider": 6,
+    "commodities": [
+      "Vue sur la mer Égée",
+      "Piscine privée de 6 mètres de long",
+      "Lit king size",
+      "Spacieux espaces de vie et de couchage ouverts",
+      "Terrasse extérieure, ombragée par une pergola",
+      "Accès par une cour avec des murs en pierre",
+      "Équipements pour accueillir les personnes en situation de handicap",
+      "Espace intérieur : 100 m² ; espace extérieur : 110 m²",
+      "Wi-Fi",
+      "TV avec vidéo à la demande"
+    ]
+  },
+  {
+    "name": "Pavillon Piscine",
+    "slug": "pavillon-piscine",
+    "type": "Pavillon",
+    "description": "Une piscine privée de six mètres de long, une spacieuse terrasse privée et une vue sur la campagne environnante.",
+    "long_description": "Chaque Pavillon Piscine de du Twelve propose un espace intérieur et extérieur de 210 mètres carrés, offrant une vue panoramique sur la campagne environnante du Péloponnèse. Inspirés de l'architecture grecque classique, ces pavillons sont accessibles par une cour bordée de murs en pierre, menant à un espace de vie aux plafonds élevés, où un lit king size est niché dans une alcôve en marbre. Les vastes terrasses privées sont toutes dotées d'une piscine et d'une pergola haute offrant une agréable ombre pour profiter des après-midis de détente sous le soleil méditerranéen.",
+    "slider": 7,
+    "commodities": [
+      "Vues sur la campagne",
+      "Piscine privée de 6 mètres de long",
+      "Lit king size",
+      "Spacieux espaces de vie et de couchage ouverts",
+      "Terrasse extérieure, ombragée par une pergola",
+      "Accès par une cour avec des murs en pierre",
+      "Équipements pour accueillir les personnes en situation de handicap",
+      "Espace intérieur : 100 m² ; espace extérieur : 110 m²",
+      "Wi-Fi",
+      "TV avec vidéo à la demande"
+    ]
+  }
 ]

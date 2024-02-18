@@ -1,36 +1,36 @@
 [
-    {
-        "title": "À partager",
-        "content": [
-            "Sélection de Sashimi de saumon, accompagné de fines tranches de daikon, zeste de yuzu et feuilles de shiso",
-            "Assortiment de Tempura : crevettes jumbo enrobées d'une pâte légère, légumes de saison croustillants, servi avec une sauce ponzu artisanale",
-            "Délicats Gyoza au porc, farcis de chou frais et de gingembre râpé, accompagnés d'une sauce soja maison",
-            "Edamame croquants, délicatement assaisonnés au sel de mer pour une expérience gustative subtile"
-        ]
-    },
-    {
-        "title": "Hors d'œuvre",
-        "content": [
-            "Carpaccio de thon rouge mariné dans une infusion de yuzu, agrémenté de fines tranches de radis et de graines de sésame grillées",
-            "Tartare de bœuf premium, relevé par une huître fraîche, des perles de caviar et une touche de wasabi, pour une explosion de saveurs en bouche",
-            "Raviole de langoustine, nage au bouillon dashi parfumé, agrémentée de shiitake poêlé et de coriandre fraîche"
-        ]
-    },
-    {
-        "title": "Plats",
-        "content": [
-            "Filet de Bar sauvage, accompagné d'un duo d'artichaut et de fenouil, nappé d'une émulsion légère à l'orange sanguine",
-            "Suprême de poulet fermier mariné au miso, servi avec des aubergines confites, du pak-choï sauté et des éclats de cacahuètes caramélisées",
-            "Filet de bœuf Wagyu fondant, accompagné de pommes de terre fondantes, de copeaux de truffe noire et d'une sauce au poivre raffinée",
-            "Risotto crémeux, agrémenté de champignons sauvages, de généreux copeaux de parmesan et d'une touche d'huile de truffe exquise"
-        ]
-    },
-    {
-        "title": "Desserts",
-        "content": [
-            "Millefeuille croustillant, garni d'une crème légère à la vanille bourbon, de fraises fraîches et de feuilles de basilic pour une touche de fraîcheur",
-            "Alliance gourmande de chocolat noir intense, de caramel fondant, de cacahuètes caramélisées et de glace onctueuse au sésame noir",
-            "Tartelette au citron acidulé, meringue légère et sorbet rafraîchissant au yuzu"
-        ]
-    }
+  {
+    "title": "À partager",
+    "content": [
+      "Sélection de Sashimi de saumon, accompagné de fines tranches de daikon, zeste de yuzu et feuilles de shiso",
+      "Assortiment de Tempura : crevettes jumbo enrobées d'une pâte légère, légumes de saison croustillants, servi avec une sauce ponzu artisanale",
+      "Délicats Gyoza au porc, farcis de chou frais et de gingembre râpé, accompagnés d'une sauce soja maison",
+      "Edamame croquants, délicatement assaisonnés au sel de mer pour une expérience gustative subtile"
+    ]
+  },
+  {
+    "title": "Hors d'œuvre",
+    "content": [
+      "Carpaccio de thon rouge mariné dans une infusion de yuzu, agrémenté de fines tranches de radis et de graines de sésame grillées",
+      "Tartare de bœuf premium, relevé par une huître fraîche, des perles de caviar et une touche de wasabi, pour une explosion de saveurs en bouche",
+      "Raviole de langoustine, nage au bouillon dashi parfumé, agrémentée de shiitake poêlé et de coriandre fraîche"
+    ]
+  },
+  {
+    "title": "Plats",
+    "content": [
+      "Filet de Bar sauvage, accompagné d'un duo d'artichaut et de fenouil, nappé d'une émulsion légère à l'orange sanguine",
+      "Suprême de poulet fermier mariné au miso, servi avec des aubergines confites, du pak-choï sauté et des éclats de cacahuètes caramélisées",
+      "Filet de bœuf Wagyu fondant, accompagné de pommes de terre fondantes, de copeaux de truffe noire et d'une sauce au poivre raffinée",
+      "Risotto crémeux, agrémenté de champignons sauvages, de généreux copeaux de parmesan et d'une touche d'huile de truffe exquise"
+    ]
+  },
+  {
+    "title": "Desserts",
+    "content": [
+      "Millefeuille croustillant, garni d'une crème légère à la vanille bourbon, de fraises fraîches et de feuilles de basilic pour une touche de fraîcheur",
+      "Alliance gourmande de chocolat noir intense, de caramel fondant, de cacahuètes caramélisées et de glace onctueuse au sésame noir",
+      "Tartelette au citron acidulé, meringue légère et sorbet rafraîchissant au yuzu"
+    ]
+  }
 ]
