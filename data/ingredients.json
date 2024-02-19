@@ -1,0 +1,1417 @@
+[{
+    "name": "Vodka",
+    "type": "Vodka"
+},{
+    "name": "Gin",
+    "type": "Gin"
+},{
+    "name": "Rhum",
+    "type": "Rhum"
+},{
+    "name": "Tequila",
+    "type": "Esprit"
+},{
+    "name": "Scotch",
+    "type": "Whisky"
+},{
+    "name": "Absolument kurant",
+    "type": "Vodka"
+},{
+    "name": "Poivre absolu",
+    "type": "Vodka"
+},{
+    "name": "Vodka absolue",
+    "type": "Vodka"
+},{
+    "name": "Avocat",
+    "type": "Esprit"
+},{
+    "name": "Chambre aejo",
+    "type": "Rhum"
+},{
+    "name": "R\u00e9plique",
+    "type": "Esprit"
+},{
+    "name": "Sirop d'agave",
+    "type": "Sirop"
+},{
+    "name": "Mais",
+    "type": "Bi\u00e8re"
+},{
+    "name": "Piment de la jama\u00efque",
+    "type": "Autre"
+},{
+    "name": "Ar\u00f4me amande",
+    "type": "Autre"
+},{
+    "name": "Amande",
+    "type": "Autre"
+},{
+    "name": "Amaretto",
+    "type": "Liqueur"
+},{
+    "name": "Racine d'ang\u00e9lique",
+    "type": "Autre"
+},{
+    "name": "Amers angostura",
+    "type": "Amer"
+},{
+    "name": "Anis",
+    "type": "Autre"
+},{
+    "name": "Anis",
+    "type": "Autre"
+},{
+    "name": "Anisette",
+    "type": "Autre"
+},{
+    "name": "Ap\u00e9rol",
+    "type": "Liqueur"
+},{
+    "name": "Grain de pomme",
+    "type": "Autre"
+},{
+    "name": "Eau-de-vie \u00e0 la pomme",
+    "type": "Brandy"
+},{
+    "name": "Cidre",
+    "type": "Cidre"
+},{
+    "name": "Jus de pomme",
+    "type": "Autre"
+},{
+    "name": "Schnapps \u00e0 la pomme",
+    "type": "Alcool"
+},{
+    "name": "Pomme",
+    "type": "Autre"
+},{
+    "name": "Cidre fort",
+    "type": "Boisson"
+},{
+    "name": "Brandy \u00e0 l'abricot",
+    "type": "Brandy"
+},{
+    "name": "Nectar d'abricot",
+    "type": "Autre"
+},{
+    "name": "Abricot",
+    "type": "Autre"
+},{
+    "name": "Aquavit",
+    "type": "Autre"
+},{
+    "name": "Asafoetida",
+    "type": "Autre"
+},{
+    "name": "Rhum vieux",
+    "type": "Rhum"
+},{
+    "name": "Bacardi limon",
+    "type": "Rhum"
+},{
+    "name": "Bacardi",
+    "type": "Rhum"
+},{
+    "name": "Cr\u00e8me irlandaise baileys",
+    "type": "Liqueur"
+},{
+    "name": "Banana liqueur",
+    "type": "Liqueur"
+},{
+    "name": "Chambre banane",
+    "type": "Rhum"
+},{
+    "name": "Sirop de banane",
+    "type": "Autre"
+},{
+    "name": "Banane",
+    "type": "Autre"
+},{
+    "name": "Chasseur de bars",
+    "type": "Autre"
+},{
+    "name": "Basilic",
+    "type": "Garnir"
+},{
+    "name": "De bouillon de b\u0153uf",
+    "type": "Autre"
+},{
+    "name": "Bi\u00e8re",
+    "type": "Bi\u00e8re"
+},{
+    "name": "B\u00e9n\u00e9dictin",
+    "type": "Autre"
+},{
+    "name": "Baies",
+    "type": "Autre"
+},{
+    "name": "Citron amer",
+    "type": "Autre"
+},{
+    "name": "Bitter",
+    "type": "Autre"
+},{
+    "name": "Poivre noir",
+    "type": "Autre"
+},{
+    "name": "Rhum noir",
+    "type": "Rhum"
+},{
+    "name": "Sambuca noire",
+    "type": "Sambuca"
+},{
+    "name": "M\u00fbres",
+    "type": "Autre"
+},{
+    "name": "Brandy de m\u00fbre",
+    "type": "Brandy"
+},{
+    "name": "Schnaps aux m\u00fbres",
+    "type": "Alcool"
+},{
+    "name": "Cordial de cassis",
+    "type": "Autre"
+},{
+    "name": "Schnaps au cassis",
+    "type": "Alcool"
+},{
+    "name": "Courge cassis",
+    "type": "Autre"
+},{
+    "name": "Whisky m\u00e9lang\u00e9",
+    "type": "Whisky"
+},{
+    "name": "Cura\u00e7ao bleu",
+    "type": "Liqueur"
+},{
+    "name": "Maui bleu",
+    "type": "Autre"
+},{
+    "name": "Myrtilles",
+    "type": "Autre"
+},{
+    "name": "Schnaps aux bleuets",
+    "type": "Alcool"
+},{
+    "name": "Bourbon",
+    "type": "Whisky"
+},{
+    "name": "Brandy",
+    "type": "Esprit"
+},{
+    "name": "Cassonade",
+    "type": "Autre"
+},{
+    "name": "Beurre",
+    "type": "Autre"
+},{
+    "name": "Schnaps au caramel \u00e9cossais",
+    "type": "Alcool"
+},{
+    "name": "Cachaca",
+    "type": "Esprit"
+},{
+    "name": "Calvados",
+    "type": "Liquide"
+},{
+    "name": "Campari",
+    "type": "Liquide"
+},{
+    "name": "Whisky canadien",
+    "type": "Whisky"
+},{
+    "name": "Bonbons",
+    "type": "Bonbons"
+},{
+    "name": "Cantaloup",
+    "type": "Fruit"
+},{
+    "name": "Coloration caramel",
+    "type": "Autre"
+},{
+    "name": "Boisson gazeuse gazeuse",
+    "type": "Boisson non-alcoolis\u00e9e"
+},{
+    "name": "Eau gazeuse",
+    "type": "Eau"
+},{
+    "name": "Cardamome",
+    "type": "Autre"
+},{
+    "name": "Poivre de cayenne",
+    "type": "Min\u00e9ral"
+},{
+    "name": "Sel de c\u00e9leri",
+    "type": "Autre"
+},{
+    "name": "C\u00e9leri",
+    "type": "Autre"
+},{
+    "name": "Chambord raspberry liqueur",
+    "type": "Liqueur"
+},{
+    "name": "Champagne",
+    "type": "Vin"
+},{
+    "name": "Cerises",
+    "type": "Autre"
+},{
+    "name": "Cognac de cerise",
+    "type": "Liquide"
+},{
+    "name": "Cola aux cerises",
+    "type": "Un soda"
+},{
+    "name": "Grenadine cerise",
+    "type": "Sirop"
+},{
+    "name": "Cerise heering",
+    "type": "Liquide"
+},{
+    "name": "Jus de cerise",
+    "type": "Autre"
+},{
+    "name": "Cherry liqueur",
+    "type": "Liqueur"
+},{
+    "name": "Cerise",
+    "type": "Autre"
+},{
+    "name": "Cr\u00e8me glac\u00e9e au chocolat",
+    "type": "Cr\u00e8me"
+},{
+    "name": "Chocolate liqueur",
+    "type": "Liqueur"
+},{
+    "name": "Lait au chocolat",
+    "type": "Lait"
+},{
+    "name": "Sirop au chocolat",
+    "type": "Sirop"
+},{
+    "name": "Chocolat",
+    "type": "Autre"
+},{
+    "name": "Cidre",
+    "type": "Cidre"
+},{
+    "name": "Schnaps \u00e0 la cannelle",
+    "type": "Alcool"
+},{
+    "name": "Cannelle",
+    "type": "Autre"
+},{
+    "name": "Vodka aux agrumes",
+    "type": "Vodka"
+},{
+    "name": "Jus hurlant",
+    "type": "Jus"
+},{
+    "name": "Clous de girofle",
+    "type": "Autre"
+},{
+    "name": "Club soda",
+    "type": "Autre"
+},{
+    "name": "Coca cola",
+    "type": "Boisson non-alcoolis\u00e9e"
+},{
+    "name": "Oignon cocktail",
+    "type": "Autre"
+},{
+    "name": "Poudre de cacao",
+    "type": "Autre"
+},{
+    "name": "Creme de noix de coco",
+    "type": "Autre"
+},{
+    "name": "Coconut liqueur",
+    "type": "Liqueur"
+},{
+    "name": "Lait de coco",
+    "type": "Lait"
+},{
+    "name": "Rhum \u00e0 la noix de coco",
+    "type": "Rhum"
+},{
+    "name": "Sirop de noix de coco",
+    "type": "Sirop"
+},{
+    "name": "Eau-de-vie de caf\u00e9",
+    "type": "Brandy"
+},{
+    "name": "Liqueur de caf\u00e9",
+    "type": "Liqueur"
+},{
+    "name": "Caf\u00e9",
+    "type": "Caf\u00e9"
+},{
+    "name": "Cognac",
+    "type": "Brandy"
+},{
+    "name": "Cointreau",
+    "type": "Liqueur"
+},{
+    "name": "Cola",
+    "type": "Boisson non-alcoolis\u00e9e"
+},{
+    "name": "Eau froide",
+    "type": "Eau"
+},{
+    "name": "Lait condens\u00e9",
+    "type": "Lait"
+},{
+    "name": "Coriandre",
+    "type": "Autre"
+},{
+    "name": "Sirop de ma\u00efs",
+    "type": "Sirop"
+},{
+    "name": "F\u00e9cule de ma\u00efs",
+    "type": "Autre"
+},{
+    "name": "Couronne",
+    "type": "Bi\u00e8re"
+},{
+    "name": "Canneberges",
+    "type": "Fruit"
+},{
+    "name": "Jus de cranberry",
+    "type": "Jus"
+},{
+    "name": "Liqueur de canneberge",
+    "type": "Liqueur"
+},{
+    "name": "Vodka aux canneberges",
+    "type": "Vodka"
+},{
+    "name": "Cr\u00e8me de noix de coco",
+    "type": "Cr\u00e8me"
+},{
+    "name": "Cr\u00e8me sherry",
+    "type": "Sherry"
+},{
+    "name": "Soda \u00e0 la cr\u00e8me",
+    "type": "Un soda"
+},{
+    "name": "Cr\u00e8me",
+    "type": "Cr\u00e8me"
+},{
+    "name": "Cr\u00e8me d'amande",
+    "type": "Liquide"
+},{
+    "name": "Cr\u00e8mes de banane",
+    "type": "Liquide"
+},{
+    "name": "Cr\u00e8me de cacao",
+    "type": "Liquide"
+},{
+    "name": "Cr\u00e8me de cassis",
+    "type": "Liqueur"
+},{
+    "name": "Creme de noyaux",
+    "type": "Liquide"
+},{
+    "name": "Cr\u00e8me fraiche",
+    "type": "Liquide"
+},{
+    "name": "Couronne royale",
+    "type": "Liquide"
+},{
+    "name": "Lumi\u00e8re cristalline",
+    "type": "Autre"
+},{
+    "name": "Concombre",
+    "type": "Autre"
+},{
+    "name": "Poudre de cumin",
+    "type": "Pimenter"
+},{
+    "name": "Graines de cumin",
+    "type": "Pimenter"
+},{
+    "name": "Curacao",
+    "type": "Liquide"
+},{
+    "name": "T\u00f4t",
+    "type": "Liquide"
+},{
+    "name": "M\u00e9lange da\u00efquiri",
+    "type": "M\u00e9langer"
+},{
+    "name": "Chocolat noir",
+    "type": "Autre"
+},{
+    "name": "Dark creme de cacao",
+    "type": "Autre"
+},{
+    "name": "Rhum brun",
+    "type": "Rhum"
+},{
+    "name": "Sauce soja",
+    "type": "Autre"
+},{
+    "name": "Sucre demerara",
+    "type": "Autre"
+},{
+    "name": "Dr pepper",
+    "type": "Boisson non-alcoolis\u00e9e"
+},{
+    "name": "Drambuie",
+    "type": "Liqueur"
+},{
+    "name": "Origan s\u00e9ch\u00e9",
+    "type": "Autre"
+},{
+    "name": "Vermouth sec",
+    "type": "Vin fortifi\u00e9"
+},{
+    "name": "Dubonnet blanc",
+    "type": "Liquide"
+},{
+    "name": "Dubonnet rouge",
+    "type": "Liquide"
+},{
+    "name": "Blanc d'oeuf",
+    "type": "Autre"
+},{
+    "name": "Jaune d'\u0153uf",
+    "type": "Autre"
+},{
+    "name": "\u0152uf",
+    "type": "Autre"
+},{
+    "name": "Lait de poule",
+    "type": "Autre"
+},{
+    "name": "Cr\u00e8me erin",
+    "type": "Autre"
+},{
+    "name": "Expresso",
+    "type": "Autre"
+},{
+    "name": "Everclear",
+    "type": "Autre"
+},{
+    "name": "Fantaisie",
+    "type": "Autre"
+},{
+    "name": "Graines de fenouil",
+    "type": "Autre"
+},{
+    "name": "Eau d'incendie",
+    "type": "Autre"
+},{
+    "name": "Amandes effil\u00e9es",
+    "type": "Autre"
+},{
+    "name": "Colorant alimentaire",
+    "type": "Autre"
+},{
+    "name": "Le fruit interdit",
+    "type": "Autre"
+},{
+    "name": "Frangelico",
+    "type": "Liquide"
+},{
+    "name": "Frais",
+    "type": "Un soda"
+},{
+    "name": "Basilic frais",
+    "type": "Pimenter"
+},{
+    "name": "Jus de citron frais",
+    "type": "Jus"
+},{
+    "name": "Jus de fruit",
+    "type": "Jus"
+},{
+    "name": "Punch aux fruits",
+    "type": "Jus"
+},{
+    "name": "Fruit",
+    "type": "Fruit"
+},{
+    "name": "Galliano",
+    "type": "Liqueur"
+},{
+    "name": "Sauce \u00e0 l'ail",
+    "type": "Sauce"
+},{
+    "name": "Gatorade",
+    "type": "Boisson non-alcoolis\u00e9e"
+},{
+    "name": "Soda au gingembre",
+    "type": "Boisson non-alcoolis\u00e9e"
+},{
+    "name": "Bi\u00e8re de gingembre",
+    "type": "Boisson non-alcoolis\u00e9e"
+},{
+    "name": "Gingembre",
+    "type": "Fruit"
+},{
+    "name": "Glyc\u00e9rine",
+    "type": "Autre"
+},{
+    "name": "Liqueur godiva",
+    "type": "Liqueur"
+},{
+    "name": "Rhum d'or",
+    "type": "Rhum"
+},{
+    "name": "T\u00e9quila dor\u00e9e",
+    "type": "Tequila"
+},{
+    "name": "Schlager d'or",
+    "type": "Schnaps"
+},{
+    "name": "Alcool de grain",
+    "type": "Liquide"
+},{
+    "name": "Grand marnier",
+    "type": "Liqueur"
+},{
+    "name": "Sucre en poudre",
+    "type": "Sucre"
+},{
+    "name": "Jus de raisin",
+    "type": "Jus"
+},{
+    "name": "Soda aux raisins",
+    "type": "Un soda"
+},{
+    "name": "Jus de pamplemousse",
+    "type": "Jus"
+},{
+    "name": "Raisins",
+    "type": "Fruit"
+},{
+    "name": "Chartreuse verte",
+    "type": "Liquide"
+},{
+    "name": "Cr\u00e8me de menthe verte",
+    "type": "Liqueur"
+},{
+    "name": "Vin de gingembre vert",
+    "type": "Vin"
+},{
+    "name": "Olives vertes",
+    "type": "Autre"
+},{
+    "name": "Grenadine",
+    "type": "Sirop"
+},{
+    "name": "Gingembre moulu",
+    "type": "Autre"
+},{
+    "name": "Jus de goyave",
+    "type": "Jus"
+},{
+    "name": "Guinness grosse",
+    "type": "Bi\u00e8re"
+},{
+    "name": "Guinness",
+    "type": "Bi\u00e8re"
+},{
+    "name": "Moiti\u00e9 moiti\u00e9",
+    "type": "Boisson non-alcoolis\u00e9e"
+},{
+    "name": "Punch hawa\u00efen",
+    "type": "Un soda"
+},{
+    "name": "Liqueur de noisette",
+    "type": "Liquide"
+},{
+    "name": "Cr\u00e8me \u00e9paisse",
+    "type": "Cr\u00e8me"
+},{
+    "name": "Ch\u00e9ri",
+    "type": "Autre"
+},{
+    "name": "Gn\u00f4le",
+    "type": "Alcopop"
+},{
+    "name": "Chocolat chaud",
+    "type": "Autre"
+},{
+    "name": "Damn hot",
+    "type": "Autre"
+},{
+    "name": "Sauce piquante",
+    "type": "Sauce"
+},{
+    "name": "Hpnotiq",
+    "type": "Autre"
+},{
+    "name": "Glace",
+    "type": "Cr\u00e8me"
+},{
+    "name": "Glace",
+    "type": "Autre"
+},{
+    "name": "Th\u00e9 glac\u00e9",
+    "type": "Autre"
+},{
+    "name": "Cr\u00e8me irlandaise",
+    "type": "Liqueur"
+},{
+    "name": "Whisky irlandais",
+    "type": "Whisky"
+},{
+    "name": "Jack daniels",
+    "type": "Whisky"
+},{
+    "name": "Gel\u00e9e",
+    "type": "Autre"
+},{
+    "name": "Gel\u00e9e",
+    "type": "Autre"
+},{
+    "name": "J\u00e4germeister",
+    "type": "Liqueur"
+},{
+    "name": "Jim beam",
+    "type": "Whisky"
+},{
+    "name": "Johnnie walker",
+    "type": "Whisky"
+},{
+    "name": "Double",
+    "type": "Liqueur"
+},{
+    "name": "Schnaps de key largo",
+    "type": "Liqueur"
+},{
+    "name": "Kirsch",
+    "type": "Liquide"
+},{
+    "name": "Kiwi liqueur",
+    "type": "Liqueur"
+},{
+    "name": "Kiwi",
+    "type": "Autre"
+},{
+    "name": "Kool-aid",
+    "type": "Autre"
+},{
+    "name": "Camomille",
+    "type": "Liquide"
+},{
+    "name": "Bi\u00e8re blonde",
+    "type": "Bi\u00e8re"
+},{
+    "name": "Jus de citron",
+    "type": "Jus"
+},{
+    "name": "\u00c9corces de citron",
+    "type": "Autre"
+},{
+    "name": "Soda citron",
+    "type": "Un soda"
+},{
+    "name": "Vodka au citron",
+    "type": "Autre"
+},{
+    "name": "Soda de citron vert",
+    "type": "Un soda"
+},{
+    "name": "Citron vert",
+    "type": "Autre"
+},{
+    "name": "Citron",
+    "type": "Fruit"
+},{
+    "name": "Limonade",
+    "type": "Boisson non-alcoolis\u00e9e"
+},{
+    "name": "Racine de r\u00e9glisse",
+    "type": "Autre"
+},{
+    "name": "Cr\u00e8me l\u00e9g\u00e8re",
+    "type": "Cr\u00e8me"
+},{
+    "name": "Rhum l\u00e9ger",
+    "type": "Rhum"
+},{
+    "name": "Lillet",
+    "type": "Autre"
+},{
+    "name": "Cordial de jus de citron vert",
+    "type": "Cordial"
+},{
+    "name": "Jus de citron vert",
+    "type": "Jus"
+},{
+    "name": "Lime liqueur",
+    "type": "Liqueur"
+},{
+    "name": "Zeste de citron vert",
+    "type": "Fruit"
+},{
+    "name": "Vodka au citron vert",
+    "type": "Vodka"
+},{
+    "name": "Citron vert",
+    "type": "Fruit"
+},{
+    "name": "Limonade",
+    "type": "Autre"
+},{
+    "name": "Mad\u00e8re",
+    "type": "Autre"
+},{
+    "name": "Rhum malibu",
+    "type": "Rhum"
+},{
+    "name": "Mandarin",
+    "type": "Fruit"
+},{
+    "name": "Mandarine napoleon",
+    "type": "Fruit"
+},{
+    "name": "Mangue",
+    "type": "Autre"
+},{
+    "name": "Sirop d'\u00e9rable",
+    "type": "Sirop"
+},{
+    "name": "Jus de cerise au marasquin",
+    "type": "Jus"
+},{
+    "name": "Cerise au marasquin",
+    "type": "Autre"
+},{
+    "name": "Liqueur de marasquin",
+    "type": "Liqueur"
+},{
+    "name": "M\u00e9lange \u00e0 margarita",
+    "type": "Autre"
+},{
+    "name": "Feuilles de marjolaine",
+    "type": "Autre"
+},{
+    "name": "Guimauves",
+    "type": "Autre"
+},{
+    "name": "Maui",
+    "type": "Autre"
+},{
+    "name": "Melon liqueur",
+    "type": "Liqueur"
+},{
+    "name": "Vodka au melon",
+    "type": "Liquide"
+},{
+    "name": "Mezcal",
+    "type": "Liquide"
+},{
+    "name": "Liqueur de melon midori",
+    "type": "Liqueur"
+},{
+    "name": "Midori",
+    "type": "Liqueur"
+},{
+    "name": "Lait",
+    "type": "Lait"
+},{
+    "name": "Sirop de menthe",
+    "type": "Sirop"
+},{
+    "name": "Menthe",
+    "type": "Fleur"
+},{
+    "name": "Mountain dew",
+    "type": "Un soda"
+},{
+    "name": "Noix de muscade",
+    "type": "Autre"
+},{
+    "name": "Huile d'olive",
+    "type": "Autre"
+},{
+    "name": "Olive",
+    "type": "Autre"
+},{
+    "name": "Oignon",
+    "type": "Autre"
+},{
+    "name": "Amers \u00e0 l'orange",
+    "type": "Bitter"
+},{
+    "name": "Cura\u00e7ao orange",
+    "type": "Liqueur"
+},{
+    "name": "Du jus d'orange",
+    "type": "Jus"
+},{
+    "name": "Orange liqueur",
+    "type": "Liqueur"
+},{
+    "name": "\u00c9pluchure d'orange",
+    "type": "Fruit"
+},{
+    "name": "Rhum orange",
+    "type": "Rhum"
+},{
+    "name": "Soda \u00e0 l'orange",
+    "type": "Un soda"
+},{
+    "name": "Spirale orange",
+    "type": "Fruit"
+},{
+    "name": "Vodka \u00e0 l'orange",
+    "type": "Vodka"
+},{
+    "name": "Orange",
+    "type": "Fruit"
+},{
+    "name": "Biscuit or\u00e9o",
+    "type": "Autre"
+},{
+    "name": "Sirop d'orgeat",
+    "type": "Sirop"
+},{
+    "name": "Ouzo",
+    "type": "Ap\u00e9ritif"
+},{
+    "name": "Sauce aux hu\u00eetres",
+    "type": "Autre"
+},{
+    "name": "Jus de papaye",
+    "type": "Jus"
+},{
+    "name": "Papaye",
+    "type": "Fruit"
+},{
+    "name": "Parfait amour",
+    "type": "Liquide"
+},{
+    "name": "Jus de fruits de la passion",
+    "type": "Autre"
+},{
+    "name": "Sirop de fruit de la passion",
+    "type": "Sirop"
+},{
+    "name": "Passoa",
+    "type": "Liqueur"
+},{
+    "name": "Eau-de-vie de p\u00eache",
+    "type": "Brandy"
+},{
+    "name": "Jus de p\u00eache",
+    "type": "Jus"
+},{
+    "name": "Liqueur de p\u00eache",
+    "type": "Liqueur"
+},{
+    "name": "Nectar de p\u00eache",
+    "type": "Jus"
+},{
+    "name": "Schnaps aux p\u00eaches",
+    "type": "Alcool"
+},{
+    "name": "Vodka \u00e0 la p\u00eache",
+    "type": "Vodka"
+},{
+    "name": "P\u00eache",
+    "type": "Fruit"
+},{
+    "name": "Schnaps au p\u00eacher",
+    "type": "Alcool"
+},{
+    "name": "Huile d'arachide",
+    "type": "Autre"
+},{
+    "name": "Poivre",
+    "type": "Autre"
+},{
+    "name": "Extrait de menthe poivr\u00e9e",
+    "type": "Autre"
+},{
+    "name": "Schnaps \u00e0 la menthe poivr\u00e9e",
+    "type": "Alcool"
+},{
+    "name": "Pepsi cola",
+    "type": "Cola"
+},{
+    "name": "Pernod",
+    "type": "Liquide"
+},{
+    "name": "Amers peychaud",
+    "type": "Bitter"
+},{
+    "name": "Pina colada mix",
+    "type": "M\u00e9langer"
+},{
+    "name": "Jus d'ananas",
+    "type": "Jus"
+},{
+    "name": "Rhum d'ananas",
+    "type": "Liquide"
+},{
+    "name": "Vodka \u00e0 l'ananas",
+    "type": "Liquide"
+},{
+    "name": "Jus d'ananas-orange-banane",
+    "type": "Jus"
+},{
+    "name": "Ananas",
+    "type": "Fruit"
+},{
+    "name": "Limonade rose",
+    "type": "Un soda"
+},{
+    "name": "Banane ambon",
+    "type": "Liquide"
+},{
+    "name": "Pisco",
+    "type": "Brandy"
+},{
+    "name": "Chocolat nature",
+    "type": "Autre"
+},{
+    "name": "Farine",
+    "type": "Autre"
+},{
+    "name": "Prunes",
+    "type": "Autre"
+},{
+    "name": "Port",
+    "type": "Vin fortifi\u00e9"
+},{
+    "name": "Sucre en poudre",
+    "type": "Autre"
+},{
+    "name": "Passion violette",
+    "type": "Autre"
+},{
+    "name": "Raisins secs",
+    "type": "Autre"
+},{
+    "name": "Sirop de framboise",
+    "type": "Cordial"
+},{
+    "name": "Confiture de framboise",
+    "type": "Autre"
+},{
+    "name": "Jus de framboise",
+    "type": "Jus"
+},{
+    "name": "Liqueur de framboise",
+    "type": "Liqueur"
+},{
+    "name": "Schnaps aux framboises",
+    "type": "Alcool"
+},{
+    "name": "Sirop de framboise",
+    "type": "Sirop"
+},{
+    "name": "Vodka framboise",
+    "type": "Vodka"
+},{
+    "name": "Flocons de piment rouge",
+    "type": "Autre"
+},{
+    "name": "Flocons de piment rouge",
+    "type": "Autre"
+},{
+    "name": "Flocons de piment rouge chaud",
+    "type": "Autre"
+},{
+    "name": "Vin rouge",
+    "type": "Vin"
+},{
+    "name": "Rhubarbe",
+    "type": "Autre"
+},{
+    "name": "Ricard",
+    "type": "Ap\u00e9ritif"
+},{
+    "name": "Sel gemme",
+    "type": "Min\u00e9ral"
+},{
+    "name": "Schnaps \u00e0 la bi\u00e8re de racine",
+    "type": "Alcool"
+},{
+    "name": "Biere de racine",
+    "type": "Boisson non-alcoolis\u00e9e"
+},{
+    "name": "Jus de citron vert sucr\u00e9 aux roses",
+    "type": "Autre"
+},{
+    "name": "Eau de rose",
+    "type": "Autre"
+},{
+    "name": "Rumple minze",
+    "type": "Liquide"
+},{
+    "name": "Whisky de seigle",
+    "type": "Whisky"
+},{
+    "name": "Sak\u00e9",
+    "type": "Sak\u00e9"
+},{
+    "name": "Sel",
+    "type": "Min\u00e9ral"
+},{
+    "name": "Sambuca",
+    "type": "Liqueur"
+},{
+    "name": "Salsepareille",
+    "type": "Un soda"
+},{
+    "name": "Schnaps",
+    "type": "Alcool"
+},{
+    "name": "Citron schweppes",
+    "type": "Un soda"
+},{
+    "name": "Schweppes russe",
+    "type": "Un soda"
+},{
+    "name": "Sorbet",
+    "type": "Doux"
+},{
+    "name": "Sherry",
+    "type": "Vin fortifi\u00e9"
+},{
+    "name": "Sirop de roses",
+    "type": "Sirop"
+},{
+    "name": "Gin \u00e0 la prunelle",
+    "type": "Liqueur"
+},{
+    "name": "Eau gazifi\u00e9e",
+    "type": "Eau"
+},{
+    "name": "Pucker aux pommes aigre",
+    "type": "Autre"
+},{
+    "name": "M\u00e9lange acide",
+    "type": "Boisson non-alcoolis\u00e9e"
+},{
+    "name": "Le confort du sud",
+    "type": "Liqueur"
+},{
+    "name": "Je suis du lait",
+    "type": "Lait"
+},{
+    "name": "Je suis willow",
+    "type": "Autre"
+},{
+    "name": "Lait de soja",
+    "type": "Lait"
+},{
+    "name": "Sauce soja",
+    "type": "Sauce"
+},{
+    "name": "Rhum \u00e9pic\u00e9",
+    "type": "Liquide"
+},{
+    "name": "Lutin",
+    "type": "Un soda"
+},{
+    "name": "Orange press\u00e9e",
+    "type": "Jus"
+},{
+    "name": "Jet",
+    "type": "Autre"
+},{
+    "name": "Des fraises",
+    "type": "Fruit"
+},{
+    "name": "Jus de fraise",
+    "type": "Jus"
+},{
+    "name": "Liqueur de fraise",
+    "type": "Alcool"
+},{
+    "name": "Schnaps aux fraises",
+    "type": "Alcool"
+},{
+    "name": "Sirop de fraise",
+    "type": "Sirop"
+},{
+    "name": "Sirop de sucre",
+    "type": "Sirop"
+},{
+    "name": "Sucre",
+    "type": "Autre"
+},{
+    "name": "D\u00e9lice ensoleill\u00e9",
+    "type": "Jus"
+},{
+    "name": "Surtension",
+    "type": "Un soda"
+},{
+    "name": "Punch su\u00e9dois",
+    "type": "Liquide"
+},{
+    "name": "Aigre-doux",
+    "type": "Boisson non-alcoolis\u00e9e"
+},{
+    "name": "Cr\u00e8me sucr\u00e9e",
+    "type": "Autre"
+},{
+    "name": "Vermouth doux",
+    "type": "Vin fortifi\u00e9"
+},{
+    "name": "Sauce tabasco",
+    "type": "Sauce"
+},{
+    "name": "Soie",
+    "type": "Autre"
+},{
+    "name": "Porto fauve",
+    "type": "Vin fortifi\u00e9"
+},{
+    "name": "Th\u00e9",
+    "type": "Th\u00e9"
+},{
+    "name": "Whisky du tennessee",
+    "type": "Whisky"
+},{
+    "name": "T\u00e9quila rose",
+    "type": "Autre"
+},{
+    "name": "Tante maria",
+    "type": "Liquide"
+},{
+    "name": "Jus de tomate",
+    "type": "Boisson non-alcoolis\u00e9e"
+},{
+    "name": "Tomate",
+    "type": "Autre"
+},{
+    "name": "L'eau tonique",
+    "type": "Boisson non-alcoolis\u00e9e"
+},{
+    "name": "Triple sec",
+    "type": "Liqueur"
+},{
+    "name": "Tropicana",
+    "type": "Jus"
+},{
+    "name": "Tuaca",
+    "type": "Liquide"
+},{
+    "name": "Extrait de vanille",
+    "type": "Autre"
+},{
+    "name": "Glace \u00e0 la vanille",
+    "type": "Autre"
+},{
+    "name": "Vanilla liqueur",
+    "type": "Alcool"
+},{
+    "name": "Schnaps \u00e0 la vanille",
+    "type": "Alcool"
+},{
+    "name": "Sirop de vanille",
+    "type": "Sirop"
+},{
+    "name": "Vodka vanille",
+    "type": "Vodka"
+},{
+    "name": "Vanille",
+    "type": "Autre"
+},{
+    "name": "Vermouth",
+    "type": "Vin fortifi\u00e9"
+},{
+    "name": "Vinaigre",
+    "type": "Autre"
+},{
+    "name": "Eau",
+    "type": "Eau"
+},{
+    "name": "Schnaps \u00e0 la past\u00e8que",
+    "type": "Alcool"
+},{
+    "name": "Cr\u00e8me fouett\u00e9e",
+    "type": "Cr\u00e8me"
+},{
+    "name": "Cr\u00e8me fouett\u00e9e",
+    "type": "Cr\u00e8me"
+},{
+    "name": "Liqueur de chocolat blanc",
+    "type": "Liquide"
+},{
+    "name": "Cr\u00e8me de menthe blanche",
+    "type": "Liquide"
+},{
+    "name": "Jus de raisin blanc",
+    "type": "Jus"
+},{
+    "name": "Porto blanc",
+    "type": "Port"
+},{
+    "name": "Rhum blanc",
+    "type": "Rhum"
+},{
+    "name": "Vinaigre blanc",
+    "type": "Vinaigre"
+},{
+    "name": "Vin blanc",
+    "type": "Vin"
+},{
+    "name": "Dinde sauvage",
+    "type": "Whisky"
+},{
+    "name": "Schnaps aux fruits des bois",
+    "type": "Alcool"
+},{
+    "name": "Vin",
+    "type": "Vin"
+},{
+    "name": "Sauce worcestershire",
+    "type": "Sauce"
+},{
+    "name": "Armoise",
+    "type": "Autre"
+},{
+    "name": "Levure",
+    "type": "Autre"
+},{
+    "name": "Chartreuse jaune",
+    "type": "Liqueur"
+},{
+    "name": "Yaourt",
+    "type": "Cr\u00e8me"
+},{
+    "name": "Jack du yukon",
+    "type": "Liqueur"
+},{
+    "name": "\u00c9teignez-le",
+    "type": "Boisson"
+},{
+    "name": "Sauce caramel",
+    "type": "Sauce"
+},{
+    "name": "Sauce au chocolat",
+    "type": "Sauce"
+},{
+    "name": "Petit blanc",
+    "type": "Ap\u00e9ritif"
+},{
+    "name": "Amers \u00e0 la p\u00eache",
+    "type": "Amer"
+},{
+    "name": "Barres mini-snickers",
+    "type": "Confiserie"
+},{
+    "name": "Prosecco",
+    "type": "Vin"
+},{
+    "name": "Chocolat sal\u00e9",
+    "type": "Confiserie"
+},{
+    "name": "Martini rosso",
+    "type": "Vermouth"
+},{
+    "name": "Martini blanc",
+    "type": "Vermouth"
+},{
+    "name": "Martini extra sec",
+    "type": "Vermouth"
+},{
+    "name": "Jus de citron vert frais",
+    "type": "Fruit"
+},{
+    "name": "Menthe fra\u00eeche",
+    "type": "Garnir"
+},{
+    "name": "Romarin",
+    "type": "Garnir"
+},{
+    "name": "Piments habanero",
+    "type": "Garnir"
+},{
+    "name": "Mezcal jeune ill\u00e9gal",
+    "type": "Esprit"
+},{
+    "name": "Cordial de fleurs de sureau",
+    "type": "Cordial"
+},{
+    "name": "Vermouth rosso",
+    "type": "Vin fortifi\u00e9"
+},{
+    "name": "Creme de violette",
+    "type": "Liqueur"
+},{
+    "name": "Cuisine am\u00e9ricaine",
+    "type": "Ap\u00e9ritif"
+},{
+    "name": "Vermouth blanc",
+    "type": "Vin fortifi\u00e9"
+},{
+    "name": "Cura\u00e7ao sec",
+    "type": "Liqueur"
+},{
+    "name": "Nocino",
+    "type": "Liqueur"
+},{
+    "name": "Averna",
+    "type": "Liqueur"
+},{
+    "name": "Ramazzotti",
+    "type": "Liqueur"
+},{
+    "name": "Fernet branca",
+    "type": "Liqueur"
+},{
+    "name": "Dram au piment de la jama\u00efque",
+    "type": "Liquide"
+},{
+    "name": "Falerne",
+    "type": "Sirop"
+},{
+    "name": "Bonjour",
+    "type": "Alcool"
+},{
+    "name": "Arak",
+    "type": "Alcool"
+},{
+    "name": "Rhum blackstrap",
+    "type": "Rhum"
+},{
+    "name": "Sirop de gingembre",
+    "type": "Sirop"
+},{
+    "name": "Sirop de miel",
+    "type": "Sirop"
+},{
+    "name": "Scotch m\u00e9lang\u00e9",
+    "type": "Whisky"
+},{
+    "name": "Scotch single malt d'islay",
+    "type": "Whisky"
+},{
+    "name": "Rhum 151-proof",
+    "type": "Rhum"
+},{
+    "name": "7 up",
+    "type": "Boisson non-alcoolis\u00e9e"
+},{
+    "name": "Absinthe",
+    "type": "Esprit"
+},{
+    "name": "Citron absolu",
+    "type": "Vodka"
+},{
+    "name": "Cr\u00e8me de m\u00fbres",
+    "type": "Alcool"
+},{
+    "name": "Saumure d'olives",
+    "type": "Mixer"
+},{
+    "name": "Sirop d'ananas",
+    "type": "Jus de fruit"
+},{
+    "name": "Saint-germain",
+    "type": "Alcool"
+},{
+    "name": "Lavande",
+    "type": "Fleur"
+}]
