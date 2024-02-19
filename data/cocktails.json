@@ -13,5 +13,18 @@
   "4w5rq3urg": ["Vodka", "Gin"],
   "qhxuwcni6": ["Rum", "Gin", "Tequila", "Wine"],
   "sdn2eftts": ["Tequila", "Vodka", "Wine", "Water"],
-  "4q7wlhjlh": ["Rum", "Gin", "Wine", "Water"]
+  "4q7wlhjlh": ["Rum", "Gin", "Wine", "Water"],
+  "zvd4rqfb8": ["Amande, Lavande"],
+  "mvbsekuvg": ["Vodka, Cidre"],
+  "d6285c6gy": ["Galliano", "Lumière cristalline"],
+  "q7pt7811n": ["Galliano", "Lumière cristalline"],
+  "s89423uqo": ["Vodka", "Gin", "Rhum", "Tequila", "Scotch"],
+  "rxxtv9bpb": ["Jus de pomme", "Jus de fruit", "Jus de pêche"],
+  "ltcnp9yg6": [
+    "Jus de pomme",
+    "Sirop de sucre",
+    "Sucre en poudre",
+    "Vodka",
+    "Eau gazeuse"
+  ]
 }

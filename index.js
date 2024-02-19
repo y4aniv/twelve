@@ -17,10 +17,12 @@ app.use(bodyParser.urlencoded({ extended: true })); // Permet de parser les requ
 app.use(compression());
 
 // Configurer Express pour servir les fichiers statiques depuis le dossier public
-app.use(express.static("public", {
-  maxAge: "1y", // Définir la durée de mise en cache à 1 an
-  etag: false, // Désactiver la validation ETag pour améliorer les performances
-}));
+app.use(
+  express.static("public", {
+    maxAge: "1y", // Définir la durée de mise en cache à 1 an
+    etag: false, // Désactiver la validation ETag pour améliorer les performances
+  }),
+);
 app.use("/css", express.static(__dirname + "public/css"));
 app.use("/js", express.static(__dirname + "public/js"));
 app.use("/img", express.static(__dirname + "public/img"));
@@ -127,21 +129,26 @@ app.get("/api/ingredients/", (req, res) => {
   var ingredients = require("./data/ingredients.json"); // Charger les ingrédients depuis le fichier ingredients.json
   if (query) {
     // Si un paramètre de requête q est présent
-    ingredients = ingredients.filter((ingredient) =>
-      // Filtrer les ingrédients correspondant à la requête
-      ingredient.name.toLowerCase().includes(query.toLowerCase()),
-    ).map((ingredient) => { // Ajouter un score à chaque ingrédient
-      // Ajouter un score à chaque ingrédient en fonction du nombre de caractères correspondants
-      ingredient.score =  1 - (ingredient.name.length - query.length) / ingredient.name.length; // Calculer le score
-      return ingredient; // Renvoyer l'ingrédient avec le score
-    }).sort((a, b) => b.score - a.score) // Trier les ingrédients par score
-    .slice(0, 5); // Trier les ingrédients par score et renvoyer les 5 premiers
-  }else{
+    ingredients = ingredients
+      .filter((ingredient) =>
+        // Filtrer les ingrédients correspondant à la requête
+        ingredient.name.toLowerCase().includes(query.toLowerCase()),
+      )
+      .map((ingredient) => {
+        // Ajouter un score à chaque ingrédient
+        // Ajouter un score à chaque ingrédient en fonction du nombre de caractères correspondants
+        ingredient.score =
+          1 - (ingredient.name.length - query.length) / ingredient.name.length; // Calculer le score
+        return ingredient; // Renvoyer l'ingrédient avec le score
+      })
+      .sort((a, b) => b.score - a.score) // Trier les ingrédients par score
+      .slice(0, 5); // Trier les ingrédients par score et renvoyer les 5 premiers
+  } else {
     ingredients = ingredients.slice(0, 5); // Renvoyer les 5 premiers ingrédients
   }
 
   res.json(ingredients); // Renvoyer les ingrédients au format JSON
-})
+});
 
 app.post("/api/cocktail", (req, res) => {
   // Définir une route pour créer un cocktail
