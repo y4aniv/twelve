@@ -1,25 +1,25 @@
 .header {
-  position: relative;
+  position: relative; /* La propriété position: relative permet de positionner un élément par rapport à sa position initiale */
   width: 100%;
   height: 100vh;
-  background: url("/img/header-404.jpg") no-repeat center 40% / cover;
+  background: url("/img/header-404.jpg") no-repeat center 40% / cover; /* Utilisation de la propriété background pour afficher une image de fond */
 }
 
 .header__logo {
-  position: sticky;
+  position: sticky; /* La propriété position: sticky permet de fixer un élément à une position donnée lors du scroll et de le décoller une fois que l'élément est atteint */
   top: 10px;
   left: 50px;
   width: 100px;
   height: 100px;
   margin-bottom: 10px;
-  background: url("/img/logo-white.svg") no-repeat center/contain;
+  background: url("/img/logo-white.svg") no-repeat center/contain; /* Utilisation de la propriété background pour afficher une image de fond */
 }
 
 .header__title {
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); /* La propriété transform: translate permet de déplacer un élément horizontalement et verticalement sans modifier le positionnement des autres éléments */
   font-size: 100px;
-  color: var(--color-white);
+  color: var(--color-white); /* La valeur var(--color-white) fait référence à la couleur blanche définie dans le fichier global.css */
 }
