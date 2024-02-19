@@ -19,7 +19,12 @@
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); /* La propriété transform: translate permet de déplacer un élément horizontalement et verticalement sans modifier le positionnement des autres éléments */
+  transform: translate(
+    -50%,
+    -50%
+  ); /* La propriété transform: translate permet de déplacer un élément horizontalement et verticalement sans modifier le positionnement des autres éléments */
   font-size: 100px;
-  color: var(--color-white); /* La valeur var(--color-white) fait référence à la couleur blanche définie dans le fichier global.css */
+  color: var(
+    --color-white
+  ); /* La valeur var(--color-white) fait référence à la couleur blanche définie dans le fichier global.css */
 }

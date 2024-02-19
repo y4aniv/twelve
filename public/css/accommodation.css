@@ -20,10 +20,16 @@
   margin-top: 50px;
   width: 95%;
   left: 50%;
-  transform: translateX(-50%); /* La propriété transform: translateX permet de déplacer un élément horizontalement sans modifier le positionnement des autres éléments */
+  transform: translateX(
+    -50%
+  ); /* La propriété transform: translateX permet de déplacer un élément horizontalement sans modifier le positionnement des autres éléments */
   text-align: center;
-  font-size: var(--font-size-large); /* La valeur var(--font-size-large) fait référence à la taille de police large définie dans le fichier global.css */
-  font-family: var(--font-secondary); /* La valeur var(--font-secondary) fait référence à la police de caractères "Syne" définie dans le fichier global.css */
+  font-size: var(
+    --font-size-large
+  ); /* La valeur var(--font-size-large) fait référence à la taille de police large définie dans le fichier global.css */
+  font-family: var(
+    --font-secondary
+  ); /* La valeur var(--font-secondary) fait référence à la police de caractères "Syne" définie dans le fichier global.css */
   text-transform: uppercase; /* La propriété text-transform: uppercase permet de convertir le texte en majuscules */
 }
 
@@ -32,7 +38,9 @@
   margin-top: 50px;
   width: 95%;
   left: 50%;
-  transform: translateX(-50%); /* La propriété transform: translateX permet de déplacer un élément horizontalement sans modifier le positionnement des autres éléments */
+  transform: translateX(
+    -50%
+  ); /* La propriété transform: translateX permet de déplacer un élément horizontalement sans modifier le positionnement des autres éléments */
   display: flex; /* La propriété display: flex permet de créer un conteneur flexible pour les éléments enfants */
   flex-direction: row; /* La propriété flex-direction: row permet de spécifier que les éléments enfants doivent être affichés horizontalement */
   flex-wrap: nowrap; /* La propriété flex-wrap: nowrap permet de spécifier que les éléments enfants ne doivent pas être enroulés sur plusieurs lignes */
@@ -45,7 +53,9 @@
   position: relative; /* La propriété position: relative permet de positionner un élément par rapport à sa position initiale */
   width: 20%;
   height: 100%;
-  padding: var(--padding-medium); /* La valeur var(--padding-medium) fait référence à l'espacement moyen défini dans le fichier global.css */
+  padding: var(
+    --padding-medium
+  ); /* La valeur var(--padding-medium) fait référence à l'espacement moyen défini dans le fichier global.css */
   list-style: none; /* La propriété list-style: none permet de supprimer les puces des listes */
 }
 
@@ -55,7 +65,9 @@
   position: relative; /* La propriété position: relative permet de positionner un élément par rapport à sa position initiale */
   cursor: pointer; /* La propriété cursor: pointer permet de spécifier que le curseur doit changer pour indiquer qu'un élément est cliquable */
   margin-bottom: 10px;
-  font-size: var(--font-size-medium); /* La valeur var(--font-size-medium) fait référence à la taille de police moyenne définie dans le fichier global.css */
+  font-size: var(
+    --font-size-medium
+  ); /* La valeur var(--font-size-medium) fait référence à la taille de police moyenne définie dans le fichier global.css */
   opacity: 0.7;
 }
 
@@ -67,9 +79,15 @@
 
 .accommodation__content {
   position: relative; /* La propriété position: relative permet de positionner un élément par rapport à sa position initiale */
-  padding-left: var(--padding-medium); /* La valeur var(--padding-medium) fait référence à l'espacement moyen défini dans le fichier global.css */
-  padding-right: var(--padding-medium); /* La valeur var(--padding-medium) fait référence à l'espacement moyen défini dans le fichier global.css */
-  gap: var(--gap); /* La propriété gap permet de spécifier l'espacement entre les éléments enfants */ /* La valeur var(--gap) fait référence à l'espacement défini dans le fichier global.css */
+  padding-left: var(
+    --padding-medium
+  ); /* La valeur var(--padding-medium) fait référence à l'espacement moyen défini dans le fichier global.css */
+  padding-right: var(
+    --padding-medium
+  ); /* La valeur var(--padding-medium) fait référence à l'espacement moyen défini dans le fichier global.css */
+  gap: var(
+    --gap
+  ); /* La propriété gap permet de spécifier l'espacement entre les éléments enfants */ /* La valeur var(--gap) fait référence à l'espacement défini dans le fichier global.css */
   width: 80%;
   height: 100%;
   display: flex; /* La propriété display: flex permet de créer un conteneur flexible pour les éléments enfants */
@@ -81,11 +99,15 @@
 .content__item {
   position: relative; /* La propriété position: relative permet de positionner un élément par rapport à sa position initiale */
   height: 100%;
-  flex-basis: calc(50% - 10px); /* La propriété flex-basis permet de spécifier la taille de base d'un élément flexible avant que l'espace restant ne soit distribué */ /* La fonction calc() permet de réaliser des calculs en CSS */
+  flex-basis: calc(
+    50% - 10px
+  ); /* La propriété flex-basis permet de spécifier la taille de base d'un élément flexible avant que l'espace restant ne soit distribué */ /* La fonction calc() permet de réaliser des calculs en CSS */
   cursor: pointer; /* La propriété cursor: pointer permet de spécifier que le curseur doit changer pour indiquer qu'un élément est cliquable */
   margin-top: 20px;
   opacity: 0;
-  transform: translateY(20px); /* La propriété transform: translateY permet de déplacer un élément verticalement sans modifier le positionnement des autres éléments */
+  transform: translateY(
+    20px
+  ); /* La propriété transform: translateY permet de déplacer un élément verticalement sans modifier le positionnement des autres éléments */
 }
 
 .item__poster {
@@ -109,13 +131,17 @@
   position: relative;
   font-size: 25px;
   font-weight: normal;
-  font-family: var(--font-secondary); /* La valeur var(--font-secondary) fait référence à la police de caractères "Syne" définie dans le fichier global.css */
+  font-family: var(
+    --font-secondary
+  ); /* La valeur var(--font-secondary) fait référence à la police de caractères "Syne" définie dans le fichier global.css */
 }
 
 .item__description {
   position: relative;
   margin-top: 10px;
-  font-size: var(--font-size-small); /* La valeur var(--font-size-small) fait référence à la taille de police petite définie dans le fichier global.css */
+  font-size: var(
+    --font-size-small
+  ); /* La valeur var(--font-size-small) fait référence à la taille de police petite définie dans le fichier global.css */
   font-weight: thin;
 }
 

@@ -2,14 +2,18 @@
   position: relative; /* La propriété position: relative permet de positionner un élément par rapport à sa position initiale */
   width: 100%;
   padding-bottom: 30px;
-  background: var(--color-grey); /* La valeur var(--color-grey) fait référence à la couleur grise définie dans le fichier global.css */
+  background: var(
+    --color-grey
+  ); /* La valeur var(--color-grey) fait référence à la couleur grise définie dans le fichier global.css */
 }
 
 .footer__logo {
   position: relative; /* La propriété position: relative permet de positionner un élément par rapport à sa position initiale */
   margin-top: 50px;
   left: 50%;
-  transform: translateX(-50%); /* La propriété transform: translateX(-50%) permet de déplacer un élément de 50% de sa largeur vers la gauche sans modifier le positionnement des autres éléments */
+  transform: translateX(
+    -50%
+  ); /* La propriété transform: translateX(-50%) permet de déplacer un élément de 50% de sa largeur vers la gauche sans modifier le positionnement des autres éléments */
   width: 100px;
   height: 100px;
   background: url("/img/logo-black.svg") no-repeat center center / contain; /* Utilisation de la propriété background pour afficher une image de fond */
@@ -20,7 +24,9 @@
   position: relative; /* La propriété position: relative permet de positionner un élément par rapport à sa position initiale */
   width: 90%;
   left: 50%;
-  transform: translateX(-50%); /* La propriété transform: translateX permet de déplacer un élément horizontalement sans modifier le positionnement des autres éléments */
+  transform: translateX(
+    -50%
+  ); /* La propriété transform: translateX permet de déplacer un élément horizontalement sans modifier le positionnement des autres éléments */
 }
 
 .footer__contact li {
@@ -30,5 +36,7 @@
 
 .footer__contact li a {
   text-decoration: none; /* La propriété text-decoration: none permet de supprimer le soulignement des liens hypertextes */
-  color: var(--color-black); /* La valeur var(--color-black) fait référence à la couleur noire définie dans le fichier global.css */
+  color: var(
+    --color-black
+  ); /* La valeur var(--color-black) fait référence à la couleur noire définie dans le fichier global.css */
 }

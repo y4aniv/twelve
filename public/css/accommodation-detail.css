@@ -22,25 +22,35 @@
   margin-top: 50px;
   margin-bottom: 50px;
   text-align: center;
-  font-size: var(--font-size-large); /* La valeur var(--font-size-large) fait référence à la taille de police "large" définie dans le fichier global.css */
+  font-size: var(
+    --font-size-large
+  ); /* La valeur var(--font-size-large) fait référence à la taille de police "large" définie dans le fichier global.css */
   font-weight: 700; /* La propriété font-weight: 700 permet de spécifier l'épaisseur des caractères */
   letter-spacing: 2px; /* La propriété letter-spacing: 2px permet de spécifier l'espacement entre les caractères */
-  color: var(--color-black); /* La valeur var(--color-black) fait référence à la couleur noire définie dans le fichier global.css */
-  font-family: var(--font-secondary); /* La valeur var(--font-secondary) fait référence à la police de caractères "Syne" définie dans le fichier global.css */
+  color: var(
+    --color-black
+  ); /* La valeur var(--color-black) fait référence à la couleur noire définie dans le fichier global.css */
+  font-family: var(
+    --font-secondary
+  ); /* La valeur var(--font-secondary) fait référence à la police de caractères "Syne" définie dans le fichier global.css */
 }
 
 .accommodation-detail {
   position: relative; /* La propriété position: relative permet de positionner un élément par rapport à sa position initiale */
   width: 95%;
   left: 50%;
-  transform: translateX(-50%); /* La propriété transform: translateX permet de déplacer un élément horizontalement sans modifier le positionnement des autres éléments */
+  transform: translateX(
+    -50%
+  ); /* La propriété transform: translateX permet de déplacer un élément horizontalement sans modifier le positionnement des autres éléments */
   display: flex; /* La propriété display: flex permet de créer un conteneur flexible pour les éléments enfants */
   flex-direction: row; /* La propriété flex-direction: row permet de spécifier que les éléments enfants doivent être affichés horizontalement */
   flex-wrap: nowrap; /* La propriété flex-wrap: nowrap permet de spécifier que les éléments enfants ne doivent pas être enroulés sur plusieurs lignes */
   justify-content: normal; /* La propriété justify-content: normal permet de spécifier que les éléments enfants doivent être alignés de manière normale */
   align-items: normal; /* La propriété align-items: normal permet de spécifier que les éléments enfants doivent être alignés de manière normale */
   align-content: normal; /* La propriété align-content: normal permet de spécifier que les éléments enfants doivent être alignés de manière normale */
-  gap: var(--gap); /* La propriété gap permet de spécifier l'espacement entre les éléments enfants */ /* La valeur var(--gap) fait référence à l'espacement défini dans le fichier global.css */
+  gap: var(
+    --gap
+  ); /* La propriété gap permet de spécifier l'espacement entre les éléments enfants */ /* La valeur var(--gap) fait référence à l'espacement défini dans le fichier global.css */
 }
 
 .accommodation-detail__slider {
@@ -72,33 +82,53 @@
   justify-content: normal; /* La propriété justify-content: normal permet de spécifier que les éléments enfants doivent être alignés de manière normale */
   align-items: stretch; /* La propriété align-items: stretch permet de spécifier que les éléments enfants doivent être étirés pour remplir le conteneur */
   align-content: stretch; /* La propriété align-content: stretch permet de spécifier que les éléments enfants doivent être étirés pour remplir le conteneur */
-  gap: var(--gap); /* La propriété gap permet de spécifier l'espacement entre les éléments enfants */ /* La valeur var(--gap) fait référence à l'espacement défini dans le fichier global.css */
-  padding: var(--padding-large); /* La valeur var(--padding-large) fait référence à l'espacement large défini dans le fichier global.css */
+  gap: var(
+    --gap
+  ); /* La propriété gap permet de spécifier l'espacement entre les éléments enfants */ /* La valeur var(--gap) fait référence à l'espacement défini dans le fichier global.css */
+  padding: var(
+    --padding-large
+  ); /* La valeur var(--padding-large) fait référence à l'espacement large défini dans le fichier global.css */
 }
 
 .content__description {
-  font-size: var(--font-size-medium); /* La valeur var(--font-size-medium) fait référence à la taille de police "medium" définie dans le fichier global.css */
+  font-size: var(
+    --font-size-medium
+  ); /* La valeur var(--font-size-medium) fait référence à la taille de police "medium" définie dans le fichier global.css */
 }
 
 .content__button {
   position: relative; /* La propriété position: relative permet de positionner un élément par rapport à sa position initiale */
   width: 100%;
   min-height: 50px; /* La propriété min-height: 50px permet de spécifier la hauteur minimale de l'élément */
-  padding-top: var(--padding-small); /* La valeur var(--padding-small) fait référence à l'espacement petit défini dans le fichier global.css */
-  padding-bottom: var(--padding-small); /* La valeur var(--padding-small) fait référence à l'espacement petit défini dans le fichier global.css */
-  font-size: var(--font-size-medium); /* La valeur var(--font-size-medium) fait référence à la taille de police "medium" définie dans le fichier global.css */
-  background-color: var(--color-black); /* La valeur var(--color-black) fait référence à la couleur noire définie dans le fichier global.css */
-  color: var(--color-white); /* La valeur var(--color-white) fait référence à la couleur blanche définie dans le fichier global.css */
+  padding-top: var(
+    --padding-small
+  ); /* La valeur var(--padding-small) fait référence à l'espacement petit défini dans le fichier global.css */
+  padding-bottom: var(
+    --padding-small
+  ); /* La valeur var(--padding-small) fait référence à l'espacement petit défini dans le fichier global.css */
+  font-size: var(
+    --font-size-medium
+  ); /* La valeur var(--font-size-medium) fait référence à la taille de police "medium" définie dans le fichier global.css */
+  background-color: var(
+    --color-black
+  ); /* La valeur var(--color-black) fait référence à la couleur noire définie dans le fichier global.css */
+  color: var(
+    --color-white
+  ); /* La valeur var(--color-white) fait référence à la couleur blanche définie dans le fichier global.css */
   border: none; /* La propriété border: none permet de supprimer les bordures d'un élément */
   cursor: pointer; /* La propriété cursor: pointer permet de spécifier que le curseur doit changer lorsqu'il survole un élément */
-  font-family: var(--font-primary); /* La valeur var(--font-primary) fait référence à la police de caractères "Outfit" définie dans le fichier global.css */
+  font-family: var(
+    --font-primary
+  ); /* La valeur var(--font-primary) fait référence à la police de caractères "Outfit" définie dans le fichier global.css */
 }
 
 .accommodation-detail__commodities {
   position: relative; /* La propriété position: relative permet de positionner un élément par rapport à sa position initiale */
   width: 95%;
   left: 50%;
-  transform: translateX(-50%); /* La propriété transform: translateX permet de déplacer un élément horizontalement sans modifier le positionnement des autres éléments */
+  transform: translateX(
+    -50%
+  ); /* La propriété transform: translateX permet de déplacer un élément horizontalement sans modifier le positionnement des autres éléments */
   margin-top: 50px;
 }
 
@@ -106,7 +136,9 @@
   position: relative; /* La propriété position: relative permet de positionner un élément par rapport à sa position initiale */
   width: 100%;
   height: 1px;
-  background-color: var(--color-black); /* La valeur var(--color-black) fait référence à la couleur noire définie dans le fichier global.css */
+  background-color: var(
+    --color-black
+  ); /* La valeur var(--color-black) fait référence à la couleur noire définie dans le fichier global.css */
   margin-bottom: 50px;
   opacity: 0.5;
 }
@@ -116,11 +148,17 @@
   width: 95%;
   margin-bottom: 50px;
   text-align: left;
-  font-size: var(--font-size-large); /* La valeur var(--font-size-large) fait référence à la taille de police "large" définie dans le fichier global.css */
+  font-size: var(
+    --font-size-large
+  ); /* La valeur var(--font-size-large) fait référence à la taille de police "large" définie dans le fichier global.css */
   font-weight: 700; /* La propriété font-weight: 700 permet de spécifier l'épaisseur des caractères */
   letter-spacing: 2px; /* La propriété letter-spacing: 2px permet de spécifier l'espacement entre les caractères */
-  color: var(--color-black); /* La valeur var(--color-black) fait référence à la couleur noire définie dans le fichier global.css */
-  font-family: var(--font-secondary); /* La valeur var(--font-secondary) fait référence à la police de caractères "Syne" définie dans le fichier global.css */
+  color: var(
+    --color-black
+  ); /* La valeur var(--color-black) fait référence à la couleur noire définie dans le fichier global.css */
+  font-family: var(
+    --font-secondary
+  ); /* La valeur var(--font-secondary) fait référence à la police de caractères "Syne" définie dans le fichier global.css */
 }
 
 .commodities__list {
@@ -129,18 +167,30 @@
   list-style: none; /* La propriété list-style: none permet de supprimer les puces des listes */
   padding: 0;
   display: grid; /* La propriété display: grid permet de créer un conteneur de type grille pour les éléments enfants */
-  grid-template-columns: repeat(3, 1fr); /* La propriété grid-template-columns: repeat(3, 1fr) permet de spécifier le nombre de colonnes et la largeur de chaque colonne */
-  gap: var(--gap); /* La propriété gap permet de spécifier l'espacement entre les éléments enfants */ /* La valeur var(--gap) fait référence à l'espacement défini dans le fichier global.css */
+  grid-template-columns: repeat(
+    3,
+    1fr
+  ); /* La propriété grid-template-columns: repeat(3, 1fr) permet de spécifier le nombre de colonnes et la largeur de chaque colonne */
+  gap: var(
+    --gap
+  ); /* La propriété gap permet de spécifier l'espacement entre les éléments enfants */ /* La valeur var(--gap) fait référence à l'espacement défini dans le fichier global.css */
 }
 
 .commodities__list li {
-  font-size: var(--font-size-medium); /* La valeur var(--font-size-medium) fait référence à la taille de police "medium" définie dans le fichier global.css */
+  font-size: var(
+    --font-size-medium
+  ); /* La valeur var(--font-size-medium) fait référence à la taille de police "medium" définie dans le fichier global.css */
   opacity: 0;
-  transform: translateY(20px); /* La propriété transform: translateY(20px) permet de déplacer un élément de 20 pixels vers le bas */
-  color: var(--color-black); /* La valeur var(--color-black) fait référence à la couleur noire définie dans le fichier global.css */
+  transform: translateY(
+    20px
+  ); /* La propriété transform: translateY(20px) permet de déplacer un élément de 20 pixels vers le bas */
+  color: var(
+    --color-black
+  ); /* La valeur var(--color-black) fait référence à la couleur noire définie dans le fichier global.css */
 }
 
-@media screen and (max-width: 800px) { /* La règle @media screen and (max-width: 800px) permet de définir des styles spécifiques pour les écrans dont la largeur est inférieure ou égale à 800 pixels */
+@media screen and (max-width: 800px) {
+  /* La règle @media screen and (max-width: 800px) permet de définir des styles spécifiques pour les écrans dont la largeur est inférieure ou égale à 800 pixels */
   .accommodation-detail {
     flex-direction: column; /* La propriété flex-direction: column permet de spécifier que les éléments enfants doivent être affichés verticalement */
   }
@@ -152,11 +202,15 @@
 
   .accommodation-detail__content {
     width: 100%;
-    padding: var(--padding-medium); /* La valeur var(--padding-medium) fait référence à l'espacement moyen défini dans le fichier global.css */
+    padding: var(
+      --padding-medium
+    ); /* La valeur var(--padding-medium) fait référence à l'espacement moyen défini dans le fichier global.css */
   }
 
   .accommodation-detail__commodities {
-    padding: var(--padding-medium); /* La valeur var(--padding-medium) fait référence à l'espacement moyen défini dans le fichier global.css */
+    padding: var(
+      --padding-medium
+    ); /* La valeur var(--padding-medium) fait référence à l'espacement moyen défini dans le fichier global.css */
   }
 
   .commodities__title {
@@ -164,7 +218,10 @@
   }
 
   .commodities__list {
-    grid-template-columns: repeat(1, 1fr); /* La propriété grid-template-columns: repeat(1, 1fr) permet de spécifier le nombre de colonnes et la largeur de chaque colonne */
+    grid-template-columns: repeat(
+      1,
+      1fr
+    ); /* La propriété grid-template-columns: repeat(1, 1fr) permet de spécifier le nombre de colonnes et la largeur de chaque colonne */
     text-align: center;
   }
 }

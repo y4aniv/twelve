@@ -3,7 +3,8 @@ const sliderLength = document.getElementsByClassName(
 )[0].children.length; // Récupérer la longueur du slider afin de savoir combien d'images sont présentes
 let sliderIndex = 0; // Initialiser l'index du slider à 0
 
-setInterval(() => { // Créer un intervalle pour changer les images du slider
+setInterval(() => {
+  // Créer un intervalle pour changer les images du slider
   sliderIndex = (sliderIndex + 1) % sliderLength; // Incrémenter l'index du slider
   document.getElementsByClassName("accommodation-detail__slider")[0].children[
     sliderIndex
@@ -13,8 +14,10 @@ setInterval(() => { // Créer un intervalle pour changer les images du slider
   ].style.opacity = 0; // Masquer l'image précédente
 }, 3000); // Changer l'image toutes les 3 secondes
 
-gsap.to(".commodities__list li", { // Animer les éléments de la liste des commodités
-  scrollTrigger: { // Utiliser le déclencheur de défilement pour déclencher l'animation
+gsap.to(".commodities__list li", {
+  // Animer les éléments de la liste des commodités
+  scrollTrigger: {
+    // Utiliser le déclencheur de défilement pour déclencher l'animation
     trigger: ".commodities__list", // Utiliser l'élément .commodities__list comme déclencheur
     start: "top 80%", // Déclencher l'animation lorsque le déclencheur est à 80% de la fenêtre
     end: "bottom center", // Arrêter l'animation lorsque le déclencheur est à 50% de la fenêtre
