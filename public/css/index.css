@@ -134,7 +134,7 @@
 }
 
 .dining__image {
-  background: url("/img/dining-index.jpg") no-repeat center 40% / cover; /* Utilisation de la propriété background pour afficher une image de fond */ /* La valeur center 40% permet de centrer l'image horizontalement et de la positionner à 40% de la hauteur de l'élément parent */
+  background: url("/img/dining-index.jpg") no-repeat center 70% / cover; /* Utilisation de la propriété background pour afficher une image de fond */ /* La valeur center 70% permet de centrer l'image horizontalement et de la positionner à 70% de la hauteur de l'élément parent */
 }
 
 @media screen and (max-width: 800px) {
