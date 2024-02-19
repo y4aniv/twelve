@@ -60,6 +60,19 @@ document
     });
   });
 
+document.getElementById('button-next').addEventListener('click', function () { // Ajouter un écouteur d'événements sur le bouton suivant
+  gsap.to('.step-1', {
+    opacity: 0, // Masquer l'étape 1
+    display: 'none', // Masquer l'étape 1 (éviter les problèmes d'accessibilité)
+    onComplete: function () { // À la fin de l'animation
+      gsap.to('.step-2', {
+        opacity: 1, // Afficher l'étape 2
+        display: 'block', // Afficher l'étape 2 (éviter les problèmes d'accessibilité)
+      })
+    }
+  })
+})
+
 var allIngredients = [] // Créer un tableau pour stocker les ingrédients
 var searchInput = document.getElementById('input-ingredient') // Récupérer l'élément input pour la recherche d'ingrédients
 
