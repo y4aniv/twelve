@@ -95,6 +95,7 @@ function addIngredient(name, type) { // Créer une fonction pour ajouter un ingr
     document.querySelector(`.choices__item[data-ingredient="${name}"]`).style.display = 'none' // Masquer l'ingrédient dans la liste des choix
   } else { // Si l'ingrédient n'est pas déjà présent
     document.getElementById('empty-ingredients').style.display = 'none' // Masquer le message d'ingrédients vides car il y a au moins un ingrédient
+    document.getElementById('button-validate').removeAttribute('disabled') // Activer le bouton de validation car il y a au moins un ingrédient
     document.querySelector(`.choices__item[data-ingredient="${name}"]`).style.display = 'none' // Masquer l'ingrédient dans la liste des choix
     allIngredients.push(name) // Ajouter l'ingrédient au tableau
     document.getElementById('list-ingredients').innerHTML += `<li class="ingredients__item" data-ingredient="${name}" onclick='removeIngredient("${name}")'><p>${name}</p><sub>${type}</sub></li>` // Ajouter l'ingrédient à la liste des ingrédients
@@ -110,7 +111,37 @@ function removeIngredient(name) { // Créer une fonction pour supprimer un ingr�
 
   if (allIngredients.length === 0) { // Vérifier si le tableau est vide
     document.getElementById('empty-ingredients').style.display = 'block' // Afficher le message d'ingrédients vides
+    document.getElementById('button-validate').setAttribute('disabled', 'disabled') // Désactiver le bouton de validation
   }
+}
+
+function validateCocktail(){ // Créer une fonction pour valider le cocktail
+  fetch('/api/cocktail', { // Effectuer une requête POST
+    method: 'POST', // Utiliser la méthode POST
+    headers: {
+      'Content-Type': 'application/json' // Définir le type de contenu
+    },
+    body: JSON.stringify({ // Convertir les données en JSON
+      ingredients: allIngredients // Ajouter les ingrédients à la requête
+    })
+  }).then(function(response){ // Récupérer la réponse de la requête
+    return response.json() // Renvoyer la réponse au format JSON
+  }).then(function(data){ // Récupérer les données
+    document.querySelector('#qrcode img').src = `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${window.location.origin}/cocktail/${data.id}&bgcolor=fdfaf6&color=0d0700` // Générer un code QR avec l'URL du cocktail
+    gsap.to('.step-2', {
+      opacity: 0, // Masquer l'étape 2
+      display: 'none', // Masquer l'étape 2 (éviter les problèmes d'accessibilité)
+      onComplete: function(){ // À la fin de l'animation
+        gsap.to('.step-3', {
+          opacity: 1, // Afficher l'étape 3
+          display: 'block', // Afficher l'étape 3 (éviter les problèmes d'accessibilité)
+        })
+      }
+    })
+  }).catch(function(error){ // Gérer les erreurs
+    alert('Une erreur est survenue. Veuillez réessayer plus tard.') // Afficher un message d'erreur
+    window.location.reload() // Recharger la page
+  })
 }
 
 let timeout = null // Créer une variable pour stocker le délai de la recherche
