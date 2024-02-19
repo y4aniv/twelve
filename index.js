@@ -17,7 +17,10 @@ app.use(bodyParser.urlencoded({ extended: true })); // Permet de parser les requ
 app.use(compression());
 
 // Configurer Express pour servir les fichiers statiques depuis le dossier public
-app.use(express.static("public"));
+app.use(express.static("public", {
+  maxAge: "1y", // Définir la durée de mise en cache à 1 an
+  etag: false, // Désactiver la validation ETag pour améliorer les performances
+}));
 app.use("/css", express.static(__dirname + "public/css"));
 app.use("/js", express.static(__dirname + "public/js"));
 app.use("/img", express.static(__dirname + "public/img"));
