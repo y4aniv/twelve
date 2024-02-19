@@ -72,29 +72,27 @@
         </div>
     </div>
     <div class="cocktail-builder">
-        <p class="cocktail__close" id="cocktail-close">FERMER</p>
-        <div class="cocktail__content">
-            <h2 class="cocktail__title">Concevoir un cocktail</h2>
-            <p class="cocktail__description">Concevez votre cocktail sur-mesure en sélectionnant parmis plus de 400 spiritueux, liqueurs, sirops et
-                garnitures.</p>
+        <p class="builder__close" id="builder-close">FERMER</p>
+        <div class="builder__step step-1">
+            <h2 class="builder__title">Concevez votre cocktail</h2>
+            <p class="builder__description">Choisissez parmis <%= ingredients.length %> ingrédients pour créer votre cocktail sur-mesure.</p>
+            <button class="builder__button" id="button-next">Commencer</button>
         </div>
-        <div class="separator"></div>
-        <div class="cocktail__labs">
-            <div class="labs__ingredients">
-                <h3 class="labs__title">Ingrédients de votre cocktail</h3>
-                <ul class="labs__list" id="labs-list">
+        <div class="builder__step step-2">
+            <h2 class="builder__title">Ajoutez des ingrédients</h2>
+            <div class="builder__ingredients">
+                <h3 class="ingredients__title">Ingrédients de votre cocktail</h3>
+                <ul class="ingredients__list" id="list-ingredients">
                 </ul>
+                <p class="ingredients__empty" id="empty-ingredients">Aucun ingrédient</p>
             </div>
-            <div class="labs__form">
-                <h3 class="labs__title">Ajouter un ingrédient</h3>
-                <input type="text" class="labs__input" id="labs-search" placeholder="Rechercher un ingrédient">
-                    <ul class="labs__results" id="labs-results">
-                    </ul>
+            <div class="builder__choices">
+                <h3 class="choices__title">Choisissez un ingrédient</h3>
+                <input type="text" class="choices__input" id="input-ingredient" placeholder="Rechercher un ingrédient">
+                <ul class="choices__list" id="list-choices"></ul>
+                </ul>
+                <p class="choices__empty" id="empty-choices">Aucun résultat</p>
             </div>
-            <button class="labs__button" id="next-step" disabled>Continuer</button>
-        </div>
-        <div class="cocktail__qr">
-            <img id="cocktail-qr" draggable="false" />
         </div>
     </div>
     <%- include('../partials/footer') %>
