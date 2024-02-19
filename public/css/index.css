@@ -24,7 +24,7 @@
 }
 
 .keywords__text {
-  font-size: 30px;
+  font-size: var(--font-size-large); /* La valeur var(--font-size-large) fait référence à la taille de police large définie dans le fichier global.css */
 }
 
 .accommodation,
@@ -53,7 +53,7 @@
   position: relative; /* La propriété position: relative permet de positionner un élément par rapport à sa position initiale */
   width: 40%;
   height: 100%;
-  padding: 50px;
+  padding: var(--padding-large); /* La valeur var(--padding-large) fait référence à l'espacement large défini dans le fichier global.css */
   display: flex; /* La propriété display: flex permet de créer un conteneur flexible pour les éléments enfants */
   flex-wrap: nowrap; /* La propriété flex-wrap: nowrap permet de spécifier que les éléments enfants ne doivent pas être enroulés sur plusieurs lignes */
   justify-content: flex-end; /* La propriété justify-content: flex-end permet de spécifier que les éléments enfants doivent être alignés à droite */
@@ -65,19 +65,19 @@
 .accommodation__title,
 .dining__title {
   font-family: var(--font-secondary); /* La propriété font-family permet de spécifier la police de caractères à utiliser pour le texte */ /* La valeur var(--font-secondary) fait référence à la police de caractères "Syne" définie dans le fichier global.css */
-  font-size: 30px;
+  font-size: var(--font-size-large); /* La valeur var(--font-size-large) fait référence à la taille de police large définie dans le fichier global.css */
 }
 
 .accommodation__description,
 .dining__description {
   margin-top: 20px;
-  font-size: 20px;
+  font-size: var(--font-size-medium); /* La valeur var(--font-size-medium) fait référence à la taille de police moyenne définie dans le fichier global.css */
 }
 
 .accommodation__author,
 .dining__author {
   margin-top: 10px;
-  font-size: 20px;
+  font-size: var(--font-size-medium); /* La valeur var(--font-size-medium) fait référence à la taille de police moyenne définie dans le fichier global.css */
 }
 
 .accommodation__button,
@@ -85,10 +85,10 @@
   position: relative; /* La propriété position: relative permet de positionner un élément par rapport à sa position initiale */
   width: 100%;
   min-height: 50px; /* La propriété min-height permet de spécifier la hauteur minimale d'un élément */
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: var(--padding-small); /* La valeur var(--padding-small) fait référence à l'espacement petit défini dans le fichier global.css */
+  padding-bottom: var(--padding-small); /* La valeur var(--padding-small) fait référence à l'espacement petit défini dans le fichier global.css */
   margin-top: 20px;
-  font-size: 20px;
+  font-size: var(--font-size-medium); /* La valeur var(--font-size-medium) fait référence à la taille de police moyenne définie dans le fichier global.css */
   background-color: var(--color-black); /* La valeur var(--color-black) fait référence à la couleur noire définie dans le fichier global.css */
   color: var(--color-white); /* La valeur var(--color-white) fait référence à la couleur blanche définie dans le fichier global.css */
   border: none; /* La propriété border: none permet de supprimer les bordures d'un élément */
@@ -121,7 +121,7 @@
   .dining__content {
     width: 100%;
     height: auto;
-    padding: 20px;
+    padding: var(--padding-medium); /* La valeur var(--padding-medium) fait référence à l'espacement moyen défini dans le fichier global.css */
     justify-content: center; /* La propriété justify-content: center permet de spécifier que les éléments enfants doivent être alignés au centre */
   }
   .accommodation__image,
