@@ -19,9 +19,7 @@
   --padding-medium: 20px; /* La valeur var(--padding-medium) fait référence à la marge "20px" définie dans le fichier global.css */
   --padding-large: 50px; /* La valeur var(--padding-large) fait référence à la marge "50px" définie dans le fichier global.css */
 
-  --gap: var(
-    --gap
-  ); /* La valeur var(--gap) fait référence à l'espacement "20px" défini dans le fichier global.css */
+  --gap: 20px; /* La valeur var(--gap) fait référence à l'espacement "20px" défini dans le fichier global.css */
 }
 
 * {
