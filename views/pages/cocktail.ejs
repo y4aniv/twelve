@@ -2,7 +2,7 @@
 <html lang="fr">
 
 <head>
-    <%- include('../partials/head') %>
+    <%- include('../partials/head') %> <!-- Import du fichier head.ejs qui contient les balises meta, link et script communes à toutes les pages -->
     <link rel="stylesheet" href="/css/cocktail.css">
 </head>
 
@@ -13,9 +13,9 @@
     <div class="cocktail">
         <h1 class="cocktail__title">Ingredients</h1>
         <ul class="ingredients">
-            <% for (let i = 0; i < ingredients.length; i++) { %>
-                <li class="ingredients__item"><%= ingredients[i] %></li>
-            <% } %>
+            <% for (let i = 0; i < ingredients.length; i++) { %> <!-- Cette boucle permet de parcourir le tableau ingredients et d'afficher les éléments de ce tableau -->
+                <li class="ingredients__item"><%= ingredients[i] %></li> <!-- Cette ligne permet d'afficher chaque élément du tableau ingredients -->
+            <% } %> <!-- Cette balise permet de fermer la boucle for -->
         </ul>
     </div>
 </body>
