@@ -1,79 +1,78 @@
 .header {
-  position: relative;
+  position: relative; /* La propriété position: relative permet de positionner un élément par rapport à sa position initiale */
   width: 100%;
   height: 125px;
   background: url("/img/header-accommodation_detail.jpg") no-repeat center 70% /
-    cover;
-  filter: saturate(100%);
+    cover; /* Utilisation de la propriété background pour afficher une image de fond */
 }
 
 .header__logo {
-  position: relative;
+  position: relative; /* La propriété position: relative permet de positionner un élément par rapport à sa position initiale */
   top: 10px;
   left: 50px;
   width: 100px;
   height: 100px;
   margin-bottom: 10px;
-  background: url("/img/logo-white.svg") no-repeat center/contain;
+  background: url("/img/logo-white.svg") no-repeat center/contain; /* Utilisation de la propriété background pour afficher une image de fond */
 }
 
 .accommodation-detail__title {
-  position: relative;
+  position: relative; /* La propriété position: relative permet de positionner un élément par rapport à sa position initiale */
   width: 100%;
   margin-top: 50px;
   margin-bottom: 50px;
   text-align: center;
   font-size: 30px;
-  font-weight: 700;
-  letter-spacing: 2px;
-  color: var(--color-black);
-  font-family: var(--font-secondary);
+  font-weight: 700; /* La propriété font-weight: 700 permet de spécifier l'épaisseur des caractères */
+  letter-spacing: 2px; /* La propriété letter-spacing: 2px permet de spécifier l'espacement entre les caractères */
+  color: var(--color-black); /* La valeur var(--color-black) fait référence à la couleur noire définie dans le fichier global.css */
+  font-family: var(--font-secondary); /* La valeur var(--font-secondary) fait référence à la police de caractères "Syne" définie dans le fichier global.css */
 }
 
 .accommodation-detail {
-  position: relative;
+  position: relative; /* La propriété position: relative permet de positionner un élément par rapport à sa position initiale */
   width: 95%;
   left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: normal;
-  align-items: normal;
-  align-content: normal;
-  gap: 20px;
+  transform: translateX(-50%); /* La propriété transform: translateX permet de déplacer un élément horizontalement sans modifier le positionnement des autres éléments */
+  display: flex; /* La propriété display: flex permet de créer un conteneur flexible pour les éléments enfants */
+  flex-direction: row; /* La propriété flex-direction: row permet de spécifier que les éléments enfants doivent être affichés horizontalement */
+  flex-wrap: nowrap; /* La propriété flex-wrap: nowrap permet de spécifier que les éléments enfants ne doivent pas être enroulés sur plusieurs lignes */
+  justify-content: normal; /* La propriété justify-content: normal permet de spécifier que les éléments enfants doivent être alignés de manière normale */
+  align-items: normal; /* La propriété align-items: normal permet de spécifier que les éléments enfants doivent être alignés de manière normale */
+  align-content: normal; /* La propriété align-content: normal permet de spécifier que les éléments enfants doivent être alignés de manière normale */
+  gap: 20px; /* La propriété gap permet de spécifier l'espacement entre les éléments enfants */
 }
 
 .accommodation-detail__slider {
-  position: relative;
+  position: relative; /* La propriété position: relative permet de positionner un élément par rapport à sa position initiale */
   width: 60%;
   margin: 0;
   padding: 0;
-  overflow: hidden;
+  overflow: hidden; /* La propriété overflow: hidden permet de cacher le contenu qui dépasse de la zone définie */
 }
 
 .slider__item {
-  position: absolute;
+  position: absolute; /* La propriété position: absolute permet de positionner un élément par rapport à son premier parent positionné */
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
-  object-fit: cover;
-  object-position: center;
+  object-fit: cover; /* La propriété object-fit: cover permet de spécifier comment l'image doit s'adapter à la hauteur et à la largeur de son conteneur */
+  object-position: center; /* La propriété object-position: center permet de spécifier la position de l'image par rapport à son conteneur */
   opacity: 0;
-  transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease; /* La propriété transition permet de spécifier les propriétés à animer, la durée de l'animation et la fonction d'accélération de l'animation */
 }
 
 .accommodation-detail__content {
-  position: relative;
+  position: relative; /* La propriété position: relative permet de positionner un élément par rapport à sa position initiale */
   width: 40%;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: normal;
-  align-items: stretch;
-  align-content: stretch;
-  gap: 20px;
+  display: flex; /* La propriété display: flex permet de créer un conteneur flexible pour les éléments enfants */
+  flex-direction: column; /* La propriété flex-direction: column permet de spécifier que les éléments enfants doivent être affichés verticalement */
+  flex-wrap: nowrap; /* La propriété flex-wrap: nowrap permet de spécifier que les éléments enfants ne doivent pas être enroulés sur plusieurs lignes */
+  justify-content: normal; /* La propriété justify-content: normal permet de spécifier que les éléments enfants doivent être alignés de manière normale */
+  align-items: stretch; /* La propriété align-items: stretch permet de spécifier que les éléments enfants doivent être étirés pour remplir le conteneur */
+  align-content: stretch; /* La propriété align-content: stretch permet de spécifier que les éléments enfants doivent être étirés pour remplir le conteneur */
+  gap: 20px; /* La propriété gap permet de spécifier l'espacement entre les éléments enfants */
   padding: 50px;
 }
 
@@ -82,68 +81,68 @@
 }
 
 .content__button {
-  position: relative;
+  position: relative; /* La propriété position: relative permet de positionner un élément par rapport à sa position initiale */
   width: 100%;
-  min-height: 50px;
+  min-height: 50px; /* La propriété min-height: 50px permet de spécifier la hauteur minimale de l'élément */
   padding-top: 10px;
   padding-bottom: 10px;
   font-size: 20px;
-  background-color: var(--color-black);
-  color: var(--color-white);
-  border: none;
-  cursor: pointer;
-  font-family: var(--font-primary);
+  background-color: var(--color-black); /* La valeur var(--color-black) fait référence à la couleur noire définie dans le fichier global.css */
+  color: var(--color-white); /* La valeur var(--color-white) fait référence à la couleur blanche définie dans le fichier global.css */
+  border: none; /* La propriété border: none permet de supprimer les bordures d'un élément */
+  cursor: pointer; /* La propriété cursor: pointer permet de spécifier que le curseur doit changer lorsqu'il survole un élément */
+  font-family: var(--font-primary); /* La valeur var(--font-primary) fait référence à la police de caractères "Outfit" définie dans le fichier global.css */
 }
 
 .accommodation-detail__commodities {
-  position: relative;
+  position: relative; /* La propriété position: relative permet de positionner un élément par rapport à sa position initiale */
   width: 95%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-50%); /* La propriété transform: translateX permet de déplacer un élément horizontalement sans modifier le positionnement des autres éléments */
   margin-top: 50px;
 }
 
 .commodities__separator {
-  position: relative;
+  position: relative; /* La propriété position: relative permet de positionner un élément par rapport à sa position initiale */
   width: 100%;
   height: 1px;
-  background-color: var(--color-black);
+  background-color: var(--color-black); /* La valeur var(--color-black) fait référence à la couleur noire définie dans le fichier global.css */
   margin-bottom: 50px;
   opacity: 0.5;
 }
 
 .commodities__title {
-  position: relative;
+  position: relative; /* La propriété position: relative permet de positionner un élément par rapport à sa position initiale */
   width: 95%;
   margin-bottom: 50px;
   text-align: left;
   font-size: 30px;
-  font-weight: 700;
-  letter-spacing: 2px;
-  color: var(--color-black);
-  font-family: var(--font-secondary);
+  font-weight: 700; /* La propriété font-weight: 700 permet de spécifier l'épaisseur des caractères */
+  letter-spacing: 2px; /* La propriété letter-spacing: 2px permet de spécifier l'espacement entre les caractères */
+  color: var(--color-black); /* La valeur var(--color-black) fait référence à la couleur noire définie dans le fichier global.css */
+  font-family: var(--font-secondary); /* La valeur var(--font-secondary) fait référence à la police de caractères "Syne" définie dans le fichier global.css */
 }
 
 .commodities__list {
-  position: relative;
+  position: relative; /* La propriété position: relative permet de positionner un élément par rapport à sa position initiale */
   width: 100%;
-  list-style: none;
+  list-style: none; /* La propriété list-style: none permet de supprimer les puces des listes */
   padding: 0;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  display: grid; /* La propriété display: grid permet de créer un conteneur de type grille pour les éléments enfants */
+  grid-template-columns: repeat(3, 1fr); /* La propriété grid-template-columns: repeat(3, 1fr) permet de spécifier le nombre de colonnes et la largeur de chaque colonne */
+  gap: 20px; /* La propriété gap permet de spécifier l'espacement entre les éléments enfants */
 }
 
 .commodities__list li {
   font-size: 20px;
   opacity: 0;
-  transform: translateY(20px);
-  color: var(--color-black);
+  transform: translateY(20px); /* La propriété transform: translateY(20px) permet de déplacer un élément de 20 pixels vers le bas */
+  color: var(--color-black); /* La valeur var(--color-black) fait référence à la couleur noire définie dans le fichier global.css */
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 800px) { /* La règle @media screen and (max-width: 800px) permet de définir des styles spécifiques pour les écrans dont la largeur est inférieure ou égale à 800 pixels */
   .accommodation-detail {
-    flex-direction: column;
+    flex-direction: column; /* La propriété flex-direction: column permet de spécifier que les éléments enfants doivent être affichés verticalement */
   }
 
   .accommodation-detail__slider {
@@ -165,7 +164,7 @@
   }
 
   .commodities__list {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(1, 1fr); /* La propriété grid-template-columns: repeat(1, 1fr) permet de spécifier le nombre de colonnes et la largeur de chaque colonne */
     text-align: center;
   }
 }
