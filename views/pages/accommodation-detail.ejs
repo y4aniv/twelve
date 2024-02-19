@@ -2,7 +2,7 @@
 <html lang="fr">
 
 <head>
-    <%- include('../partials/head') %>
+    <%- include('../partials/head') %> <!-- Import du fichier head.ejs qui contient les balises meta, link et script communes à toutes les pages -->
     <link rel="stylesheet" href="/css/accommodation-detail.css">
     <script src="/js/accommodation-detail.js" defer></script>
 </head>
@@ -13,19 +13,19 @@
             <div class="header__logo"></div>
         </a>
     </div>
-    <h1 class="accommodation-detail__title"><%= accommodation.name.toUpperCase() %></h1>
+    <h1 class="accommodation-detail__title"><%= accommodation.name.toUpperCase() %></h1> <!-- Cette ligne permet d'afficher le nom de l'hébergement en majuscules -->
     <div class="accommodation-detail">
         <div class="accommodation-detail__slider">
-            <% for (let i=0; i < accommodation.slider; i++) { %>
-                <% if (i === 0) { %>
-                    <img class="slider__item" src="/img/accommodation/slider/<%= accommodation.slug %>/<%= i %>.jpg" style="opacity: 1;" draggable="false">
-                <% } else { %>
-                    <img class="slider__item" src="/img/accommodation/slider/<%= accommodation.slug %>/<%= i %>.jpg" draggable="false">
-                <% } %>
-            <% } %>
+            <% for (let i=0; i < accommodation.slider; i++) { %> <!-- Cette boucle permet de parcourir le tableau slider de l'objet accommodation et d'afficher les éléments de ce tableau -->
+                <% if (i === 0) { %> <!-- Cette condition permet de vérifier si l'index de l'élément est égal à 0 -->
+                    <img class="slider__item" src="/img/accommodation/slider/<%= accommodation.slug %>/<%= i %>.jpg" style="opacity: 1;" draggable="false"> <!-- Cette ligne permet d'afficher l'image de chaque élément du tableau slider de l'objet accommodation -->
+                <% } else { %> <!-- Cette balise permet de fermer la condition -->
+                    <img class="slider__item" src="/img/accommodation/slider/<%= accommodation.slug %>/<%= i %>.jpg" draggable="false"> <!-- Cette ligne permet d'afficher l'image de chaque élément du tableau slider de l'objet accommodation -->
+                <% } %> <!-- Cette balise permet de fermer la condition -->
+            <% } %> <!-- Cette balise permet de fermer la boucle for -->
         </div>
         <div class="accommodation-detail__content">
-            <p class="content__description"><%= accommodation.long_description %></p>
+            <p class="content__description"><%= accommodation.long_description %></p> <!-- Cette ligne permet d'afficher la description de l'hébergement -->
             <a href="https://fr.lartisien.com/hotel/amanzoe" target="_blank">
                 <button class="content__button">Réserver maintenant</button>
             </a>
@@ -35,12 +35,12 @@
         <div class="commodities__separator"></div>
         <h2 class="commodities__title">Avantages exclusifs</h2>
         <ul class="commodities__list">
-            <% for (let i=0; i < accommodation.commodities.length; i++) { %>
-                <li class="list__item"><%= accommodation.commodities[i] %></li>
-            <% } %>
+            <% for (let i=0; i < accommodation.commodities.length; i++) { %> <!-- Cette boucle permet de parcourir le tableau commodities de l'objet accommodation et d'afficher les éléments de ce tableau -->
+                <li class="list__item"><%= accommodation.commodities[i] %></li> <!-- Cette ligne permet d'afficher chaque élément du tableau commodities de l'objet accommodation -->
+            <% } %> <!-- Cette balise permet de fermer la boucle for -->
         </ul>
     </div>
-    <%- include('../partials/footer') %>
+    <%- include('../partials/footer') %> <!-- Import du fichier footer.ejs qui contient le footer commun à toutes les pages -->
 </body>
 
 </html>
