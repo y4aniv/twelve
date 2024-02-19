@@ -28,7 +28,7 @@
   left: 50%;
   transform: translateX(-50%); /* La propriété transform: translateX permet de déplacer un élément horizontalement sans modifier le positionnement des autres éléments */
   text-align: center;
-  font-size: 30px;
+  font-size: var(--font-size-large); /* La valeur var(--font-size-large) fait référence à la taille de police large définie dans le fichier global.css */
   font-family: var(--font-secondary); /* La valeur var(--font-secondary) fait référence à la police de caractères "Syne" définie dans le fichier global.css */
   text-transform: uppercase; /* La propriété text-transform: uppercase permet de convertir le texte en majuscules */
   margin-bottom: 50px;
@@ -37,7 +37,7 @@
 .ingredients__item {
   position: relative; /* La propriété position: relative permet de positionner un élément par rapport à sa position initiale */
   margin-bottom: 10px;
-  font-size: 20px;
+  font-size: var(--font-size-medium); /* La valeur var(--font-size-medium) fait référence à la taille de police moyenne définie dans le fichier global.css */
   opacity: 0.7;
   text-align: center;
 }
