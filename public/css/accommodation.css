@@ -1,100 +1,99 @@
 .header {
-  position: relative;
+  position: relative; /* La propriété position: relative permet de positionner un élément par rapport à sa position initiale */
   width: 100%;
   height: 150vh;
-  background: url("/img/header-accommodation.jpg") no-repeat center 40% / cover;
-  filter: saturate(100%);
+  background: url("/img/header-accommodation.jpg") no-repeat center 40% / cover; /* Utilisation de la propriété background pour afficher une image de fond */
 }
 
 .header__logo {
-  position: sticky;
+  position: sticky; /* La propriété position: sticky permet de fixer un élément à une position donnée lors du scroll et de le décoller une fois que l'élément est atteint */
   top: 10px;
   left: 50px;
   width: 100px;
   height: 100px;
   margin-bottom: 10px;
-  background: url("/img/logo-white.svg") no-repeat center/contain;
+  background: url("/img/logo-white.svg") no-repeat center/contain; /* Utilisation de la propriété background pour afficher une image de fond */
 }
 
 .accommodation__title {
-  position: relative;
+  position: relative; /* La propriété position: relative permet de positionner un élément par rapport à sa position initiale */
   margin-top: 50px;
   width: 95%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-50%); /* La propriété transform: translateX permet de déplacer un élément horizontalement sans modifier le positionnement des autres éléments */
   text-align: center;
   font-size: 30px;
-  font-family: var(--font-secondary);
-  text-transform: uppercase;
+  font-family: var(--font-secondary); /* La valeur var(--font-secondary) fait référence à la police de caractères "Syne" définie dans le fichier global.css */
+  text-transform: uppercase; /* La propriété text-transform: uppercase permet de convertir le texte en majuscules */
 }
 
 .accommodation {
-  position: relative;
+  position: relative; /* La propriété position: relative permet de positionner un élément par rapport à sa position initiale */
   margin-top: 50px;
   width: 95%;
   left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: normal;
-  align-items: normal;
-  align-content: normal;
+  transform: translateX(-50%); /* La propriété transform: translateX permet de déplacer un élément horizontalement sans modifier le positionnement des autres éléments */
+  display: flex; /* La propriété display: flex permet de créer un conteneur flexible pour les éléments enfants */
+  flex-direction: row; /* La propriété flex-direction: row permet de spécifier que les éléments enfants doivent être affichés horizontalement */
+  flex-wrap: nowrap; /* La propriété flex-wrap: nowrap permet de spécifier que les éléments enfants ne doivent pas être enroulés sur plusieurs lignes */
+  justify-content: normal; /* La propriété justify-content: normal permet de spécifier que les éléments enfants doivent être alignés de manière normale */
+  align-items: normal; /* La propriété align-items: normal permet de spécifier que les éléments enfants doivent être alignés de manière normale */
+  align-content: normal; /* La propriété align-content: normal permet de spécifier que les éléments enfants doivent être alignés de manière normale */
 }
 
 .accommodation__sorting {
-  position: relative;
+  position: relative; /* La propriété position: relative permet de positionner un élément par rapport à sa position initiale */
   width: 20%;
   height: 100%;
   padding: 20px;
-  list-style: none;
+  list-style: none; /* La propriété list-style: none permet de supprimer les puces des listes */
 }
 
 .sorting__villa,
 .sorting__pavillon,
 .sorting__all {
-  position: relative;
-  cursor: pointer;
+  position: relative; /* La propriété position: relative permet de positionner un élément par rapport à sa position initiale */
+  cursor: pointer; /* La propriété cursor: pointer permet de spécifier que le curseur doit changer pour indiquer qu'un élément est cliquable */
   margin-bottom: 10px;
   font-size: 20px;
   opacity: 0.7;
 }
 
 .sorting__active {
-  text-decoration: underline;
-  text-underline-offset: 5px;
+  text-decoration: underline; /* La propriété text-decoration: underline permet de souligner le texte */
+  text-underline-offset: 5px; /* La propriété text-underline-offset permet de spécifier l'espacement entre le texte et le soulignement */
   opacity: 1;
 }
 
 .accommodation__content {
-  position: relative;
+  position: relative; /* La propriété position: relative permet de positionner un élément par rapport à sa position initiale */
   padding-left: 20px;
   padding-right: 20px;
-  gap: 20px;
+  gap: 20px; /* La propriété gap permet de spécifier l'espacement entre les éléments enfants */
   width: 80%;
   height: 100%;
-  display: flex;
-  flex-wrap: wrap;
+  display: flex; /* La propriété display: flex permet de créer un conteneur flexible pour les éléments enfants */
+  flex-wrap: wrap; /* La propriété flex-wrap: wrap permet de spécifier que les éléments enfants doivent être enroulés sur plusieurs lignes si nécessaire */
   opacity: 1;
-  transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease; /* La propriété transition permet de spécifier les propriétés CSS à animer */
 }
 
 .content__item {
-  position: relative;
+  position: relative; /* La propriété position: relative permet de positionner un élément par rapport à sa position initiale */
   height: 100%;
-  flex-basis: calc(50% - 10px);
-  cursor: pointer;
+  flex-basis: calc(50% - 10px); /* La propriété flex-basis permet de spécifier la taille de base d'un élément flexible avant que l'espace restant ne soit distribué */ /* La fonction calc() permet de réaliser des calculs en CSS */
+  cursor: pointer; /* La propriété cursor: pointer permet de spécifier que le curseur doit changer pour indiquer qu'un élément est cliquable */
   margin-top: 20px;
   opacity: 0;
-  transform: translateY(20px);
+  transform: translateY(20px); /* La propriété transform: translateY permet de déplacer un élément verticalement sans modifier le positionnement des autres éléments */
 }
 
 .item__poster {
-  position: relative;
+  position: relative; /* La propriété position: relative permet de positionner un élément par rapport à sa position initiale */
   width: 100%;
   height: 300px;
-  overflow: hidden;
-  object-fit: cover;
+  overflow: hidden; /* La propriété overflow: hidden permet de cacher le contenu qui dépasse de la zone définie */
+  object-fit: cover; /* La propriété object-fit: cover permet de spécifier que l'image doit être redimensionnée pour remplir la zone définie */
 }
 
 .item__type {
