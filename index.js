@@ -94,6 +94,7 @@ app.get("/dining", (req, res) => {
       url: "https://" + req.get("host") + req.originalUrl, // Récupérer l'URL complète de la requête
     },
     le12: require("./data/le12.json"), // Charger le menu du restaurant Le 12 depuis le fichier le12.json
+    ingredients: require("./data/ingredients.json"), // Charger les ingrédients depuis le fichier ingredients.json
   });
 });
 
