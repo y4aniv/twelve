@@ -2,24 +2,24 @@
   position: relative;
   width: 100%;
   height: 150vh;
-  background: url("/img/header-index.jpg") no-repeat center 40% / cover;
+  background: url("/img/header-index.jpg") no-repeat center 40% / cover; /* Utilisation de la propriété background pour afficher une image de fond */
 }
 
 .header__logo {
-  position: sticky;
+  position: sticky; /* La propriété position: sticky permet de fixer un élément à une position donnée lors du scroll et de le décoller une fois que l'élément est atteint */
   top: 10px;
   left: 50px;
   width: 100px;
   height: 100px;
   margin-bottom: 10px;
-  background: url("/img/logo-white.svg") no-repeat center/contain;
+  background: url("/img/logo-white.svg") no-repeat center/contain; /* Utilisation de la propriété background pour afficher une image de fond */
 }
 
 .keywords {
-  position: relative;
+  position: relative; /* La propriété position: relative permet de positionner un élément par rapport à sa position initiale */
   width: 95%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-50%); /* La propriété transform: translateX permet de déplacer un élément horizontalement sans modifier le positionnement des autres éléments */
   margin-top: 50px;
 }
 
@@ -33,38 +33,38 @@
   width: 100%;
   height: 150vh;
   margin-top: 50px;
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: normal;
-  align-items: normal;
-  align-content: normal;
+  display: flex; /* La propriété display: flex permet de créer un conteneur flexible pour les éléments enfants */
+  flex-wrap: nowrap; /* La propriété flex-wrap: nowrap permet de spécifier que les éléments enfants ne doivent pas être enroulés sur plusieurs lignes */
+  justify-content: normal; /* La propriété justify-content: normal permet de spécifier que les éléments enfants doivent être alignés de manière normale */
+  align-items: normal; /* La propriété align-items: normal permet de spécifier que les éléments enfants doivent être alignés de manière normale */
+  align-content: normal; /* La propriété align-content: normal permet de spécifier que les éléments enfants doivent être alignés de manière normale */
 }
 
 .accommodation {
-  flex-direction: row;
+  flex-direction: row; /* La propriété flex-direction: row permet de spécifier que les éléments enfants doivent être affichés horizontalement */
 }
 
 .dining {
-  flex-direction: row-reverse;
+  flex-direction: row-reverse; /* La propriété flex-direction: row-reverse permet de spécifier que les éléments enfants doivent être affichés horizontalement en sens inverse */
 }
 
 .accommodation__content,
 .dining__content {
-  position: relative;
+  position: relative; /* La propriété position: relative permet de positionner un élément par rapport à sa position initiale */
   width: 40%;
   height: 100%;
   padding: 50px;
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: flex-end;
-  align-items: normal;
-  align-content: normal;
-  flex-direction: column;
+  display: flex; /* La propriété display: flex permet de créer un conteneur flexible pour les éléments enfants */
+  flex-wrap: nowrap; /* La propriété flex-wrap: nowrap permet de spécifier que les éléments enfants ne doivent pas être enroulés sur plusieurs lignes */
+  justify-content: flex-end; /* La propriété justify-content: flex-end permet de spécifier que les éléments enfants doivent être alignés à droite */
+  align-items: normal; /* La propriété align-items: normal permet de spécifier que les éléments enfants doivent être alignés de manière normale */
+  align-content: normal; /* La propriété align-content: normal permet de spécifier que les éléments enfants doivent être alignés de manière normale */
+  flex-direction: column; /* La propriété flex-direction: column permet de spécifier que les éléments enfants doivent être affichés verticalement */
 }
 
 .accommodation__title,
 .dining__title {
-  font-family: var(--font-secondary);
+  font-family: var(--font-secondary); /* La propriété font-family permet de spécifier la police de caractères à utiliser pour le texte */ /* La valeur var(--font-secondary) fait référence à la police de caractères "Syne" définie dans le fichier global.css */
   font-size: 30px;
 }
 
@@ -82,38 +82,36 @@
 
 .accommodation__button,
 .dining__button {
-  position: relative;
+  position: relative; /* La propriété position: relative permet de positionner un élément par rapport à sa position initiale */
   width: 100%;
-  min-height: 50px;
+  min-height: 50px; /* La propriété min-height permet de spécifier la hauteur minimale d'un élément */
   padding-top: 10px;
   padding-bottom: 10px;
   margin-top: 20px;
   font-size: 20px;
-  background-color: var(--color-black);
-  color: var(--color-white);
-  border: none;
-  cursor: pointer;
-  font-family: var(--font-primary);
+  background-color: var(--color-black); /* La valeur var(--color-black) fait référence à la couleur noire définie dans le fichier global.css */
+  color: var(--color-white); /* La valeur var(--color-white) fait référence à la couleur blanche définie dans le fichier global.css */
+  border: none; /* La propriété border: none permet de supprimer les bordures d'un élément */
+  cursor: pointer; /* La propriété cursor: pointer permet de spécifier que le curseur doit changer lorsqu'il survole un élément */
+  font-family: var(--font-primary); /* La valeur var(--font-primary) fait référence à la police de caractères "Outfit" définie dans le fichier global.css */
 }
 
 .accommodation__image,
 .dining__image {
-  position: relative;
+  position: relative; /* La propriété position: relative permet de positionner un élément par rapport à sa position initiale */
   width: 60%;
   height: 100%;
 }
 
 .accommodation__image {
-  background: url("/img/accommodation-index.jpg") no-repeat center 40% / cover;
-  filter: saturate(100%);
+  background: url("/img/accommodation-index.jpg") no-repeat center 40% / cover; /* Utilisation de la propriété background pour afficher une image de fond */ /* La valeur center 40% permet de centrer l'image horizontalement et de la positionner à 40% de la hauteur de l'élément parent */
 }
 
 .dining__image {
-  background: url("/img/dining-index.jpg") no-repeat center 40% / cover;
-  filter: saturate(100%);
+  background: url("/img/dining-index.jpg") no-repeat center 40% / cover; /* Utilisation de la propriété background pour afficher une image de fond */ /* La valeur center 40% permet de centrer l'image horizontalement et de la positionner à 40% de la hauteur de l'élément parent */
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 800px) { /* La règle @media screen and (max-width: 800px) permet de définir des styles spécifiques pour les écrans dont la largeur est inférieure ou égale à 800 pixels */
   .accommodation,
   .dining {
     flex-direction: column-reverse;
@@ -124,7 +122,7 @@
     width: 100%;
     height: auto;
     padding: 20px;
-    justify-content: center;
+    justify-content: center; /* La propriété justify-content: center permet de spécifier que les éléments enfants doivent être alignés au centre */
   }
   .accommodation__image,
   .dining__image {
