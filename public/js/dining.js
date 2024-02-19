@@ -38,16 +38,14 @@ document.getElementById('menu-close').addEventListener('click', () => {
   });
 });
 
-document
-  .getElementById('button-cocktails')
-  .addEventListener('click', () => {
-    // Ajouter un écouteur d'événements sur le bouton de cocktails
-    gsap.to('.cocktail-builder', {
-      // Ouvrir le cocktail builder
-      x: 0, // Déplacer le cocktail builder vers la droite
-      duration: 0.5, // Définir la durée de l'animation
-    });
+document.getElementById('button-cocktails').addEventListener('click', () => {
+  // Ajouter un écouteur d'événements sur le bouton de cocktails
+  gsap.to('.cocktail-builder', {
+    // Ouvrir le cocktail builder
+    x: 0, // Déplacer le cocktail builder vers la droite
+    duration: 0.5, // Définir la durée de l'animation
   });
+});
 
 document.getElementById('builder-close').addEventListener('click', () => {
   // Ajouter un écouteur d'événements sur le bouton de fermeture du cocktail builder
@@ -143,9 +141,10 @@ function validateCocktail() {
       ingredients: allIngredients, // Ajouter les ingrédients à la requête
     }),
   })
-    .then((response) =>
-      // Récupérer la réponse de la requête
-      response.json(), // Renvoyer la réponse au format JSON
+    .then(
+      (response) =>
+        // Récupérer la réponse de la requête
+        response.json(), // Renvoyer la réponse au format JSON
     )
     .then((data) => {
       // Récupérer les données
@@ -186,9 +185,10 @@ searchInput.addEventListener('input', () => {
     // Ajouter un nouveau délai
     const value = searchInput.value.toLowerCase(); // Récupérer la valeur de l'élément input
     fetch(`/api/ingredients/?q=${value}`) // Effectuer une requête GET sur l'API /api/ingredients/ avec la valeur de l'élément input
-      .then((response) =>
-        // Récupérer la réponse de la requête
-        response.json(), // Renvoyer la réponse au format JSON
+      .then(
+        (response) =>
+          // Récupérer la réponse de la requête
+          response.json(), // Renvoyer la réponse au format JSON
       ) // Récupérer la réponse au format JSON
       .then((data) => {
         // Récupérer les données
