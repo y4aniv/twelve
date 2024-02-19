@@ -9,6 +9,16 @@
 
   --font-primary: "Outfit", sans-serif; /* La valeur var(--font-primary) fait référence à la police de caractères "Outfit" définie dans le fichier global.css */ /* Si la police de caractères "Outfit" n'est pas disponible, le navigateur utilisera une police de caractères sans-serif par défaut */
   --font-secondary: "Syne", sans-serif; /* La valeur var(--font-secondary) fait référence à la police de caractères "Syne" définie dans le fichier global.css */ /* Si la police de caractères "Syne" n'est pas disponible, le navigateur utilisera une police de caractères sans-serif par défaut */
+
+  --font-size-small: 15px; /* La valeur var(--font-size-small) fait référence à la taille de police "15px" définie dans le fichier global.css */
+    --font-size-medium: 20px; /* La valeur var(--font-size-medium) fait référence à la taille de police "20px" définie dans le fichier global.css */
+    --font-size-large: 30px; /* La valeur var(--font-size-large) fait référence à la taille de police "50px" définie dans le fichier global.css */
+
+    --padding-small: 10px; /* La valeur var(--padding-small) fait référence à la marge "10px" définie dans le fichier global.css */
+    --padding-medium: 20px; /* La valeur var(--padding-medium) fait référence à la marge "20px" définie dans le fichier global.css */
+    --padding-large: 50px; /* La valeur var(--padding-large) fait référence à la marge "50px" définie dans le fichier global.css */
+
+    --gap: var(--gap); /* La valeur var(--gap) fait référence à l'espacement "20px" défini dans le fichier global.css */
 }
 
 * {
