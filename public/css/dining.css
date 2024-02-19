@@ -296,6 +296,7 @@
   justify-content: normal; /* La propriété justify-content: normal permet de spécifier que les éléments enfants doivent être alignés de manière normale */
   align-items: normal; /* La propriété align-items: normal permet de spécifier que les éléments enfants doivent être alignés de manière normale */
   align-content: normal; /* La propriété align-content: normal permet de spécifier que les éléments enfants doivent être alignés de manière normale */
+  transform: translateX(-100%); /* La propriété transform: translateX(-100%) permet de déplacer un élément de 100% de sa largeur vers la gauche sans modifier le positionnement des autres éléments */
 }
 
 .builder__close {
@@ -363,12 +364,28 @@
 
 }
 
+.builder__button:disabled{ /* La pseudo-classe :disabled permet de sélectionner un élément lorsqu'il est désactivé */
+  background-color: var(
+    --color-grey
+  ); /* La valeur var(--color-grey) fait référence à la couleur grise définie dans le fichier global.css */
+  color: var(
+    --color-black
+  ); /* La valeur var(--color-black) fait référence à la couleur noire définie dans le fichier global.css */
+  cursor: not-allowed; /* La propriété cursor: not-allowed permet de spécifier que le curseur de la souris est interdit lorsqu'il survole un élément */
+}
+
 .step-1 {
-  display: block;
+  display: block; /* La propriété display: block permet d'afficher un élément en tant que bloc */
 }
 
 .step-2 {
-  display: none;
+  display: none; /* La propriété display: none permet de masquer un élément */
+  opacity: 0;
+}
+
+.step-3 {
+  display: none; /* La propriété display: none permet de masquer un élément */
+  opacity: 0;
 }
 
 .builder__ingredients, .builder__choices {
@@ -475,6 +492,21 @@
 
 .choices__empty {
   display: none; /* La propriété display: none permet de masquer un élément */
+  margin-bottom: 20px;
+}
+
+.builder__qrcode {
+  margin-bottom: 20px;
+  margin-top: 50px;
+}
+
+.builder__qrcode img {
+  position: relative; /* La propriété position: relative permet de positionner un élément par rapport à sa position initiale */
+  left: 50%;
+  width: 100px;
+  transform: translateX(
+    -50%
+  ); /* La propriété transform: translateX permet de déplacer un élément horizontalement sans modifier le positionnement des autres éléments */
 }
 
 @media screen and (max-width: 800px) {
