@@ -107,7 +107,7 @@ function addIngredient(name, type) {
     ).style.display = 'none'; // Masquer l'ingrédient dans la liste des choix
     allIngredients.push(name); // Ajouter l'ingrédient au tableau
     document.getElementById('list-ingredients').innerHTML
-      += `<li class="ingredients__item" data-ingredient="${name}" onclick='removeIngredient("${name}")'><p>${name}</p><sub>${type}</sub></li>`; // Ajouter l'ingrédient à la liste des ingrédients
+      += `<li class="ingredients__item" data-ingredient="${name}" onclick='removeIngredient("${escapeApostrophe(name)}")'><p>${name}</p><sub>${type}</sub></li>`; // Ajouter l'ingrédient à la liste des ingrédients
   }
 }
 
@@ -169,6 +169,15 @@ function validateCocktail() {
     });
 }
 
+function escapeApostrophe(string) {
+  // Créer une fonction pour échapper les apostrophes
+  /**
+   * @param {string} string - La chaîne de caractères à modifier
+   * @returns {string} La chaîne de caractères modifiée
+   */
+  return string.replace(/'/g, '&#39;'); // Remplacer les apostrophes par leur équivalent HTML
+}
+
 let timeout = null; // Créer une variable pour stocker le délai de la recherche
 searchInput.addEventListener('input', () => {
   // Ajouter un écouteur d'événements sur l'élément input pour la recherche d'ingrédients
@@ -198,7 +207,7 @@ searchInput.addEventListener('input', () => {
             } else {
               // Si l'ingrédient n'est pas déjà présent
               document.getElementById('list-choices').innerHTML
-                += `<li class="choices__item" data-ingredient="${ingredient.name}" onclick='addIngredient("${ingredient.name}", "${ingredient.type}")'><p>${highlightResult(ingredient.name, value)}</p><sub>${ingredient.type}</sub></li>`; // Ajouter l'ingrédient à la liste des choix
+                += `<li class="choices__item" data-ingredient="${ingredient.name}" onclick='addIngredient("${escapeApostrophe(ingredient.name)}", "${escapeApostrophe(ingredient.type)}")'><p>${highlightResult(ingredient.name, value)}</p><sub>${ingredient.type}</sub></li>`; // Ajouter l'ingrédient à la liste des choix
             }
           });
         }
