@@ -1,14 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800;900&display=swap");
-:root {
-  --color-white: #fdfaf6;
-  --color-black: #0d0700;
-  --color-red: #d90d00;
-  --color-blue: #0048bc;
-  --color-grey: #f4f4f4;
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap"); /* La règle @import permet d'importer une police de caractères depuis Google Fonts */ /* La police de caractères "Outfit" est importée depuis Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800;900&display=swap"); /* La police de caractères "Syne" est importée depuis Google Fonts */
+:root { /* La pseudo-classe :root permet de définir des variables CSS globales qui peuvent être utilisées dans l'ensemble du document */
+  --color-white: #fdfaf6; /* La valeur var(--color-white) fait référence à la couleur blanche définie dans le fichier global.css */
+  --color-black: #0d0700; /* La valeur var(--color-black) fait référence à la couleur noire définie dans le fichier global.css */
+  --color-red: #d90d00; /* La valeur var(--color-red) fait référence à la couleur rouge définie dans le fichier global.css */
+  --color-blue: #0048bc; /* La valeur var(--color-blue) fait référence à la couleur bleue définie dans le fichier global.css */
+  --color-grey: #f4f4f4; /* La valeur var(--color-grey) fait référence à la couleur grise définie dans le fichier global.css */
 
-  --font-primary: "Outfit", sans-serif;
-  --font-secondary: "Syne", sans-serif;
+  --font-primary: "Outfit", sans-serif; /* La valeur var(--font-primary) fait référence à la police de caractères "Outfit" définie dans le fichier global.css */ /* Si la police de caractères "Outfit" n'est pas disponible, le navigateur utilisera une police de caractères sans-serif par défaut */
+  --font-secondary: "Syne", sans-serif; /* La valeur var(--font-secondary) fait référence à la police de caractères "Syne" définie dans le fichier global.css */ /* Si la police de caractères "Syne" n'est pas disponible, le navigateur utilisera une police de caractères sans-serif par défaut */
 }
 
 * {
