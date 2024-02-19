@@ -50,7 +50,7 @@ document
   });
 
 document
-  .getElementById("cocktail-close")
+  .getElementById("builder-close")
   .addEventListener("click", function () {
     // Ajouter un écouteur d'événements sur le bouton de fermeture du cocktail builder
     gsap.to(".cocktail-builder", {
@@ -60,141 +60,69 @@ document
     });
   });
 
-var cocktailIngredients = []; // Créer un tableau pour stocker les ingrédients du cocktail
-var labsSearch = document.getElementById("labs-search"); // Récupérer l'élément de recherche des ingrédients
-var labsResults = document.getElementById("labs-results"); // Récupérer l'élément des résultats des ingrédients
-var labsList = document.getElementById("labs-list"); // Récupérer l'élément de la liste des ingrédients
-var nextStep = document.getElementById("next-step"); // Récupérer le bouton d'étape suivante
+var allIngredients = [] // Créer un tableau pour stocker les ingrédients
+var searchInput = document.getElementById('input-ingredient') // Récupérer l'élément input pour la recherche d'ingrédients
 
-for (var i = 1; i < 5; i++) {
-  // Pour chaque ingrédient de 1 à 4 (données initiales)
-  fetch("https://www.thecocktaildb.com/api/json/v1/1/lookup.php?iid=" + i) // Récupérer les informations de l'ingrédient via l'API TheCocktailDB
-    .then((response) => response.json()) // Convertir la réponse en JSON
-    .then((data) => {
-      // Utiliser les données JSON
-      var ingr = data.ingredients[0].strIngredient; // Récupérer le nom de l'ingrédient
-      labsResults.innerHTML += `<li onclick="addIngredient('${ingr}')" data-ingr="${ingr}">${ingr}</li>`; // Ajouter l'ingrédient à la liste des résultats avec un écouteur d'événements pour l'ajouter au cocktail
-    });
+function highlightResult(string, search) { // Créer une fonction pour mettre en évidence les résultats de recherche
+  /**
+   * @param {string} string - La chaîne de caractères à modifier
+   * @param {string} search - La chaîne de caractères à rechercher
+   * @returns {string} La chaîne de caractères modifiée
+   */
+  return string.replace(new RegExp(search, 'gi'), match => `<b>${match}</b>`); // Remplacer les occurrences de la recherche par la même chaîne entourée de balises <b>
 }
 
-function addIngredient(ingredient) {
-  // Créer une fonction pour ajouter un ingrédient
+function addIngredient(name, type) { // Créer une fonction pour ajouter un ingrédient
   /**
-   * @param {string} ingredient - Nom de l'ingrédient
-   * @returns {void}
-   *
-   * Ajoute un ingrédient à la liste des ingrédients du cocktail et masque l'ingrédient dans les résultats.
+   * @param {string} name - Le nom de l'ingrédient à ajouter
+   * @param {string} type - Le type de l'ingrédient à ajouter
    */
-  if (cocktailIngredients.includes(ingredient)) {
-    // Si l'ingrédient est déjà dans le cocktail
-    document.querySelector(`[data-ingr="${ingredient}"]`).style.display =
-      "none"; // Masquer l'ingrédient dans les résultats
-  } else {
-    // Sinon
-    cocktailIngredients.push(ingredient); // Ajouter l'ingrédient à la liste des ingrédients du cocktail
-    document.querySelector(`[data-ingr="${ingredient}"]`).style.display =
-      "none"; // Masquer l'ingrédient dans les résultats
-    labsList.innerHTML += `<li onclick="removeIngredient('${ingredient}')" data-ingr="${ingredient}">${ingredient}</li>`; // Ajouter l'ingrédient à la liste des ingrédients du cocktail avec un écouteur d'événements pour le supprimer
-  }
-  nextStep.removeAttribute("disabled"); // Activer le bouton d'étape suivante car au moins un ingrédient est présent
-}
 
-function removeIngredient(ingredient) {
-  // Créer une fonction pour supprimer un ingrédient
-  /**
-   * @param {string} ingredient - Nom de l'ingrédient
-   * @returns {void}
-   *
-   * Supprime un ingrédient de la liste des ingrédients du cocktail et affiche l'ingrédient dans les résultats.
-   */
-  cocktailIngredients = cocktailIngredients.filter(
-    // Filtrer les ingrédients pour supprimer l'ingrédient
-    (ingr) => ingr !== ingredient, // Retourner tous les ingrédients sauf celui à supprimer
-  );
-  document.querySelector(`[data-ingr="${ingredient}"]`).style.display = "block"; // Afficher l'ingrédient dans les résultats
-  document.querySelector(`[data-ingr="${ingredient}"]`).remove(); // Supprimer l'ingrédient de la liste des ingrédients du cocktail sur l'interface
-
-  if (cocktailIngredients.length === 0) {
-    // Si aucun ingrédient n'est présent
-    nextStep.setAttribute("disabled", "disabled"); // Désactiver le bouton d'étape suivante
+  if (allIngredients.includes(name)) { // Vérifier si l'ingrédient est déjà présent
+    document.querySelector(`.choices__item[data-ingredient="${name}"]`).style.display = 'none' // Masquer l'ingrédient dans la liste des choix
+  } else { // Si l'ingrédient n'est pas déjà présent
+    document.getElementById('empty-ingredients').style.display = 'none' // Masquer le message d'ingrédients vides car il y a au moins un ingrédient
+    document.querySelector(`.choices__item[data-ingredient="${name}"]`).style.display = 'none' // Masquer l'ingrédient dans la liste des choix
+    allIngredients.push(name) // Ajouter l'ingrédient au tableau
+    document.getElementById('list-ingredients').innerHTML += `<li class="ingredients__item" data-ingredient="${name}" onclick='removeIngredient("${name}")'><p>${name}</p><sub>${type}</sub></li>` // Ajouter l'ingrédient à la liste des ingrédients
   }
 }
 
-function fetchData(ingredient) {
-  // Créer une fonction pour récupérer les ingrédients
+function removeIngredient(name) { // Créer une fonction pour supprimer un ingrédient
   /**
-   * @param {string} ingredient - Nom de l'ingrédient
-   * @returns {void}
-   *
-   * Récupère les ingrédients correspondant à la recherche et les ajoute à la liste des résultats.
+   * @param {string} name - Le nom de l'ingrédient à supprimer
    */
-  fetch(
-    "https://www.thecocktaildb.com/api/json/v1/1/search.php?i=" + ingredient,
-  ) // Récupérer les informations de l'ingrédient via l'API TheCocktailDB
-    .then((response) => response.json()) // Convertir la réponse en JSON
-    .then((data) => {
-      // Utiliser les données JSON
-      if (data.ingredients) {
-        // Si des ingrédients sont trouvés
-        data.ingredients.forEach((ingredient) => {
-          // Pour chaque ingrédient
-          if (
-            cocktailIngredients.includes(ingredient.strIngredient) === false // Si l'ingrédient n'est pas déjà dans le cocktail
-          ) {
-            labsResults.innerHTML += `<li onclick="addIngredient('${ingredient.strIngredient}')" data-ingr="${ingredient.strIngredient}">${ingredient.strIngredient}</li>`; // Ajouter l'ingrédient à la liste des résultats avec un écouteur d'événements pour l'ajouter au cocktail
-          }
-        });
-        document
-          .querySelector(".cocktail__labs")
-          .scrollTo(0, document.querySelector(".cocktail__labs").scrollHeight); // Faire défiler la liste des résultats jusqu'en bas pour améliorer l'expérience utilisateur
-      }
-    });
+  document.querySelector(`.ingredients__item[data-ingredient="${name}"]`).remove() // Supprimer l'ingrédient de la liste des ingrédients
+  allIngredients = allIngredients.filter(ingredient => ingredient !== name) // Filtrer le tableau pour supprimer l'ingrédient
+
+  if (allIngredients.length === 0) { // Vérifier si le tableau est vide
+    document.getElementById('empty-ingredients').style.display = 'block' // Afficher le message d'ingrédients vides
+  }
 }
 
-var timeout = null; // Créer un délai pour la recherche
-labsSearch.addEventListener("input", function () {
-  // Ajouter un écouteur d'événements sur la recherche d'ingrédients
-  clearTimeout(timeout); // Réinitialiser le délai à chaque saisie
-  timeout = setTimeout(function () {
-    // Créer un délai de 500 ms
-    labsResults.innerHTML = ""; // Réinitialiser la liste des résultats
-    fetchData(labsSearch.value);
-  }, 500);
-});
-
-nextStep.addEventListener("click", function () {
-  // Ajouter un écouteur d'événements sur le bouton d'étape suivante
-  fetch("/api/cocktail", {
-    // Créer un cocktail via l'API interne
-    method: "POST", // Utiliser la méthode POST pour envoyer les données
-    headers: {
-      // Définir les en-têtes de la requête
-      "Content-Type": "application/json", // Définir le type de contenu de la requête
-    },
-    body: JSON.stringify({ ingredients: cocktailIngredients }), // Convertir les ingrédients en chaîne JSON et les envoyer dans le corps de la requête
-  })
-    .then((response) => response.json()) // Convertir la réponse en JSON
-    .then((json) => {
-      // Utiliser les données JSON
-      document.getElementById("cocktail-qr").src =
-        `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${window.location.origin}/cocktail/${json.id}`; // Générer un code QR pour le cocktail avec l'identifiant en utilisant l'API QR Server
-      gsap.to(".cocktail__labs", {
-        // Enlever la liste des ingrédients
-        opacity: 0, // Changer l'opacité de 1 à 0
-        display: "none", // Empêcher les interactions avec la liste meme si elle est invisible
-        onComplete: function () {
-          // À la fin de l'animation
-          gsap.to(".cocktail__qr", {
-            // Afficher le code QR du cocktail
-            opacity: 1, // Changer l'opacité de 0 à 1
-            display: "block", // Autoriser les interactions avec le code QR
-          });
-        },
-      });
-    })
-    .catch((err) => {
-      // Gérer les erreurs
-      alert("Une erreur est survenue. Veuillez réessayer plus tard."); // Afficher une alerte en cas d'erreur
-      window.location.reload(); // Recharger la page pour réinitialiser l'interface
-    });
-});
+let timeout = null // Créer une variable pour stocker le délai de la recherche
+searchInput.addEventListener('input', function () { // Ajouter un écouteur d'événements sur l'élément input pour la recherche d'ingrédients
+  clearTimeout(timeout) // Effacer le délai précédent
+  timeout = setTimeout(function () { // Ajouter un nouveau délai
+    var value = searchInput.value.toLowerCase() // Récupérer la valeur de l'élément input
+    fetch('/api/ingredients/?q=' + value) // Effectuer une requête GET sur l'API /api/ingredients/ avec la valeur de l'élément input
+      .then(function (response) { // Récupérer la réponse de la requête
+        return response.json() // Renvoyer la réponse au format JSON
+      }) // Récupérer la réponse au format JSON
+      .then(function (data) { // Récupérer les données
+        document.getElementById('empty-choices').style.display = 'none' // Masquer le message de choix vides
+        document.getElementById('list-choices').innerHTML = '' // Réinitialiser la liste des choix
+        if (data.length === 0) { // Vérifier si les données sont vides
+          document.getElementById('empty-choices').style.display = 'block' // Afficher le message de choix vides
+        } else { // Si les données ne sont pas vides
+          data.forEach(function (ingredient) { // Pour chaque ingrédient
+            if (allIngredients.includes(ingredient.name)) { // Vérifier si l'ingrédient est déjà présent
+              return // Passer à l'itération suivante
+            } else { // Si l'ingrédient n'est pas déjà présent
+              document.getElementById('list-choices').innerHTML += `<li class="choices__item" data-ingredient="${ingredient.name}" onclick='addIngredient("${ingredient.name}", "${ingredient.type}")'><p>${highlightResult(ingredient.name, value)}</p><sub>${ingredient.type}</sub></li>` // Ajouter l'ingrédient à la liste des choix
+            }
+          })
+        }
+      })
+  }, 500) // Attendre 500 millisecondes avant d'effectuer la recherche pour éviter de surcharger le serveur
+})
