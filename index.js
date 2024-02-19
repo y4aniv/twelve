@@ -98,30 +98,6 @@ app.get("/dining", (req, res) => {
   });
 });
 
-app.post("/api/cocktail", (req, res) => {
-  // Définir une route pour créer un cocktail
-  const ingredients = req.body.ingredients; // Récupérer les ingrédients depuis le corps de la requête
-  if (!ingredients || !Array.isArray(ingredients) || ingredients.length === 0) {
-    // Vérifier que les ingrédients sont présents et sous forme de tableau
-    res.status(400).send("Bad request"); // Renvoyer une erreur 400 Bad Request si les ingrédients sont manquants ou invalides
-    return;
-  }
-  var id = Math.random().toString(36).substr(2, 9); // Générer un identifiant aléatoire
-  try {
-    // Essayer d'ajouter le cocktail à la base de données
-    cocktailDB.set(id, ingredients); // Ajouter le cocktail à la base de données
-    cocktailDB.save(); // Sauvegarder les modifications dans le fichier cocktails.json
-    res.json({
-      // Renvoyer une réponse JSON avec l'identifiant du cocktail
-      id,
-    });
-  } catch (e) {
-    // Si une erreur survient, renvoyer une erreur 500 Internal Server Error
-    res.status(500).send("Internal server error");
-    return;
-  }
-});
-
 app.get("/cocktail/:id", (req, res) => {
   // Définir une route pour afficher un cocktail
   if (cocktailDB.get(req.params.id)) {
@@ -143,6 +119,51 @@ app.get("/cocktail/:id", (req, res) => {
         url: "https://" + req.get("host") + req.originalUrl, // Récupérer l'URL complète de la requête
       },
     });
+  }
+});
+
+app.get("/api/ingredients/", (req, res) => {
+  var query = req.query.q; // Récupérer le paramètre de requête q
+  var ingredients = require("./data/ingredients.json"); // Charger les ingrédients depuis le fichier ingredients.json
+  if (query) {
+    // Si un paramètre de requête q est présent
+    ingredients = ingredients.filter((ingredient) =>
+      // Filtrer les ingrédients correspondant à la requête
+      ingredient.name.toLowerCase().includes(query.toLowerCase()),
+    ).map((ingredient) => { // Ajouter un score à chaque ingrédient
+      // Ajouter un score à chaque ingrédient en fonction du nombre de caractères correspondants
+      ingredient.score =  1 - (ingredient.name.length - query.length) / ingredient.name.length; // Calculer le score
+      return ingredient; // Renvoyer l'ingrédient avec le score
+    }).sort((a, b) => b.score - a.score) // Trier les ingrédients par score
+    .slice(0, 5); // Trier les ingrédients par score et renvoyer les 5 premiers
+  }else{
+    ingredients = ingredients.slice(0, 5); // Renvoyer les 5 premiers ingrédients
+  }
+
+  res.json(ingredients); // Renvoyer les ingrédients au format JSON
+})
+
+app.post("/api/cocktail", (req, res) => {
+  // Définir une route pour créer un cocktail
+  const ingredients = req.body.ingredients; // Récupérer les ingrédients depuis le corps de la requête
+  if (!ingredients || !Array.isArray(ingredients) || ingredients.length === 0) {
+    // Vérifier que les ingrédients sont présents et sous forme de tableau
+    res.status(400).send("Bad request"); // Renvoyer une erreur 400 Bad Request si les ingrédients sont manquants ou invalides
+    return;
+  }
+  var id = Math.random().toString(36).substr(2, 9); // Générer un identifiant aléatoire
+  try {
+    // Essayer d'ajouter le cocktail à la base de données
+    cocktailDB.set(id, ingredients); // Ajouter le cocktail à la base de données
+    cocktailDB.save(); // Sauvegarder les modifications dans le fichier cocktails.json
+    res.json({
+      // Renvoyer une réponse JSON avec l'identifiant du cocktail
+      id,
+    });
+  } catch (e) {
+    // Si une erreur survient, renvoyer une erreur 500 Internal Server Error
+    res.status(500).send("Internal server error");
+    return;
   }
 });
 
