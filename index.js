@@ -3,6 +3,7 @@ const express = require("express"); // Express permet de créer un serveur web
 const dotenv = require("dotenv").config(); // Dotenv permet de charger les variables d'environnement depuis un fichier .env
 const bodyParser = require("body-parser"); // Body-parser permet de parser les requêtes HTTP
 const editJsonFile = require("edit-json-file"); // Edit-json-file permet de lire et écrire dans un fichier JSON
+const compression = require("compression"); // Compression permet de compresser les réponses HTTP pour améliorer les performances
 
 // Créer une application Express
 const app = express();
@@ -11,6 +12,9 @@ const port = process.env.PORT || 3000; // Récupérer le port depuis les variabl
 // Configurer body-parser pour parser les requêtes HTTP et récupérer les données dans req.body
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true })); // Permet de parser les requêtes POST avec le type application/x-www-form-urlencoded
+
+// Activer la compression des réponses HTTP
+app.use(compression());
 
 // Configurer Express pour servir les fichiers statiques depuis le dossier public
 app.use(express.static("public"));
