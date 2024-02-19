@@ -22,7 +22,7 @@
   left: 50%;
   transform: translateX(-50%); /* La propriété transform: translateX permet de déplacer un élément horizontalement sans modifier le positionnement des autres éléments */
   text-align: center;
-  font-size: 30px;
+  font-size: var(--font-size-large); /* La valeur var(--font-size-large) fait référence à la taille de police large définie dans le fichier global.css */
   font-family: var(--font-secondary); /* La valeur var(--font-secondary) fait référence à la police de caractères "Syne" définie dans le fichier global.css */
   text-transform: uppercase; /* La propriété text-transform: uppercase permet de convertir le texte en majuscules */
 }
@@ -45,7 +45,7 @@
   position: relative; /* La propriété position: relative permet de positionner un élément par rapport à sa position initiale */
   width: 20%;
   height: 100%;
-  padding: 20px;
+  padding: var(--padding-medium); /* La valeur var(--padding-medium) fait référence à l'espacement moyen défini dans le fichier global.css */
   list-style: none; /* La propriété list-style: none permet de supprimer les puces des listes */
 }
 
@@ -55,7 +55,7 @@
   position: relative; /* La propriété position: relative permet de positionner un élément par rapport à sa position initiale */
   cursor: pointer; /* La propriété cursor: pointer permet de spécifier que le curseur doit changer pour indiquer qu'un élément est cliquable */
   margin-bottom: 10px;
-  font-size: 20px;
+  font-size: var(--font-size-medium); /* La valeur var(--font-size-medium) fait référence à la taille de police moyenne définie dans le fichier global.css */
   opacity: 0.7;
 }
 
@@ -67,9 +67,9 @@
 
 .accommodation__content {
   position: relative; /* La propriété position: relative permet de positionner un élément par rapport à sa position initiale */
-  padding-left: 20px;
-  padding-right: 20px;
-  gap: 20px; /* La propriété gap permet de spécifier l'espacement entre les éléments enfants */
+  padding-left: var(--padding-medium); /* La valeur var(--padding-medium) fait référence à l'espacement moyen défini dans le fichier global.css */
+  padding-right: var(--padding-medium); /* La valeur var(--padding-medium) fait référence à l'espacement moyen défini dans le fichier global.css */
+  gap: var(--gap); /* La propriété gap permet de spécifier l'espacement entre les éléments enfants */ /* La valeur var(--gap) fait référence à l'espacement défini dans le fichier global.css */
   width: 80%;
   height: 100%;
   display: flex; /* La propriété display: flex permet de créer un conteneur flexible pour les éléments enfants */
@@ -109,13 +109,13 @@
   position: relative;
   font-size: 25px;
   font-weight: normal;
-  font-family: var(--font-secondary);
+  font-family: var(--font-secondary); /* La valeur var(--font-secondary) fait référence à la police de caractères "Syne" définie dans le fichier global.css */
 }
 
 .item__description {
   position: relative;
   margin-top: 10px;
-  font-size: 15px;
+  font-size: var(--font-size-small); /* La valeur var(--font-size-small) fait référence à la taille de police petite définie dans le fichier global.css */
   font-weight: thin;
 }
 
