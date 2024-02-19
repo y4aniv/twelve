@@ -127,6 +127,10 @@
   align-content: stretch; /* La propriété align-content: stretch permet de spécifier que les éléments enfants doivent être étirés pour remplir l'élément conteneur */
 }
 
+.bar__content {
+  padding-left: 0;
+}
+
 .restaurant__title,
 .bar__title {
   font-size: var(
@@ -530,6 +534,10 @@
       --padding-medium
     ); /* La valeur var(--padding-medium) fait référence à l'espacement moyen défini dans le fichier global.css */
     padding-bottom: 0;
+  }
+
+  .restaurant {
+    padding-right: 0;
   }
 
   .illustration__bottom {
