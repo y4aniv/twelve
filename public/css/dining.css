@@ -22,7 +22,7 @@
   left: 50%;
   transform: translateX(-50%); /* La propriété transform: translateX permet de déplacer un élément horizontalement sans modifier le positionnement des autres éléments */
   text-align: center;
-  font-size: 30px;
+  font-size: var(--font-size-large); /* La valeur var(--font-size-large) fait référence à la taille de police large définie dans le fichier global.css */
   font-family: var(--font-secondary); /* La valeur var(--font-secondary) fait référence à la police de caractères "Syne" définie dans le fichier global.css */
   text-transform: uppercase; /* La propriété text-transform: uppercase permet de convertir le texte en majuscules */
 }
@@ -58,7 +58,7 @@
   justify-content: normal; /* La propriété justify-content: normal permet de spécifier que les éléments enfants doivent être alignés de manière normale */
   align-items: normal; /* La propriété align-items: normal permet de spécifier que les éléments enfants doivent être alignés de manière normale */
   align-content: normal; /* La propriété align-content: normal permet de spécifier que les éléments enfants doivent être alignés de manière normale */
-  gap: 20px; /* La propriété gap: 20px permet de spécifier l'espacement entre les éléments enfants */
+  gap: var(--gap); /* La propriété gap: var(--gap) permet de spécifier l'espacement entre les éléments enfants */ /* La valeur var(--gap) fait référence à l'espacement défini dans le fichier global.css */
 }
 
 .bar__illustration {
@@ -89,7 +89,7 @@
   justify-content: normal; /* La propriété justify-content: normal permet de spécifier que les éléments enfants doivent être alignés de manière normale */
   align-items: normal; /* La propriété align-items: normal permet de spécifier que les éléments enfants doivent être alignés de manière normale */
   align-content: normal; /* La propriété align-content: normal permet de spécifier que les éléments enfants doivent être alignés de manière normale */
-  gap: 20px; /* La propriété gap: 20px permet de spécifier l'espacement entre les éléments enfants */
+  gap: var(--gap); /* La propriété gap: var(--gap) permet de spécifier l'espacement entre les éléments enfants */ /* La valeur var(--gap) fait référence à l'espacement défini dans le fichier global.css */
 }
 
 .illustration__bottom img {
@@ -102,7 +102,7 @@
 .bar__content {
   position: relative; /* La propriété position: relative permet de positionner un élément par rapport à sa position initiale */
   width: 40%;
-  padding: 50px;
+  padding: var(--padding-large); /* La valeur var(--padding-large) fait référence à l'espacement large défini dans le fichier global.css */
   display: flex; /* La propriété display: flex permet de créer un conteneur flexible pour les éléments enfants */
   flex-direction: column; /* La propriété flex-direction: column permet de spécifier que les éléments enfants doivent être affichés verticalement */
   flex-wrap: nowrap; /* La propriété flex-wrap: nowrap permet de spécifier que les éléments enfants ne doivent pas être enroulés sur plusieurs lignes */
@@ -113,7 +113,7 @@
 
 .restaurant__title,
 .bar__title {
-  font-size: 30px;
+  font-size: var(--font-size-large); /* La valeur var(--font-size-large) fait référence à la taille de police large définie dans le fichier global.css */
   font-family: var(--font-secondary); /* La valeur var(--font-secondary) fait référence à la police de caractères "Syne" définie dans le fichier global.css */
 }
 
@@ -121,7 +121,7 @@
 .bar__description {
   margin-top: 20px;
   margin-bottom: 50px;
-  font-size: 20px;
+  font-size: var(--font-size-medium); /* La valeur var(--font-size-medium) fait référence à la taille de police moyenne définie dans le fichier global.css */
 }
 
 .restaurant__button,
@@ -129,10 +129,10 @@
   position: relative; /* La propriété position: relative permet de positionner un élément par rapport à sa position initiale */
   width: 100%;
   min-height: 50px; /* La propriété min-height permet de spécifier la hauteur minimale d'un élément */
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: var(--padding-small); /* La valeur var(--padding-small) fait référence à l'espacement petit défini dans le fichier global.css */
+  padding-bottom: var(--padding-small); /* La valeur var(--padding-small) fait référence à l'espacement petit défini dans le fichier global.css */
   margin-bottom: 20px;
-  font-size: 20px;
+  font-size: var(--font-size-medium); /* La valeur var(--font-size-medium) fait référence à la taille de police moyenne définie dans le fichier global.css */
   background-color: var(--color-black); /* La valeur var(--color-black) fait référence à la couleur noire définie dans le fichier global.css */
   color: var(--color-white); /* La valeur var(--color-white) fait référence à la couleur blanche définie dans le fichier global.css */
   border: none; /* La propriété border: none permet de supprimer les bordures d'un élément */
@@ -166,7 +166,7 @@
   position: absolute; /* La propriété position: absolute permet de positionner un élément par rapport à son premier parent positionné */
   top: 20px;
   left: 20px;
-  font-size: 15px;
+  font-size: var(--font-size-small); /* La valeur var(--font-size-small) fait référence à la taille de police petite définie dans le fichier global.css */
   color: var(--color-black); /* La valeur var(--color-black) fait référence à la couleur noire définie dans le fichier global.css */
   cursor: pointer; /* La propriété cursor: pointer permet de spécifier le curseur de la souris lorsqu'il survole un élément */
   z-index: 100; /* La propriété z-index permet de spécifier l'empilement des éléments */ /* La valeur 100 est utilisée pour placer l'élément au-dessus des autres éléments */
@@ -193,7 +193,7 @@
   color: var(--color-black); /* La valeur var(--color-black) fait référence à la couleur noire définie dans le fichier global.css */
   box-sizing: border-box; /* La propriété box-sizing: border-box permet de spécifier que la largeur et la hauteur d'un élément incluent le rembourrage et la bordure, mais pas la marge */
   overflow-y: auto; /* La propriété overflow-y: auto permet d'afficher une barre de défilement verticale lorsque le contenu dépasse la hauteur de l'élément */
-  padding: 50px;
+  padding: var(--padding-large); /* La valeur var(--padding-large) fait référence à l'espacement large défini dans le fichier global.css */
 }
 
 .menu__list {
@@ -206,14 +206,14 @@
 }
 
 .menu__item--title {
-  font-size: 30px;
+  font-size: var(--font-size-large); /* La valeur var(--font-size-large) fait référence à la taille de police large définie dans le fichier global.css */
   font-family: var(--font-secondary); /* La valeur var(--font-secondary) fait référence à la police de caractères "Syne" définie dans le fichier global.css */
 }
 
 .menu__item--content {
   margin-top: 20px;
   margin-bottom: 20px;
-  font-size: 20px;
+  font-size: var(--font-size-medium); /* La valeur var(--font-size-medium) fait référence à la taille de police moyenne définie dans le fichier global.css */
 }
 
 .cocktail-builder {
@@ -224,7 +224,7 @@
   left: 0;
   background: var(--color-white); /* La valeur var(--color-white) fait référence à la couleur blanche définie dans le fichier global.css */
   z-index: 100; /* La propriété z-index permet de spécifier l'empilement des éléments */ /* La valeur 100 est utilisée pour placer l'élément au-dessus des autres éléments */
-  padding: 20px;
+  padding: var(--padding-medium); /* La valeur var(--padding-medium) fait référence à l'espacement moyen défini dans le fichier global.css */
   display: flex; /* La propriété display: flex permet de créer un conteneur flexible pour les éléments enfants */
   flex-direction: column; /* La propriété flex-direction: column permet de spécifier que les éléments enfants doivent être affichés verticalement */
   flex-wrap: nowrap; /* La propriété flex-wrap: nowrap permet de spécifier que les éléments enfants ne doivent pas être enroulés sur plusieurs lignes */
@@ -236,7 +236,7 @@
 
 .cocktail__close {
   position: absolute; /* La propriété position: absolute permet de positionner un élément par rapport à son premier parent positionné */
-  font-size: 15px;
+  font-size: var(--font-size-small); /* La valeur var(--font-size-small) fait référence à la taille de police petite définie dans le fichier global.css */
   color: var(--color-black); /* La valeur var(--color-black) fait référence à la couleur noire définie dans le fichier global.css */
   cursor: pointer; /* La propriété cursor: pointer permet de spécifier le curseur de la souris lorsqu'il survole un élément */
   z-index: 100; /* La propriété z-index permet de spécifier l'empilement des éléments */ /* La valeur 100 est utilisée pour placer l'élément au-dessus des autres éléments */
@@ -251,14 +251,14 @@
 }
 
 .cocktail__title {
-  font-size: 30px;
+  font-size: var(--font-size-large); /* La valeur var(--font-size-large) fait référence à la taille de police large définie dans le fichier global.css */
   font-family: var(--font-secondary); /* La valeur var(--font-secondary) fait référence à la police de caractères "Syne" définie dans le fichier global.css */
 }
 
 .cocktail__description {
   margin-top: 10px;
   margin-bottom: 20px;
-  font-size: 20px;
+  font-size: var(--font-size-medium); /* La valeur var(--font-size-medium) fait référence à la taille de police moyenne définie dans le fichier global.css */
 }
 
 .separator {
@@ -278,12 +278,12 @@
 }
 
 .labs__ingredients {
-  font-size: 20px;
+  font-size: var(--font-size-medium); /* La valeur var(--font-size-medium) fait référence à la taille de police moyenne définie dans le fichier global.css */
   margin-bottom: 20px;
 }
 
 .labs__title {
-  font-size: 20px;
+  font-size: var(--font-size-medium); /* La valeur var(--font-size-medium) fait référence à la taille de police moyenne définie dans le fichier global.css */
   font-family: var(--font-secondary); /* La valeur var(--font-secondary) fait référence à la police de caractères "Syne" définie dans le fichier global.css */
   margin-bottom: 10px;
 }
@@ -296,17 +296,17 @@
   justify-content: normal; /* La propriété justify-content: normal permet de spécifier que les éléments enfants doivent être alignés de manière normale */
   align-items: normal; /* La propriété align-items: normal permet de spécifier que les éléments enfants doivent être alignés de manière normale */
   align-content: normal; /* La propriété align-content: normal permet de spécifier que les éléments enfants doivent être alignés de manière normale */
-  gap: 20px; /* La propriété gap: 20px permet de spécifier l'espacement entre les éléments enfants */
+  gap: var(--gap); /* La propriété gap: var(--gap) permet de spécifier l'espacement entre les éléments enfants */ /* La valeur var(--gap) fait référence à l'espacement défini dans le fichier global.css */
 }
 
 .labs__list li {
   position: relative; /* La propriété position: relative permet de positionner un élément par rapport à sa position initiale */
   width: 100%;
   height: 100%;
-  padding: 20px;
+  padding: var(--padding-medium); /* La valeur var(--padding-medium) fait référence à l'espacement moyen défini dans le fichier global.css */
   background-color: var(--color-white); /* La valeur var(--color-white) fait référence à la couleur blanche définie dans le fichier global.css */
   color: var(--color-black); /* La valeur var(--color-black) fait référence à la couleur noire définie dans le fichier global.css */
-  font-size: 20px;
+  font-size: var(--font-size-medium); /* La valeur var(--font-size-medium) fait référence à la taille de police moyenne définie dans le fichier global.css */
   font-family: var(--font-primary); /* La valeur var(--font-primary) fait référence à la police de caractères "Outfit" définie dans le fichier global.css */
   cursor: pointer; /* La propriété cursor: pointer permet de spécifier le curseur de la souris lorsqu'il survole un élément */
   transition: background-color 0.3s ease; /* La propriété transition permet de spécifier les propriétés CSS à animer */
@@ -321,8 +321,8 @@
   position: relative; /* La propriété position: relative permet de positionner un élément par rapport à sa position initiale */
   width: 100%;
   height: 40px;
-  padding-left: 10px;
-  font-size: 20px;
+  padding-left: var(--padding-small); /* La valeur var(--padding-small) fait référence à l'espacement petit défini dans le fichier global.css */
+  font-size: var(--font-size-medium); /* La valeur var(--font-size-medium) fait référence à la taille de police moyenne définie dans le fichier global.css */
   background-color: var(--color-white); /* La valeur var(--color-white) fait référence à la couleur blanche définie dans le fichier global.css */
   color: var(--color-black); /* La valeur var(--color-black) fait référence à la couleur noire définie dans le fichier global.css */
   border: 2px solid var(--color-black); /* La valeur var(--color-black) fait référence à la couleur noire définie dans le fichier global.css */
@@ -344,7 +344,7 @@
   justify-content: normal; /* La propriété justify-content: normal permet de spécifier que les éléments enfants doivent être alignés de manière normale */
   align-items: normal; /* La propriété align-items: normal permet de spécifier que les éléments enfants doivent être alignés de manière normale */
   align-content: normal; /* La propriété align-content: normal permet de spécifier que les éléments enfants doivent être alignés de manière normale */
-  gap: 20px; /* La propriété gap: 20px permet de spécifier l'espacement entre les éléments enfants */
+  gap: var(--gap); /* La propriété gap: var(--gap) permet de spécifier l'espacement entre les éléments enfants */ /* La valeur var(--gap) fait référence à l'espacement défini dans le fichier global.css */
   list-style: none; /* La propriété list-style: none permet de supprimer les puces des listes */
   margin-top: 10px; 
 }
@@ -353,10 +353,10 @@
   position: relative; /* La propriété position: relative permet de positionner un élément par rapport à sa position initiale */
   width: 100%;
   height: 100%;
-  padding: 20px;
+  padding: var(--padding-medium); /* La valeur var(--padding-medium) fait référence à l'espacement moyen défini dans le fichier global.css */
   background-color: var(--color-white); /* La valeur var(--color-white) fait référence à la couleur blanche définie dans le fichier global.css */
   color: var(--color-black); /* La valeur var(--color-black) fait référence à la couleur noire définie dans le fichier global.css */
-  font-size: 20px; 
+  font-size: var(--font-size-medium); /* La valeur var(--font-size-medium) fait référence à la taille de police moyenne définie dans le fichier global.css */
   font-family: var(--font-primary); /* La valeur var(--font-primary) fait référence à la police de caractères "Outfit" définie dans le fichier global.css */
   cursor: pointer; /* La propriété cursor: pointer permet de spécifier le curseur de la souris lorsqu'il survole un élément */
   transition: background-color 0.3s ease; /* La propriété transition permet de spécifier les propriétés CSS à animer */
@@ -371,10 +371,10 @@
   position: relative; /* La propriété position: relative permet de positionner un élément par rapport à sa position initiale */
   width: 100%;
   height: 50px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: var(--padding-small); /* La valeur var(--padding-small) fait référence à l'espacement petit défini dans le fichier global.css */
+  padding-bottom: var(--padding-small); /* La valeur var(--padding-small) fait référence à l'espacement petit défini dans le fichier global.css */
   margin-top: 20px;
-  font-size: 20px;
+  font-size: var(--font-size-medium); /* La valeur var(--font-size-medium) fait référence à la taille de police moyenne définie dans le fichier global.css */
   background-color: var(--color-black); /* La valeur var(--color-black) fait référence à la couleur noire définie dans le fichier global.css */
   color: var(--color-white); /* La valeur var(--color-white) fait référence à la couleur blanche définie dans le fichier global.css */
   border: none; /* La propriété border: none permet de supprimer les bordures d'un élément */
@@ -421,7 +421,7 @@
   .restaurant__content,
   .bar__content {
     width: 100%;
-    padding: 20px;
+    padding: var(--padding-medium); /* La valeur var(--padding-medium) fait référence à l'espacement moyen défini dans le fichier global.css */
     padding-bottom: 0;
   }
 
