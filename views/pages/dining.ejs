@@ -2,7 +2,7 @@
 <html lang="fr">
 
 <head>
-    <%- include('../partials/head') %>
+    <%- include('../partials/head') %> <!-- Import du fichier head.ejs qui contient les balises meta, link et script communes à toutes les pages -->
         <link rel="stylesheet" href="/css/dining.css">
         <script src="/js/dining.js" defer></script>
 </head>
@@ -45,12 +45,12 @@
         </div>
         <div class="menu__content">
             <ul class="menu__list">
-                <% for (let i = 0; i < le12.length; i++) { %>
-                    <li class="menu__item--title"><%= le12[i].title %></li>
-                    <% for (let j = 0; j < le12[i].content.length; j++) { %>
-                        <li class="menu__item--content"><%= le12[i].content[j] %></li>
-                    <% } %>
-                <% } %>
+                <% for (let i = 0; i < le12.length; i++) { %> <!-- Cette boucle permet de parcourir le tableau le12 et d'afficher les éléments de ce tableau -->
+                    <li class="menu__item--title"><%= le12[i].title %></li> <!-- Cette ligne permet d'afficher le titre de chaque élément du tableau le12 -->
+                    <% for (let j = 0; j < le12[i].content.length; j++) { %> <!-- Cette boucle permet de parcourir le tableau content de chaque élément du tableau le12 et d'afficher les éléments de ce tableau -->
+                        <li class="menu__item--content"><%= le12[i].content[j] %></li> <!-- Cette ligne permet d'afficher le contenu de chaque élément du tableau content de chaque élément du tableau le12 -->
+                    <% } %> <!-- Cette balise permet de fermer la boucle for -->
+                <% } %> <!-- Cette balise permet de fermer la boucle for -->
             </ul>
         </div>
     </div>
