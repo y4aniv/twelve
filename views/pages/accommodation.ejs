@@ -2,7 +2,7 @@
 <html lang="fr">
 
 <head>
-    <%- include('../partials/head') %>
+    <%- include('../partials/head') %> <!-- Import du fichier head.ejs qui contient les balises meta, link et script communes à toutes les pages -->
         <link rel="stylesheet" href="/css/accommodation.css">
         <script src="/js/accommodation.js" defer></script>
 </head>
@@ -21,24 +21,24 @@
             <li class="sorting__pavillon" id="sorting__pavillon">Pavillons</li>
         </ul>
         <div class="accommodation__content" id="accommodation__content">
-            <% for (let i=0; i < data.length; i++) { %>
-                <a href="/accommodation/<%= data[i].slug %>" class="content__item" data-type="<%= data[i].type %>">
+            <% for (let i=0; i < data.length; i++) { %> <!-- Cette boucle permet de parcourir le tableau data et d'afficher les éléments de ce tableau -->
+                <a href="/accommodation/<%= data[i].slug %>" class="content__item" data-type="<%= data[i].type %>"> <!-- Cette ligne permet de créer un lien vers la page de détail de chaque élément du tableau data -->
                     <img class="item__poster" src="/img/accommodation/poster/<%= data[i].slug %>.jpg"
-                        alt="<%= data[i].name %>" draggable="false">
+                        alt="<%= data[i].name %>" draggable="false"> <!-- Cette ligne permet d'afficher l'image de chaque élément du tableau data -->
                     <p class="item__type">
-                        <%= data[i].type %>
+                        <%= data[i].type %> <!-- Cette ligne permet d'afficher le type de chaque élément du tableau data -->
                     </p>
                     <h3 class="item__name">
-                        <%= data[i].name %>
+                        <%= data[i].name %> <!-- Cette ligne permet d'afficher le nom de chaque élément du tableau data -->
                     </h3>
                     <p class="item__description">
-                        <%= data[i].description %>
+                        <%= data[i].description %> <!-- Cette ligne permet d'afficher la description de chaque élément du tableau data -->
                     </p>
                 </a>
-                <% } %>
+                <% } %> <!-- Cette balise permet de fermer la boucle for -->
         </div>
     </div>
-    <%- include('../partials/footer') %>
+    <%- include('../partials/footer') %> <!-- Import du fichier footer.ejs qui contient le footer commun à toutes les pages -->
 </body>
 
 </html>
