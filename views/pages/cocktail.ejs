@@ -4,6 +4,7 @@
 <head>
     <%- include('../partials/head') %> <!-- Import du fichier head.ejs qui contient les balises meta, link et script communes à toutes les pages -->
     <link rel="stylesheet" href="/css/cocktail.css">
+    <script src="/js/cocktail.js" defer></script>
 </head>
 
 <body>
@@ -17,7 +18,13 @@
                 <li class="ingredients__item"><%= ingredients[i] %></li> <!-- Cette ligne permet d'afficher chaque élément du tableau ingredients -->
             <% } %> <!-- Cette balise permet de fermer la boucle for -->
         </ul>
+        <% if (!isShare) { %> <!-- Cette condition permet de vérifier si la page provient d'un partage ou non -->
+        <button class="cocktail__button" id="share">Partager votre cocktail</button> <!-- Si la page ne provient pas d'un partage, un bouton de partage est affiché -->
+        <% } %> <!-- Cette balise permet de fermer la condition -->
     </div>
+    <script>
+        var SHARE_ID = '<%= shareId %>'; // Cette ligne permet de déclarer une variable SHARE_ID qui contient l'identifiant de partage
+    </script>
 </body>
 
 </html>
