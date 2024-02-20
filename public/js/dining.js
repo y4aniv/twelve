@@ -149,6 +149,7 @@ function validateCocktail() {
     .then((data) => {
       // Récupérer les données
       document.querySelector('#qrcode img').src = `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${window.location.origin}/cocktail/${data.id}&bgcolor=fdfaf6&color=0d0700`; // Générer un code QR avec l'URL du cocktail
+      document.querySelector('#qrcode a').href = `/cocktail/${data.id}`; // Ajouter un lien vers le cocktail avec l'URL du cocktail
       gsap.to('.step-2', {
         opacity: 0, // Masquer l'étape 2
         display: 'none', // Masquer l'étape 2 (éviter les problèmes d'accessibilité)
