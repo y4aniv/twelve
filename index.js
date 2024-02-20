@@ -20,7 +20,7 @@ app.use(compression());
 app.use(express.static('public'));
 app.use('/css', express.static(`${__dirname}public/css`));
 app.use('/js', express.static(`${__dirname}public/js`));
-app.use('/img', express.static(`${__dirname}public/img`));
+app.use('/img', express.static(`${__dirname}public/img`, { maxAge: '30d' })); // Définir une durée de mise en cache de 30 jours pour les images
 
 // Configurer EJS comme moteur de rendu
 app.set('view engine', 'ejs');
