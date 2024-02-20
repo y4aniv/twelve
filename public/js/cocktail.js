@@ -9,6 +9,6 @@ document.getElementById('share').addEventListener('click', () => {
     // Utilise l'API Web Share pour partager le cocktail
     title: "L'Aristote - Twelve, un hôtel dans les nuages", // Utilise un titre personnalisé
     text: `Découvre ${document.querySelectorAll('.ingredients__item').length == 1 ? "l'ingrédient secret" : `les ${document.querySelectorAll('.ingredients__item').length} ingrédients secrets`} de mon cocktail.`, // Utilise un texte personnalisé avec le nombre d'ingrédients qui est dynamique
-    url: `${window.location.origin}/cocktail/${SHARE_ID}`, // Utilise l'URL de partage valide vers le cocktail
+    url: window.location.href, // Utilise l'URL de la page actuelle
   });
 });
