@@ -4,6 +4,7 @@ const dotenv = require('dotenv').config(); // Dotenv permet de charger les varia
 const bodyParser = require('body-parser'); // Body-parser permet de parser les requêtes HTTP
 const editJsonFile = require('edit-json-file'); // Edit-json-file permet de lire et écrire dans un fichier JSON
 const compression = require('compression'); // Compression permet de compresser les réponses HTTP pour améliorer les performances
+const cors = require('cors') // Cors permet de transmettre les requêtes HTTP
 
 // Créer une application Express
 const app = express();
@@ -12,6 +13,9 @@ const port = process.env.PORT || 3000; // Récupérer le port depuis les variabl
 // Configurer body-parser pour parser les requêtes HTTP et récupérer les données dans req.body
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true })); // Permet de parser les requêtes POST avec le type application/x-www-form-urlencoded
+
+// Activer Cors
+app.use(cors())
 
 // Activer la compression des réponses HTTP
 app.use(compression());
