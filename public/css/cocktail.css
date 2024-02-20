@@ -14,6 +14,7 @@
 .cocktail {
   position: relative; /* La propriété position: relative permet de positionner un élément par rapport à sa position initiale */
   width: 95%;
+  max-width: 500px; /* La propriété max-width permet de spécifier la largeur maximale d'un élément */
   left: 50%;
   transform: translateX(
     -50%
@@ -52,4 +53,37 @@
   ); /* La valeur var(--font-size-medium) fait référence à la taille de police moyenne définie dans le fichier global.css */
   opacity: 0.7;
   text-align: center;
+}
+
+.ingredients {
+  margin-bottom: 50px;
+  list-style: none; /* La propriété list-style: none permet de supprimer les puces d'une liste */
+}
+
+.cocktail__button {
+  position: relative; /* La propriété position: relative permet de positionner un élément par rapport à sa position initiale */
+  width: 100%;
+  min-height: 50px; /* La propriété min-height permet de spécifier la hauteur minimale d'un élément */
+  padding-top: var(
+    --padding-small
+  ); /* La valeur var(--padding-small) fait référence à l'espacement petit défini dans le fichier global.css */
+  padding-bottom: var(
+    --padding-small
+  ); /* La valeur var(--padding-small) fait référence à l'espacement petit défini dans le fichier global.css */
+  margin-bottom: 20px;
+  font-size: var(
+    --font-size-medium
+  ); /* La valeur var(--font-size-medium) fait référence à la taille de police moyenne définie dans le fichier global.css */
+  background-color: var(
+    --color-black
+  ); /* La valeur var(--color-black) fait référence à la couleur noire définie dans le fichier global.css */
+  color: var(
+    --color-white
+  ); /* La valeur var(--color-white) fait référence à la couleur blanche définie dans le fichier global.css */
+  border: none; /* La propriété border: none permet de supprimer les bordures d'un élément */
+  cursor: pointer; /* La propriété cursor: pointer permet de spécifier le curseur de la souris lorsqu'il survole un élément */
+  font-family: var(
+    --font-primary
+  ); /* La valeur var(--font-primary) fait référence à la police de caractères "Outfit" définie dans le fichier global.css */
+  display: none; /* La propriété display: none permet de masquer un élément */
 }
