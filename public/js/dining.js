@@ -73,6 +73,7 @@ document.getElementById('button-next').addEventListener('click', () => {
 
 let allIngredients = []; // Créer un tableau pour stocker les ingrédients
 const searchInput = document.getElementById('input-ingredient'); // Récupérer l'élément input pour la recherche d'ingrédients
+searchInput.value = ''; // Réinitialiser la valeur de l'élément input pour la recherche d'ingrédients
 
 function highlightResult(string, search) {
   // Créer une fonction pour mettre en évidence les résultats de recherche
