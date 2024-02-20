@@ -12,11 +12,11 @@
 
 ## Introduction
 
-Bienvenue dans le projet NSI **Twelve** où nous vous invitons à explorer l'hôtel fictif **Twelve** à travers un site web élégant et immersif. Inspiré par l'atmosphère envoûtante de l'hôtel [Amanzoe](https://www.aman.com/fr-fr/resorts/amanzoe) en Grèce, _Twelve_ vous transporte dans un monde de luxe et de tranquillité.
+Bienvenue dans le projet NSI **Twelve** où nous vous invitons à explorer l'hôtel fictif **Twelve** à travers un site web élégant et immersif. Inspiré par l'atmosphère envoûtante de l'hôtel [Amanzoe](https://www.aman.com/fr-fr/resorts/amanzoe) en Grèce, **Twelve** vous transporte dans un monde de luxe et de tranquillité.
 
 ## Présentation du projet
 
-Le projet **Twelve** est un site web dynamique qui vous permet de découvrir l'hôtel fictif **Twelve**. Vous pourrez y trouver des informations sur les chambres (villa ou pavillon) ainsi que sur les services de restauration.
+Le projet **Twelve** est un site web dynamique qui vous permet de découvrir l'hôtel fictif **Twelve**. Vous pourrez y trouver des informations sur les chambres (villas ou pavillons) ainsi que sur les services de restauration.
 Ce projet est réalisé dans le cadre de l'enseignement de spécialité NSI (Numérique et Sciences Informatiques) en classe de première.
 Le site web est actuellement hébergé sur [Render](https://render.com/) et est accessible à l'adresse suivante : [https://twelve-resort.onrender.com/](https://twelve-resort.onrender.com/).
 
@@ -26,7 +26,7 @@ Le site web est actuellement hébergé sur [Render](https://render.com/) et est 
 
 - HTML5 (avec le moteur de rendu [EJS](https://ejs.co/))
 - CSS3
-- Vanilla JavaScript
+- JavaScript
 - Node.js
 - Python
 
