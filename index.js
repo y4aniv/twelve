@@ -96,39 +96,14 @@ app.get('/dining', (req, res) => {
 
 app.get('/cocktail/:id', (req, res) => {
   // Définir une route pour afficher un cocktail
-  const alphabet = 'abcdefghijklmnopqrstuvwxyz';
-  if (req.params.id.length === 10) {
-    // Si le cocktail provient d'un partage
-    const lastLetter = req.params.id.charAt(9); // Récupérer la dernière lettre de l'identifiant
-    const preLastLetter = req.params.id.charAt(8); // Récupérer l'avant-dernière lettre de l'identifiant
-
-    if (
-      alphabet.charAt((alphabet.indexOf(preLastLetter) + 5) % 26) !== lastLetter
-    ) {
-      // Si la dernière lettre correspond à la lettre suivante de l'avant-dernière lettre (décalage de 5 lettres dans l'alphabet)
-      res.render('pages/404', {
-        // Rendre la vue pages/404.ejs
-        head: {
-          // Passer des données à la vue
-          url: `https://${req.get('host')}${req.originalUrl}`, // Récupérer l'URL complète de la requête
-        },
-      });
-    }
-  }
-
-  if (cocktailDB.get(req.params.id.substr(0, 9))) {
-    // Si le cocktail existe (vérifier les 9 premiers caractères de l'identifiant)
+  if (cocktailDB.get(req.params.id)) {
+    // Si le cocktail existe, rendre la vue pages/cocktail.ejs
     res.render('pages/cocktail', {
-      // Rendre la vue pages/cocktail.ejs
       head: {
         // Passer des données à la vue
         url: `https://${req.get('host')}${req.originalUrl}`, // Récupérer l'URL complète de la requête
-      }, // Passer les données du cocktail à la vue
-      ingredients: cocktailDB.get(req.params.id.substr(0, 9)), // Récupérer les ingrédients du cocktail depuis la base de données
-      isShare: req.params.id.length === 10, // Passer un booléen pour savoir si le cocktail provient d'un partage
-      shareId:
-        req.params.id.substr(0, 9)
-        + alphabet.charAt((alphabet.indexOf(req.params.id.charAt(8)) + 5) % 26), // Générer l'identifiant de partage valide pour le cocktail
+      },
+      ingredients: cocktailDB.get(req.params.id), // Passer les ingrédients du cocktail à la vue
     });
   } else {
     // Si le cocktail n'existe pas, rendre la vue pages/404.ejs
