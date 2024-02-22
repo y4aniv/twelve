@@ -26,7 +26,7 @@ Le site web est actuellement hébergé sur [Render](https://render.com/) et est 
 
 - HTML5 (avec le moteur de rendu [EJS](https://ejs.co/))
 - CSS3
-- JavaScript
+- Javascript
 - Node.js
 - Python
 
