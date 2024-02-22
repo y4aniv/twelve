@@ -62,7 +62,7 @@ gsap.to('.content__item', {
   scrollTrigger: {
     // Déclenche l'animation lorsqu'un élément est visible à l'écran
     trigger: '.content__item', // L'élément à observer
-    start: 'top center', // Le point de départ de l'animation est le centre de l'élément
+    start: 'top 90%', // Le point de départ de l'animation (90% de l'écran)
   },
   opacity: 1, // Opacité à 1
   y: 0, // Décalage de 0px
