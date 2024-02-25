@@ -484,7 +484,6 @@
     --color-black
   ); /* La valeur var(--color-black) fait référence à la couleur blanche définie dans le fichier global.css */
   border: none; /* La propriété border: none permet de supprimer les bordures d'un élément */
-  cursor: pointer; /* La propriété cursor: pointer permet de spécifier le curseur de la souris lorsqu'il survole un élément */
   font-family: var(
     --font-primary
   ); /* La valeur var(--font-primary) fait référence à la police de caractères "Outfit" définie dans le fichier global.css */
